@@ -1,0 +1,7 @@
+
+<conversiontasks>
+  <conversiontask id="101" status="complete" assetid="102" presetid="previewffmpegthumb" submitted="2011-07-29 16:57:24 -0400"/>
+  <conversiontask id="102" status="complete" assetid="102" presetid="previewffmpeg" submitted="2011-07-29 16:57:24 -0400"/>
+  <conversiontask id="103" status="complete" assetid="102" presetid="amazonpreview" submitted="2011-07-29 16:57:24 -0400"/>
+  <conversiontask id="104" status="complete" assetid="102" presetid="digitalrapidspreview" submitted="2011-07-29 16:57:24 -0400"/>
+</conversiontasks>

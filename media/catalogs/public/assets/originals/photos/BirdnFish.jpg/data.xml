@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<asset name="BirdnFish.jpg" id="115">
+  <keyword><![CDATA[Wildlife]]></keyword>
+  <keyword><![CDATA[Bird]]></keyword>
+  <category id="originals_photos"/>
+  <category id="1348673354951"/>
+  <property name="fileformat">jpg</property>
+  <property name="datatype">original</property>
+  <property name="owner">admin</property>
+  <property name="assetaddeddate">2011-07-29 17:00:30 -0400</property>
+  <property name="assetviews">2</property>
+  <property name="importstatus">complete</property>
+  <property name="assetmodificationdate">2011-07-29 16:38:52 -0400</property>
+  <property name="filesize">253975</property>
+  <property name="bitspersample">8</property>
+  <property name="width">1024</property>
+  <property name="height">815</property>
+  <property name="previewstatus">generated</property>
+  <property name="recordmodificationdate">2012-09-26 15:54:01 +0000</property>
+  <property name="assetviewsexpires">1348677404087</property>
+  <property name="assettype">photo</property>
+  <property name="caption">Grace and precision</property>
+  <property name="assetcreationdate">09/06/2012</property>
+</asset>

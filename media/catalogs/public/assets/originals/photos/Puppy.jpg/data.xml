@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<asset name="Puppy.jpg" id="132">
+  <keyword><![CDATA[Dog]]></keyword>
+  <keyword><![CDATA[Wildlife]]></keyword>
+  <keyword><![CDATA[123]]></keyword>
+  <category id="originals_photos"/>
+  <property name="fileformat">jpg</property>
+  <property name="datatype">original</property>
+  <property name="owner">admin</property>
+  <property name="assetaddeddate">2011-07-29 17:00:47 -0400</property>
+  <property name="assetviews">6</property>
+  <property name="importstatus">complete</property>
+  <property name="assetmodificationdate">2011-07-29 16:40:03 -0400</property>
+  <property name="filesize">383530</property>
+  <property name="comment">AppleMark.</property>
+  <property name="bitspersample">8</property>
+  <property name="width">681</property>
+  <property name="height">1024</property>
+  <property name="previewstatus">1</property>
+  <property name="recordmodificationdate">2012-09-27 11:26:47 -0400</property>
+  <property name="assetviewsexpires">1348669834385</property>
+  <property name="assetcreationdate">09/12/2012</property>
+  <property name="assettype">photo</property>
+  <property name="caption">Walk the dog.</property>
+  <property name="libraries">1348673972782</property>
+</asset>

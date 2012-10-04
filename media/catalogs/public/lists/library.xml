@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<libraries> 
+  <library division="1348673962175" id="1348673972782">Vendors</library>  
+  <library division="1348673962175" id="1348673981887">Customers</library>  
+  <library division="1348673945784" id="1348673990214">Accounting</library>  
+  <library division="1348673945784" id="1348674007516">Editing Team</library>  
+  <library division="1348673945784" id="1348674015076">Ideas Department</library> 
+</libraries>

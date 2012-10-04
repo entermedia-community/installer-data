@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<asset name="RedFlower.jpg" id="129">
+  <keyword><![CDATA[Wildlife]]></keyword>
+  <category id="originals_photos"/>
+  <property name="fileformat">jpg</property>
+  <property name="datatype">original</property>
+  <property name="owner">admin</property>
+  <property name="assetaddeddate">2011-07-29 17:00:44 -0400</property>
+  <property name="assetviews">0</property>
+  <property name="importstatus">complete</property>
+  <property name="assetmodificationdate">2011-07-29 16:40:05 -0400</property>
+  <property name="filesize">181420</property>
+  <property name="bitspersample">8</property>
+  <property name="width">1024</property>
+  <property name="height">666</property>
+  <property name="previewstatus">generated</property>
+  <property name="recordmodificationdate">2012-09-26 15:15:49 +0000</property>
+  <property name="assettype">photo</property>
+  <property name="assetviewsexpires">1348676128566</property>
+  <property name="caption">A rose of any other name smells the same.</property>
+</asset>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<orders> 
+  <order id="admin_orderbasket" orderstatus="ordered" date="2012-09-26 13:22:39 +0000" userid="admin" applicationid="emshare">admin_orderbasket</order>  
+  <order id="101" orderstatus="ordered" date="2012-09-26 13:49:34 +0000" userid="admin" applicationid="emshare" expireson="2012-09-26 13:49:34 +0000">101</order>  
+  <order id="102" orderstatus="complete" date="2012-09-26 14:58:45 +0000" userid="admin" applicationid="emshare" expireson="2012-09-26 14:58:45 +0000" ordertype="export" publishdestination="0" emailsent="true">102</order>  
+  <order id="103" orderstatus="ordered" date="2012-09-26 15:00:03 +0000" userid="admin" applicationid="emshare" expireson="2012-09-26 15:00:03 +0000">103</order>  
+  <order id="104" orderstatus="ordered" date="2012-09-26 15:49:44 +0000" userid="admin" applicationid="emshare">104</order>  
+  <order id="105" orderstatus="complete" date="2012-09-26 15:49:51 +0000" userid="admin" applicationid="emshare" publishdestination="local" ordertype="export" orderstatusdetail="Could not email java.lang.NullPointerException" emailsent="true">105</order>  
+  <order id="106" orderstatus="ordered" date="2012-09-27 11:20:37 -0400" userid="admin" applicationid="emshare" expireson="2012-09-27 11:20:37 -0400">106</order>
+</orders>

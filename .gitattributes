@@ -1,0 +1,5 @@
+*.wav -delta -crlf -diff
+*.mp4 -delta -crlf -diff
+*.mov -delta -crlf -diff
+*.jpg -delta -crlf -diff
+*.flv -delta -crlf -diff

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<asset name="Media Intro.wma" id="139">
+  <category id="2012_09"/>
+  <category id="index"/>
+  <category id="1348673413166"/>
+  <property name="assetmodificationdate">2012-09-26 15:06:35 +0000</property>
+  <property name="filesize">288389</property>
+  <property name="fileformat">wma</property>
+  <property name="assettitle">Audio Sample</property>
+  <property name="author">Everclear</property>
+  <property name="length">34</property>
+  <property name="audiocodec">Windows Media Audio V8</property>
+  <property name="caption">Sample audio files in the table or gallery view.</property>
+  <property name="editstatus">1</property>
+  <property name="importstatus">complete</property>
+  <property name="previewtatus">0</property>
+  <property name="owner">admin</property>
+  <property name="datatype">original</property>
+  <property name="assetaddeddate">2012-09-26 15:06:36 +0000</property>
+  <property name="recordmodificationdate">2012-09-27 11:27:15 -0400</property>
+  <property name="assettype">audio</property>
+  <property name="assetviews">0</property>
+  <property name="assetviewsexpires">1348678279859</property>
+  <property name="assetcreationdate">09/01/2012</property>
+  <property name="libraries">1348674015076</property>
+</asset>

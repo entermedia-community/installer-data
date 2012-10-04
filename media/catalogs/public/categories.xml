@@ -1,0 +1,19 @@
+
+<catalog id="index" name="Archive">
+  <property id="categoryhome">/media/catalogs/public/categories/</property>
+  <catalog id="users" name="Users">
+    <catalog id="1348673354951" name="Janet Smith"/>
+    <catalog id="1348673345329" name="John Doe"/>
+    <catalog id="users_admin" name="The Administrator"/>
+  </catalog>
+  <catalog id="originals" name="By Type">
+    <catalog id="1348673413166" name="audio"/>
+    <catalog id="1348673403864" name="documents"/>
+    <catalog id="originals_photos" name="photos"/>
+    <catalog id="originals_videos" name="videos"/>
+  </catalog>
+  <catalog id="2012" name="2012">
+    <catalog id="1348673377556" name="October"/>
+    <catalog id="2012_09" name="September"/>
+  </catalog>
+</catalog>
