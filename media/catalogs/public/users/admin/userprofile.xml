@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <userprofiles>
-  <userprofile id="101" userid="admin" settingsgroup="administrator" lastcatalog="media/catalogs/public" resultview="table" assetsort="filesizeDown" view_asset_resultstable="name caption filesize assettype assetaddeddate" view_asset_advancedsearch="description libraries editstatus" maximize_screen="false" hideassettype="photo audio none document 1348758017361 video">admin</userprofile>
+  <userprofile id="101" userid="admin" settingsgroup="administrator" lastcatalog="media/catalogs/public" resultview="table" maximize_screen="false" maximize_player="false">admin</userprofile>
 </userprofiles>

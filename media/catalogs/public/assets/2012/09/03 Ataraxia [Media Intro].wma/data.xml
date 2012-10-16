@@ -11,7 +11,7 @@
   <property name="author">Everclear</property>
   <property name="length">34</property>
   <property name="audiocodec">Windows Media Audio V8</property>
-  <property name="caption">Sample audio files in the table or gallery view.</property>
+  <property name="longcaption">Sample audio files in the table or gallery view.</property>
   <property name="editstatus">1</property>
   <property name="importstatus">complete</property>
   <property name="previewtatus">0</property>

@@ -22,6 +22,6 @@
   <property name="assetviewsexpires">1348669834385</property>
   <property name="assetcreationdate">09/12/2012</property>
   <property name="assettype">photo</property>
-  <property name="caption">Walk the dog.</property>
+  <property name="longcaption">Walk the dog.</property>
   <property name="libraries">1348673972782</property>
 </asset>

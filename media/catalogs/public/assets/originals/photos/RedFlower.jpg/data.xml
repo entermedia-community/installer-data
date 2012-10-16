@@ -18,5 +18,5 @@
   <property name="recordmodificationdate">2012-09-26 15:15:49 +0000</property>
   <property name="assettype">photo</property>
   <property name="assetviewsexpires">1348676128566</property>
-  <property name="caption">A rose of any other name smells the same.</property>
+  <property name="longcaption">A rose of any other name smells the same.</property>
 </asset>

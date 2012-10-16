@@ -4,7 +4,7 @@
   <user-name>admin</user-name>
   <password>DES:2JPGMLB8Y60=</password>
   <creation-date>1146231775645</creation-date>
-  <lastLogined-Time>2012-10-11 11:15:53 -0400</lastLogined-Time>
+  <lastLogined-Time>2012-10-15 23:28:10 -0400</lastLogined-Time>
   <properties>
     <property name="productvpa" value="false"/>
     <property name="officecountry" value="237"/>
@@ -50,6 +50,6 @@
     <property name="mailingzip" value=""/>
     <property name="mailingstate" value=""/>
   </properties>
-  <group id="administrators"/>
   <group id="visualdata"/>
+  <group id="administrators"/>
 </user>
