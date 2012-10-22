@@ -13,6 +13,7 @@
     <catalog id="originals_videos" name="videos"/>
   </catalog>
   <catalog id="2012" name="2012">
+    <catalog id="2012_10" name="10"/>
     <catalog id="1348673377556" name="October"/>
     <catalog id="2012_09" name="September"/>
   </catalog>

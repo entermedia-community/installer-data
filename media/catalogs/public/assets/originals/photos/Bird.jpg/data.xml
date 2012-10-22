@@ -3,13 +3,14 @@
 <asset name="Bird.jpg" id="131">
   <keyword><![CDATA[Wildlife]]></keyword>
   <keyword><![CDATA[Bird]]></keyword>
+  <keyword><![CDATA[A tag]]></keyword>
   <category id="originals_photos"/>
   <category id="1348673354951"/>
   <property name="fileformat">jpg</property>
   <property name="datatype">original</property>
   <property name="owner">admin</property>
   <property name="assetaddeddate">2011-07-29 17:00:46 -0400</property>
-  <property name="assetviews">1</property>
+  <property name="assetviews">2</property>
   <property name="importstatus">complete</property>
   <property name="assetmodificationdate">2011-07-29 16:38:48 -0400</property>
   <property name="filesize">388917</property>
@@ -17,7 +18,7 @@
   <property name="width">1024</property>
   <property name="height">836</property>
   <property name="previewstatus">1</property>
-  <property name="recordmodificationdate">2012-09-27 11:26:47 -0400</property>
+  <property name="recordmodificationdate">2012-10-18 15:52:20 -0400</property>
   <property name="assettype">photo</property>
   <property name="assetviewsexpires">1348676062919</property>
   <property name="longcaption">Flight and song.</property>
