@@ -1,5 +1,0 @@
-
-<publishqueues>
-  <publishqueue id="101" assetid="136" assetsourcepath="2012/09/asiIn0_remux-iPad.mp4" publishdestination="0" presetid="previewffmpegthumb" exportname="asiIn0_remux-iPad.mp41024x768.jpg" status="complete" date="2012-09-26 14:59:18 +0000" errordetails=" "></publishqueue>
-  <publishqueue id="102" assetid="140" assetsourcepath="2012/09/asiIn0_remux-iPad.mp4" publishdestination="local" presetid="0" exportname="asiIn0_remux-iPad.mp4" status="complete" date="2012-09-26 15:50:51 +0000" errordetails=" "></publishqueue>
-</publishqueues>

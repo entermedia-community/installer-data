@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<asset name="Boquet.jpg" id="112">
+  <category id="by_type_photos"/>
+  <property name="fileformat">jpg</property>
+  <property name="datatype">original</property>
+  <property name="owner">admin</property>
+  <property name="assetaddeddate">2011-07-29 17:00:27 -0400</property>
+  <property name="assetviews">0</property>
+  <property name="importstatus">complete</property>
+  <property name="assetmodificationdate">2012-10-23 10:01:14 -0400</property>
+  <property name="filesize">343749</property>
+  <property name="bitspersample">8</property>
+  <property name="width">1024</property>
+  <property name="height">681</property>
+  <property name="previewstatus">1</property>
+  <property name="recordmodificationdate">2012-10-23 10:36:11 -0400</property>
+  <property name="assettype">photo</property>
+  <property name="assetviewsexpires">1348677447483</property>
+  <property name="longcaption">Cloth flowers</property>
+  <property name="assetcreationdate">09/01/2012</property>
+  <property name="libraries">1348673972782</property>
+</asset>

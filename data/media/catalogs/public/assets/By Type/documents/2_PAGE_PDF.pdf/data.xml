@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<asset name="2_PAGE_PDF.pdf" id="146">
+  <category id="by_type_documents"/>
+  <property name="fileformat">pdf</property>
+  <property name="datatype">original</property>
+  <property name="owner">admin</property>
+  <property name="assetaddeddate">2012-10-23 10:26:37 -0400</property>
+  <property name="assetviews">1</property>
+  <property name="importstatus">complete</property>
+  <property name="assettype">document</property>
+  <property name="assetmodificationdate">2012-10-23 10:01:14 -0400</property>
+  <property name="filesize">165407</property>
+  <property name="fulltext">“The city of happiness is in the state of mind.”</property>
+  <property name="width">612</property>
+  <property name="height">792</property>
+  <property name="pages">2</property>
+  <property name="creator">Microsoft® Word 2010</property>
+  <property name="assetcreationdate">2011-12-27 12:13:46 -0500</property>
+  <property name="recordmodificationdate">2012-10-23 10:36:09 -0400</property>
+  <property name="previewstatus">generated</property>
+</asset>

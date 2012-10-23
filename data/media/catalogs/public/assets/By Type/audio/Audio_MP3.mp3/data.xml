@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<asset name="Audio_MP3.mp3" id="147">
+  <category id="by_type_audio"/>
+  <property name="fileformat">mp3</property>
+  <property name="datatype">original</property>
+  <property name="owner">admin</property>
+  <property name="assetaddeddate">2012-10-23 10:26:42 -0400</property>
+  <property name="assetviews">1</property>
+  <property name="importstatus">complete</property>
+  <property name="assettype">audio</property>
+  <property name="assetmodificationdate">2012-10-23 10:01:14 -0400</property>
+  <property name="filesize">111168</property>
+  <property name="length">6</property>
+  <property name="recordmodificationdate">2012-10-23 10:27:53 -0400</property>
+</asset>

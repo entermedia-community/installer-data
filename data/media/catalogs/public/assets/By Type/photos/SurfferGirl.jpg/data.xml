@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<asset name="SurfferGirl.jpg" id="118">
+  <category id="by_type_photos"/>
+  <property name="fileformat">jpg</property>
+  <property name="datatype">original</property>
+  <property name="owner">admin</property>
+  <property name="assetaddeddate">2011-07-29 17:00:33 -0400</property>
+  <property name="assetviews">2</property>
+  <property name="importstatus">complete</property>
+  <property name="assetmodificationdate">2012-10-23 10:01:14 -0400</property>
+  <property name="filesize">294801</property>
+  <property name="bitspersample">8</property>
+  <property name="width">1024</property>
+  <property name="height">683</property>
+  <property name="previewstatus">generated</property>
+  <property name="recordmodificationdate">2012-10-23 10:36:10 -0400</property>
+  <property name="assettype">photo</property>
+  <property name="assetviewsexpires">1348677347389</property>
+  <property name="longcaption">Catch a wave.</property>
+  <property name="assetcreationdate">08/26/2010</property>
+  <property name="libraries">1348673972782</property>
+  <property name="assettitle">cats swimming</property>
+</asset>

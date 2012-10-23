@@ -1,6 +1,0 @@
-
-<conversiontasks>
-  <conversiontask id="214" status="error" assetid="142" presetid="largedocument" ordering="04" submitted="2012-10-18 16:04:47 -0400" errordetails="convert: no decode delegate for this image format `/home/cburkey/git/demoall/webapp/WEB-INF/data/media/catalogs/public/originals/2012/10/EM_ODP.odp' @ error/constitute.c/ReadImage/544.
-convert: no images defined `/home/cburkey/git/demoall/webapp/WEB-INF/data/media/catalogs/public/generated/2012/10/EM_ODP.odp/image1024x768.jpg' @ error/convert.c/ConvertImageCommand/3032.
-"></conversiontask>
-</conversiontasks>
