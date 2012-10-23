@@ -4,38 +4,54 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://demo.entermediasoftware.com/" />
-<title>New Test</title>
+<title>Searching Edit Search</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">New Test</td></tr>
+<tr><td rowspan="1" colspan="3">Searching Edit Search</td></tr>
 </thead><tbody>
-<tr>
-	<td>clickAndWait</td>
-	<td>link=Upload Media</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>name=file.0</td>
-	<td>/home/cburkey/git/installer-data/testscripts/uploads/glitter heart.jpg</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>id=finishbutton</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>css=img.smallthumb.emdropshadow</td>
-	<td></td>
-</tr>
 <tr>
 	<td>open</td>
 	<td>/emshare/</td>
 	<td></td>
 </tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=&quot;field&quot;]</td>
+	<td>label=Artist</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Done</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=artist.value</td>
+	<td>Mary</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.small</td>
+	<td></td>
+</tr>
+
 </tbody></table>
 </body>
 </html>
