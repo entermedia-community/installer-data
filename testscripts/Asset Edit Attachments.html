@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://demo.entermediasoftware.com/" />
+<title>Asset Edit Attachments</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Asset Edit Attachments</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/emshare/views/assets/By Type/videos/em500testvideo.flv/index.html?hitssessionid=hitssearchmedia/catalogs/public</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#detaileditor-viewattachments &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Convert this to a Folder-Based Record</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Upload New File</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=file</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>typeAndWait</td>
+	<td>name=file</td>
+	<td>/home/cburkey/git/installer-data/testscripts/uploads/glitter heart.jpg</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#106_row &gt; div.odd</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Thumbnail</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=img[alt=&quot;Play Video&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
