@@ -1,0 +1,5 @@
+
+<conversiontasks>
+  <conversiontask id="310" status="complete" assetid="150" presetid="previewffmpeg" ordering="06" submitted="2012-10-25 16:44:18 -0400" errordetails="com.openedit.OpenEditException: Cannot run program &quot;ffmpeg&quot; (in directory &quot;/opt/entermedia/webapp/WEB-INF/bin/linux&quot;): java.io.IOException: error=2, No such file or directory"></conversiontask>
+  <conversiontask id="311" status="complete" assetid="150" presetid="previewffmpegthumb" ordering="10" submitted="2012-10-25 16:44:18 -0400"></conversiontask>
+</conversiontasks>
