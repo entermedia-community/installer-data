@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <userprofiles> 
-  <userprofile id="101" userid="admin" settingsgroup="administrator" lastcatalog="media/catalogs/public" resultview="gallery" maximize_screen="false" maximize_player="false" view_asset_advancedsearch="description assettype assettitle" assetsort="assettypeDown" conversiontasksort="statusUp">admin</userprofile> 
+  <userprofile id="101" userid="admin" settingsgroup="administrator" lastcatalog="media/catalogs/public" resultview="table" maximize_screen="false" maximize_player="false" view_asset_advancedsearch="description assettype assettitle" assetsort="assettypeDown" conversiontasksort="statusUp" last_selected_module="library">admin</userprofile> 
 </userprofiles>

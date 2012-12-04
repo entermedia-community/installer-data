@@ -16,12 +16,12 @@
   <property name="framerate">15.00</property>
   <property name="width">720</property>
   <property name="height">480</property>
-  <property name="recordmodificationdate">2012-10-23 10:37:42 -0400</property>
+  <property name="recordmodificationdate">2012-12-04 21:43:00 +0000</property>
   <property name="assettype">1348758017361</property>
   <property name="assetviewsexpires">1348677173021</property>
   <property name="previewstatus">generated</property>
   <property name="longcaption">Open source digital asset management</property>
-  <property name="libraries">1348673972782</property>
+  <property name="libraries">engineering</property>
   <property name="audiocodec">aac</property>
   <property name="videocodec">h264</property>
 </asset>

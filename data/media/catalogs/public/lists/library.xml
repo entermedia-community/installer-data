@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <libraries> 
-  <library division="1348673962175" id="1348673972782">Vendors</library>  
-  <library division="1348673962175" id="1348673981887">Customers</library>  
-  <library division="1348673945784" id="1348673990214">Accounting</library>  
-  <library division="1348673945784" id="1348674007516">Editing Team</library>  
-  <library division="1348673945784" id="1348674015076">Ideas Department</library> 
+  <library id="engineering" division="onlinelearning">Engineering Courses</library>
+  <library id="oceanography" division="onlinelearning">Oceanography Research</library>
+  <library id="agriculture" division="onlinelearning">Agricultural Ideas</library>
+  <library id="southamericanexpo" division="acmeinc">South American Expo</library>
+  <library id="productlaunchfall" division="acmeinc">Product Launch Fall Quarter</library>
+  <library id="commercialendorsement" division="acmeinc">Commercial Endorsement</library>
+  <library id="crossroads" division="jysproductions">Crossroads - Shake it Out</library>
+  <library id="johnsonwedding" division="jysproductions">Johnson Wedding 2009</library>
+  <library id="cominghome" division="jysproductions">Coming Home</library>
 </libraries>

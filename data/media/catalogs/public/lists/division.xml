@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<divisions>
-  <division id="1348673945784">Creative Services</division>
-  <division id="1348673962175">Marketing</division>
+<divisions> 
+  <division id="jysproductions">JYS Music Videos</division>
+  <division id="acmeinc">ACME Promotional Videos</division>
+  <division id="onlinelearning">Online Learning</division>
 </divisions>

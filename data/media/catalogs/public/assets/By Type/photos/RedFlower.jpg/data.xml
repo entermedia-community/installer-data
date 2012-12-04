@@ -15,8 +15,9 @@
   <property name="width">1024</property>
   <property name="height">666</property>
   <property name="previewstatus">generated</property>
-  <property name="recordmodificationdate">2012-10-23 10:36:14 -0400</property>
+  <property name="recordmodificationdate">2012-12-04 21:45:13 +0000</property>
   <property name="assettype">photo</property>
   <property name="assetviewsexpires">1348676128566</property>
   <property name="longcaption">A rose of any other name smells the same.</property>
+  <property name="libraries">agriculture</property>
 </asset>

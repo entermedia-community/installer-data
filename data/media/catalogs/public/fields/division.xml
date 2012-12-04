@@ -1,0 +1,6 @@
+
+<properties beanname="dynamicSearcher">
+  <property id="id" index="true" stored="true" editable="true" searchtype="division" internalfield="false">Id</property>
+  <property id="name" index="true" stored="true" editable="true" searchtype="division">Name</property>
+  <property id="uploadpath" index="true" stored="true" editable="true" searchtype="division">Upload Path</property>
+</properties>
