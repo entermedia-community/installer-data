@@ -13,17 +13,7 @@
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>/emshare/</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>link=Settings</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>link=Libraries</td>
+	<td>/emshare/views/modules/library/index.html?field=last_selected_module&amp;last_selected_module.value=library</td>
 	<td></td>
 </tr>
 <tr>
@@ -32,51 +22,40 @@
 	<td></td>
 </tr>
 <tr>
+	<td>select</td>
+	<td>document.forms['dataeditor'].elements['division.value']</td>
+	<td>label=ACME Promotional Videos</td>
+</tr>
+<tr>
 	<td>type</td>
-	<td>id=name.value</td>
+	<td>document.dataeditor.elements['name.value']</td>
 	<td>Test</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>link=Save</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=a.btn.ajax &gt; span</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>xpath=(//input[@id='name.value'])[2]</td>
-	<td>Library 1</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=div &gt; #editlayout &gt; #dataeditor &gt; a.btn</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=a.ajax.delete-row</td>
+	<td>css=input.btn.right</td>
 	<td></td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>link=Delete</td>
+	<td>css=a..tooltip &gt; span.text</td>
 	<td></td>
 </tr>
-
+<tr>
+	<td>select</td>
+	<td>id=roleselect</td>
+	<td>label=Anonymous</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@value='Add'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#detaileditor-libraryassets &gt; a..tooltip &gt; span.text</td>
+	<td></td>
+</tr>
 </tbody></table>
 </body>
 </html>
