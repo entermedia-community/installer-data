@@ -53,38 +53,53 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>link=Applications</td>
+	<td>link=Catalogs</td>
 	<td></td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>link=Create New Media Application</td>
+	<td>link=Default Catalog</td>
 	<td></td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>link=Learn More</td>
+	<td>link=Create New Application</td>
 	<td></td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>link=Install</td>
+	<td>xpath=(//a[contains(text(),'Learn More')])[3]</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>id=catalog-name</td>
+	<td>clickAndWait</td>
+	<td>css=input.btn.learn-more</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=catalog-name</td>
-	<td>Test App</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=module</td>
+	<td>label=Assets</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>name=deploypath</td>
-	<td>testapp</td>
+	<td>development</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=catalog-name</td>
+	<td>Development</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Save']</td>
+	<td></td>
 </tr>
 </tbody></table>
 </body>
