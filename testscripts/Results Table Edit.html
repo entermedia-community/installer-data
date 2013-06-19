@@ -18,7 +18,22 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>id=module</td>
+	<td>link=Assets</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=img[title=&quot;Edit Columns&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//img[@title='Remove'])[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -34,11 +49,16 @@
 <tr>
 	<td>select</td>
 	<td>name=addcolumn</td>
-	<td>label=regexp:\s+Color Type</td>
+	<td>label=File Size</td>
 </tr>
 <tr>
 	<td>pause</td>
 	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=option[value=&quot;filesize&quot;]</td>
 	<td></td>
 </tr>
 <tr>
