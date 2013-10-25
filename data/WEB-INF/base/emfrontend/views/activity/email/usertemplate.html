@@ -1,0 +1,6 @@
+#set ($sharewithemail = $context.getRequestParameter("sharewithemail"))
+
+Assets for order $order.id have been delivered to "$sharewithemail"
+		<br/><br/>
+<a href="$context.siteRoot$home$apphome/views/activity/email/emailedassets.html?orderid=$order.id">View</a><br/><br/>
+

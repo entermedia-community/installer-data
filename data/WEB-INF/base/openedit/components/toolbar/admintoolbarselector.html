@@ -1,0 +1,7 @@
+<link rel="stylesheet" type="text/css" href="$home/openedit/components/toolbar/toolbar.css"/>
+<script language="javascript" src="$home/openedit/components/javascript/openedit.js">     </script>
+<div id="openedit">
+#set ( $path = $context.getRequestParameter( "path" ) )
+#set ( $origURL=$url_util.getOriginalUrl() )
+<a id="oeselector" href="$home/openedit/components/toolbar/plugintoolbar.html?origURL=$origURL&path=$!path"></a>
+</div>

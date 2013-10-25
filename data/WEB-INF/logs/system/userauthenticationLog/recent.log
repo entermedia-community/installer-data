@@ -1,0 +1,6 @@
+<event operation="authentication" user="admin" details="login" catalogid="system" date="2013-10-25 14:09:18 -0400" indexed="false"/>
+<event operation="authentication" user="102" details="delete" catalogid="system" date="2013-10-25 14:13:08 -0400" indexed="false"/>
+<event operation="authentication" user="101" details="delete" catalogid="system" date="2013-10-25 14:13:15 -0400" indexed="false"/>
+<event operation="authentication" user="gatekeeper" details="add" catalogid="system" date="2013-10-25 14:13:51 -0400" indexed="false"/>
+<event operation="authentication" user="admin" details="login" catalogid="system" date="2013-10-25 15:00:27 -0400" indexed="false"/>
+<event operation="authentication" user="admin" details="logout" catalogid="system" date="2013-10-25 15:01:14 -0400" indexed="false"/>

@@ -1,7 +1,0 @@
-
-<root>
-  <property id="length"/>
-  <property id="language"/>
-  <property id="artist"/>
-  <property id="extrakeywords"/>
-</root>

@@ -1,5 +1,0 @@
-
-<root>
-  <property id="push_masterswitch" value="false">Push Enabled</property>
-  <data id="push_asset_prefix"/>
-</root>

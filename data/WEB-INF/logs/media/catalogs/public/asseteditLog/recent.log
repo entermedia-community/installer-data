@@ -1,0 +1,4 @@
+<event operation="asset/edit" user="admin" id="128" details="assetid:  -&gt; 128, purpose: 3 | 4 -&gt; " sourcepath="By Type/photos/Camera.jpg" catalogid="media/catalogs/public" date="2013-10-25 14:23:02 -0400" indexed="false"/>
+<event operation="asset/edit" user="admin" id="151" details="assetid:  -&gt; 151, contact:  -&gt; Casey Abernathy" sourcepath="users/admin/2013/10/Climate Presentation.ppt" catalogid="media/catalogs/public" date="2013-10-25 14:44:51 -0400" indexed="false"/>
+<event operation="asset/edit" user="admin" id="122" details="assetid:  -&gt; 122, contact:  -&gt; Christopher Burkey" sourcepath="By Type/photos/Street.jpg" catalogid="media/catalogs/public" date="2013-10-25 14:45:51 -0400" indexed="false"/>
+<event operation="asset/edit" user="admin" id="125" details="assetid:  -&gt; 125, contact:  -&gt; John Doe" sourcepath="By Type/photos/BlueBus.jpg" catalogid="media/catalogs/public" date="2013-10-25 14:46:39 -0400" indexed="false"/>

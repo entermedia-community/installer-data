@@ -1,0 +1,2 @@
+<event operation="settingsgroup/edit" user="admin" id="administrator" details="embedasset: true -&gt; , embedlinks:  -&gt; true, viewfatwire:  -&gt; true, togglesidebar:  -&gt; true, viewmetadatageneral:  -&gt; true" catalogid="media/catalogs/public" date="2013-10-25 14:20:23 -0400" indexed="false"/>
+<event operation="settingsgroup/edit" user="admin" id="administrator" details="maximize: true -&gt; " catalogid="media/catalogs/public" date="2013-10-25 14:53:09 -0400" indexed="false"/>

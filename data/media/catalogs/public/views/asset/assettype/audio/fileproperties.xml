@@ -1,7 +1,0 @@
-
-<root>
-  <property id="length"/>
-  <property id="artist"/>
-  <property id="digitalalbum"/>
-  <property id="track"/>
-</root>

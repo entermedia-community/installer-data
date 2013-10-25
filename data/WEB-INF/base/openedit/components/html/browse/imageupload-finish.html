@@ -1,0 +1,14 @@
+#set($uploadtype = $context.getRequestParameter("uploadtype"))
+#set($catalogid = $context.getRequestParameter("catalogid"))
+#if( $hits && $hits.size() == 1 )
+#set( $hit = $hits.get(0) )
+#set($asset = $mediaarchive.getAssetBySourcePath($hit.sourcepath))
+#set($originalpath = $mediaarchive.asLinkToOriginal($asset))
+<script type="text/javascript">
+window.parent.CKEDITOR.tools.callFunction(1,"$home$originalpath"); 
+</script>
+
+#else
+
+#end
+

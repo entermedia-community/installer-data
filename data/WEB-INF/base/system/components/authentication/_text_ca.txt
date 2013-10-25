@@ -1,0 +1,10 @@
+#
+#Fri Oct 25 14:41:31 EDT 2013
+Log\ in=Inicia la sessi\u00F3
+Email\ or\ Username=Correu electr\u00F2nic o nom d'usuari
+You\ are\ logged\ in\ as=Ha iniciat la sessi\u00F3 com
+Password=Contrasenya
+Forgotten\ your\ password?=Heu oblidat la contrasenya ?
+Login=Login
+or\ Create\ a\ New\ Account=o Crea un nou compte
+Please\ enter\ your\ password=Si us plau , introdu\u00EFu la contrasenya
