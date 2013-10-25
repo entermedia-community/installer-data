@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<asset name="Slideshow.mp4" id="111">
+  <category id="by_type_videos"/>
+  <category id="2012_09"/>
+  <property name="fileformat">mp4</property>
+  <property name="datatype">original</property>
+  <property name="owner">admin</property>
+  <property name="assetaddeddate">2011-07-29 17:00:26 -0400</property>
+  <property name="assetviews">0</property>
+  <property name="importstatus">complete</property>
+  <property name="assetmodificationdate">2012-10-23 10:01:14 -0400</property>
+  <property name="filesize">5376345</property>
+  <property name="assetcreationdate">2010-10-18 19:21:37 -0400</property>
+  <property name="length">258</property>
+  <property name="framerate">15.00</property>
+  <property name="width">720</property>
+  <property name="height">480</property>
+  <property name="recordmodificationdate">2013-10-25 14:25:11 -0400</property>
+  <property name="assettype">1348758017361</property>
+  <property name="assetviewsexpires">1348677173021</property>
+  <property name="previewstatus">generated</property>
+  <property name="longcaption">Open source digital asset management</property>
+  <property name="libraries">johnsonwedding</property>
+  <property name="audiocodec">aac</property>
+  <property name="videocodec">h264</property>
+  <property name="copyrightnotice">This file is reserved for private use within the company. Please refer to company policy for more information.</property>
+  <property name="copyrightstatus">True</property>
+  <property name="purpose">2 | 5</property>
+  <property name="editstatus">1</property>
+</asset>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<asset name="Audio_AAC.aac" id="148">
+  <keyword><![CDATA[Music]]></keyword>
+  <category id="by_type_audio"/>
+  <property name="fileformat">aac</property>
+  <property name="datatype">original</property>
+  <property name="owner">admin</property>
+  <property name="assetaddeddate">2012-10-23 10:26:43 -0400</property>
+  <property name="assetviews">0</property>
+  <property name="importstatus">complete</property>
+  <property name="assetmodificationdate">2012-10-23 10:01:14 -0400</property>
+  <property name="filesize">64992</property>
+  <property name="recordmodificationdate">2013-10-25 14:45:12 -0400</property>
+  <property name="assetviewsexpires">1354661036052</property>
+  <property name="libraries">productlaunchfall | engineering</property>
+  <property name="copyrightstatus">False</property>
+  <property name="purpose">1</property>
+  <property name="editstatus">rejected</property>
+  <property name="contact">chrisrose</property>
+</asset>

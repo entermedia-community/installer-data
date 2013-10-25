@@ -1,0 +1,4 @@
+
+<contacts>
+  <contact id="johndoe" name="John Doe" firstname="John" lastname="Doe" phonenumber="555-555-5553" department="Manufacturing" companyname="Building Blocks Inc. " companyaddress="422 State Ave." activeprojects="Inactive" jobtitle="Machine Operator"/>
+</contacts>

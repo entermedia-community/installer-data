@@ -1,0 +1,11 @@
+
+<root>
+  <property id="cameramodel"/>
+  <property id="focallength"/>
+  <property id="framerate"/>
+  <property id="aperture"/>
+  <property id="iso"/>
+  <property id="length"/>
+  <property id="width"/>
+  <property id="height"/>
+</root>

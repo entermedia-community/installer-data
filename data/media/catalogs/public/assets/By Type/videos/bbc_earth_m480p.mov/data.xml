@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<asset name="bbc_earth_m480p.mov" id="104">
+  <category id="by_type_videos"/>
+  <category id="2012_10"/>
+  <property name="fileformat">mov</property>
+  <property name="datatype">original</property>
+  <property name="owner">admin</property>
+  <property name="assetaddeddate">2011-07-29 17:00:22 -0400</property>
+  <property name="assetviews">4</property>
+  <property name="importstatus">complete</property>
+  <property name="assetmodificationdate">2012-10-23 10:01:14 -0400</property>
+  <property name="filesize">22855129</property>
+  <property name="assetcreationdate">2008-07-24 19:28:11 -0400</property>
+  <property name="length">66</property>
+  <property name="framerate">29.99</property>
+  <property name="comment">All Rights Reserved</property>
+  <property name="width">852</property>
+  <property name="height">480</property>
+  <property name="recordmodificationdate">2013-10-25 14:46:17 -0400</property>
+  <property name="assettype">1348758017361</property>
+  <property name="assetviewsexpires">1348677271419</property>
+  <property name="previewstatus">generated</property>
+  <property name="longcaption">Hot lava and other cool stuff</property>
+  <property name="audiocodec">aac</property>
+  <property name="copyrightnotice">� Nat Geo / BBC Video</property>
+  <property name="videocodec">h264</property>
+  <property name="libraries">engineering</property>
+  <property name="copyrightstatus">False</property>
+  <property name="purpose">3</property>
+  <property name="editstatus">6</property>
+  <property name="contact">susansmith</property>
+</asset>

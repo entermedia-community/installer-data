@@ -1,0 +1,15 @@
+
+<properties prefix="contact" beanname="dataSearcher">
+  <property id="id" index="true" stored="true" editable="true" searchtype="contact" internalfield="true">Id</property>
+  <property id="name" index="true" stored="true" editable="true" searchtype="contact">Name</property>
+  <property id="sourcepath" searchtype="contact">SourcePath</property>
+  <property id="firstname" index="true" stored="true" editable="true" searchtype="contact" internalfield="false">First Name</property>
+  <property id="lastname" index="true" stored="true" editable="true" searchtype="contact" internalfield="false">Last Name</property>
+  <property id="phonenumber" index="true" stored="true" editable="true" searchtype="contact" internalfield="false">Phone Number</property>
+  <property id="department" index="true" stored="true" editable="true" searchtype="contact" internalfield="false">Department</property>
+  <property id="companyname" index="true" stored="true" editable="true" searchtype="contact" internalfield="false">Company Name</property>
+  <property id="companyaddress" index="true" stored="true" editable="true" searchtype="contact" internalfield="false">Company Address</property>
+  <property id="activeprojects" index="true" stored="true" editable="true" searchtype="contact" internalfield="false">Active Projects</property>
+  <property id="jobdescription" index="true" stored="true" editable="true" searchtype="contact" internalfield="false">Job Description</property>
+  <property id="jobtitle" index="true" stored="true" editable="true" searchtype="contact" internalfield="false">Job Title</property>
+</properties>

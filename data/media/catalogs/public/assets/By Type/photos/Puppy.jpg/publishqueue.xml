@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<publishqueues>
+  <publishqueue id="103" assetid="132" assetsourcepath="originals/photos/Puppy.jpg" publishdestination="1" presetid="largeimage" exportname="Puppy.jpg1024x768.jpg" status="error" date="2012-10-22 11:11:41 -0400" errordetails="Aspera VisualData publish failed org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+/home/cburkey/git/entermedia-server/webapp/WEB-INF/base/entermedia/catalog/events/scripts/publishing/publishers/asperapublisher.groovy: 9: unable to resolve class org.entermedia.aspera.AsperaRepository
+ @ line 9, column 1.
+   import org.entermedia.aspera.AsperaRepository 
+   ^
+
+/home/cburkey/git/entermedia-server/webapp/WEB-INF/base/entermedia/catalog/events/scripts/publishing/publishers/asperapublisher.groovy: 8: unable to resolve class org.entermedia.aspera.AsperaManager
+ @ line 8, column 1.
+   import org.entermedia.aspera.AsperaManager 
+   ^
+
+2 errors
+"/>
+  <publishqueue id="104" assetid="132" assetsourcepath="originals/photos/Puppy.jpg" publishdestination="1" presetid="largeimage" exportname="Puppy.jpg1024x768.jpg" status="error" date="2012-10-22 11:14:23 -0400" errordetails="Aspera VisualData publish failed org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+/home/cburkey/git/entermedia-server/webapp/WEB-INF/base/entermedia/catalog/events/scripts/publishing/publishers/asperapublisher.groovy: 36: unable to resolve class org.entermedia.aspera.AsperaManager 
+ @ line 36, column 39.
+   		org.entermedia.aspera.AsperaManager	manager = (AsperaManager)mediaArchive.getModuleManager().getBean(&quot;asperaManager&quot;);
+                                         ^
+
+/home/cburkey/git/entermedia-server/webapp/WEB-INF/base/entermedia/catalog/events/scripts/publishing/publishers/asperapublisher.groovy: 36: unable to resolve class AsperaManager 
+ @ line 36, column 49.
+   spera.AsperaManager	manager = (AsperaMan
+                                 ^
+
+/home/cburkey/git/entermedia-server/webapp/WEB-INF/base/entermedia/catalog/events/scripts/publishing/publishers/asperapublisher.groovy: 37: unable to resolve class org.entermedia.aspera.AsperaRepository 
+ @ line 37, column 42.
+   media.aspera.AsperaRepository repo = man
+                                 ^
+
+3 errors
+"/>
+  <publishqueue id="105" assetid="132" assetsourcepath="originals/photos/Puppy.jpg" publishdestination="1" presetid="largeimage" exportname="Puppy.jpg1024x768.jpg" status="error" date="2012-10-22 11:19:23 -0400" errordetails="Aspera VisualData publish failed org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+/home/cburkey/git/entermedia-server/webapp/WEB-INF/base/entermedia/catalog/events/scripts/publishing/publishers/asperapublisher.groovy: 36: unable to resolve class org.entermedia.aspera.AsperaManager 
+ @ line 36, column 39.
+   		org.entermedia.aspera.AsperaManager	manager = (AsperaManager)mediaArchive.getModuleManager().getBean(&quot;asperaManager&quot;);
+                                         ^
+
+/home/cburkey/git/entermedia-server/webapp/WEB-INF/base/entermedia/catalog/events/scripts/publishing/publishers/asperapublisher.groovy: 36: unable to resolve class AsperaManager 
+ @ line 36, column 49.
+   spera.AsperaManager	manager = (AsperaMan
+                                 ^
+
+/home/cburkey/git/entermedia-server/webapp/WEB-INF/base/entermedia/catalog/events/scripts/publishing/publishers/asperapublisher.groovy: 37: unable to resolve class org.entermedia.aspera.AsperaRepository 
+ @ line 37, column 42.
+   media.aspera.AsperaRepository repo = man
+                                 ^
+
+3 errors
+"/>
+  <publishqueue id="106" assetid="132" assetsourcepath="originals/photos/Puppy.jpg" publishdestination="0" presetid="largeimage" exportname="Puppy.jpg1024x768.jpg" status="complete" date="2012-10-22 11:34:22 -0400" errordetails=" "></publishqueue>
+</publishqueues>

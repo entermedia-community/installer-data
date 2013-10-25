@@ -1,0 +1,4 @@
+
+<contacts>
+  <contact id="chrisrose" name="Chris Rose" firstname="Chris" lastname="Rose" phonenumber="555-555-5552" department="Engineering" companyname="Vectron Corp." companyaddress="456 South St." activeprojects="Bound Project" jobdescription="Graphic design and logic structuring" jobtitle="Software Engineer"/>
+</contacts>

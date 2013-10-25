@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<asset name="RedFlower.jpg" id="129">
+  <keyword><![CDATA[Wildlife]]></keyword>
+  <keyword><![CDATA[Flora]]></keyword>
+  <category id="by_type_photos"/>
+  <property name="fileformat">jpg</property>
+  <property name="datatype">original</property>
+  <property name="owner">admin</property>
+  <property name="assetaddeddate">2011-07-29 17:00:44 -0400</property>
+  <property name="assetviews">0</property>
+  <property name="importstatus">complete</property>
+  <property name="assetmodificationdate">2012-10-23 10:01:14 -0400</property>
+  <property name="filesize">184295</property>
+  <property name="bitspersample">8</property>
+  <property name="width">1024</property>
+  <property name="height">666</property>
+  <property name="previewstatus">generated</property>
+  <property name="recordmodificationdate">2013-10-25 14:30:52 -0400</property>
+  <property name="assettype">photo</property>
+  <property name="assetviewsexpires">1348676128566</property>
+  <property name="longcaption">A rose of any other name smells the same.</property>
+  <property name="libraries">oceanography</property>
+  <property name="copyrightstatus">False</property>
+  <property name="purpose">1</property>
+  <property name="editstatus">rejected</property>
+</asset>

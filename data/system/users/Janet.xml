@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<user enabled="true">
+  <user-name>Janet</user-name>
+  <password>DES:F7GS3T20Dfw47RMMVoR5Tg==</password>
+  <creation-date>1348673325795</creation-date>
+  <lastLogined-Time>2012-09-26 15:28:45 +0000</lastLogined-Time>
+  <properties>
+    <property name="enabled" value="true"/>
+    <property name="lastName" value="Smith"/>
+    <property name="email" value="janet@smith.com"/>
+    <property name="userName" value="Janet"/>
+    <property name="notes" value=""/>
+    <property name="firstName" value="Janet"/>
+  </properties>
+  <group id="$content.mastergroup"/>
+</user>
