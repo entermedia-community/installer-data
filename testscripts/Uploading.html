@@ -13,7 +13,12 @@
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>/emshare/index.html</td>
+	<td>${currentEnvironment}/${currentApplication}/index.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Upload JPG ...</td>
 	<td></td>
 </tr>
 <tr>
@@ -34,12 +39,12 @@
 <tr>
 	<td>type</td>
 	<td>id=upload_field</td>
-	<td>/home/cburkey/git/installer-data/testscripts/uploads/glitter heart.jpg</td>
+	<td>${uploadDirectory}\Multiple\image\Image_JPEG.jpg</td>
 </tr>
 <tr>
 	<td>select</td>
 	<td>id=list-division</td>
-	<td>label=JYS Music Videos</td>
+	<td>label=${possibleDivision}</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -47,13 +52,148 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>type</td>
+	<td>name=keywords.value</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
 	<td>id=startbutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Upload DOC ....</td>
 	<td></td>
 </tr>
 <tr>
 	<td>pause</td>
 	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Upload Media</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=filePicker</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=upload_field</td>
+	<td>${uploadDirectory}\Multiple\doc\3Page_DOC.doc</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=list-division</td>
+	<td>label=${possibleDivision}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.select2-choice.select2-default &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=keywords.value</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=startbutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Upload PDF ...</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Upload Media</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=filePicker</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=upload_field</td>
+	<td>${uploadDirectory}\Multiple\doc\2_PAGE_PDF.pdf</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=list-division</td>
+	<td>label=${possibleDivision}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.select2-choice.select2-default &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=keywords.value</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=startbutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Upload WMV ...</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Upload Media</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=filePicker</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=upload_field</td>
+	<td>${uploadDirectory}\Multiple\video\Video_WMV.wmv</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=list-division</td>
+	<td>label=${possibleDivision}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.select2-choice.select2-default &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=keywords.value</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=startbutton</td>
 	<td></td>
 </tr>
 </tbody></table>

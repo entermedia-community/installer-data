@@ -13,7 +13,7 @@
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>/emshare/</td>
+	<td>${currentEnvironment}/${currentApplication}/</td>
 	<td></td>
 </tr>
 <tr>
@@ -29,7 +29,7 @@
 <tr>
 	<td>selectAndWait</td>
 	<td>name=searchtype</td>
-	<td>label=conversiontask</td>
+	<td>label=conversiontypes</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -38,7 +38,7 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>//table[@id='main-results-table']/tbody/tr[2]/td[4]</td>
+	<td>//table[@id='main-results-table']/tbody/tr[2]/td</td>
 	<td></td>
 </tr>
 <tr>
@@ -46,7 +46,6 @@
 	<td>css=#dataeditor &gt; input.btn.right</td>
 	<td></td>
 </tr>
-
 </tbody></table>
 </body>
 </html>

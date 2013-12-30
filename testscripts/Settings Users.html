@@ -13,7 +13,7 @@
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>/emshare/</td>
+	<td>${currentEnvironment}/${currentApplication}/</td>
 	<td></td>
 </tr>
 <tr>
@@ -74,7 +74,7 @@
 <tr>
 	<td>select</td>
 	<td>id=list-settingsgroup</td>
-	<td>label=Users</td>
+	<td>label=${possibleRole}</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
@@ -89,7 +89,7 @@
 <tr>
 	<td>type</td>
 	<td>id=description.value</td>
-	<td>User</td>
+	<td>Student</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
@@ -106,7 +106,6 @@
 	<td>css=option[value=&quot;users&quot;]</td>
 	<td></td>
 </tr>
-
 </tbody></table>
 </body>
 </html>

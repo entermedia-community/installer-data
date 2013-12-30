@@ -13,7 +13,7 @@
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>/emshare/authentication/login.html</td>
+	<td>${currentEnvironment}/${currentApplication}/authentication/login.html</td>
 	<td></td>
 </tr>
 <tr>
@@ -33,22 +33,22 @@
 </tr>
 <tr>
 	<td>open</td>
-	<td>/emshare/views/myaccount/setuserpassword.html?entermedia.key=adminmd5421c0af185908a6c0c40d50fd5e3f16760d5580bc</td>
+	<td>${currentEnvironment}/${currentApplication}/authentication/login.html</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>name=password</td>
-	<td>admin</td>
+	<td>name=accountname</td>
+	<td>${currentUser}</td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>name=retypedPassword</td>
-	<td>admin</td>
+	<td>name=password</td>
+	<td>${currentPassword}</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>//input[@value='Save']</td>
+	<td>//input[@value='Login']</td>
 	<td></td>
 </tr>
 </tbody></table>

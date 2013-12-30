@@ -18,7 +18,22 @@
 </tr>
 <tr>
 	<td>open</td>
-	<td>/emshare/views/assets/By Type/documents/2_PAGE_PDF.pdf/index.html?hitssessionid=hitsassetmedia/catalogs/public</td>
+	<td>${currentEnvironment}/${currentApplication}/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=description.value</td>
+	<td>JPEG</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.small</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//table[@id='main-results-table']/tbody/tr[2]/td[2]</td>
 	<td></td>
 </tr>
 <tr>
@@ -52,8 +67,33 @@
 	<td></td>
 </tr>
 <tr>
+	<td>echo</td>
+	<td>Check to make sure 404 doesn't happen</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>404</td>
+	<td></td>
+</tr>
+<tr>
 	<td>open</td>
-	<td>/emshare/views/modules/asset/editor/viewer/index.html?hitssessionid=hitsassetmedia/catalogs/public&amp;assetid=150</td>
+	<td>${currentEnvironment}/${currentApplication}/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=description.value</td>
+	<td>WMV</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.small</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//table[@id='main-results-table']/tbody/tr[2]/td[2]</td>
 	<td></td>
 </tr>
 <tr>
@@ -68,7 +108,7 @@
 </tr>
 <tr>
 	<td>select</td>
-	<td>css=select[name=&quot;Video Clips.presetid.value&quot;]</td>
+	<td>css=select[name=&quot;None.presetid.value&quot;]</td>
 	<td>label=Video FLV</td>
 </tr>
 <tr>

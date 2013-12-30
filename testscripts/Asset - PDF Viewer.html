@@ -13,7 +13,7 @@
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>/emshare/views/modules/asset/editor/viewer/index.html?hitssessionid=hitssearchmedia/catalogs/public&amp;assetid=146</td>
+	<td>${currentEnvironment}/${currentApplication}/</td>
 	<td></td>
 </tr>
 <tr>
@@ -22,13 +22,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>type</td>
+	<td>id=description.value</td>
+	<td>PDF</td>
+</tr>
+<tr>
 	<td>clickAndWait</td>
-	<td>//div[@id='pdf-thumbnail-sidebar']/ul/li[3]/a/img</td>
+	<td>css=input.btn.small</td>
 	<td></td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>id=prevpage</td>
+	<td>//table[@id='main-results-table']/tbody/tr[2]/td[2]</td>
 	<td></td>
 </tr>
 <tr>
@@ -39,6 +44,16 @@
 <tr>
 	<td>clickAndWait</td>
 	<td>id=gotopage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=prevpage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=nextpage</td>
 	<td></td>
 </tr>
 </tbody></table>
