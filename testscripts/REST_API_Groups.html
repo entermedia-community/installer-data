@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://demo.entermediasoftware.com/" />
+<title>REST_API_Groups</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">REST_API_Groups</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>${restClient}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>// Add Group ...</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.request-method-icon.icon-chevron-down</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=POST</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=request-url</td>
+	<td>${currentEnvironment}/media/services/rest/savedata.xml?catalogid=system&amp;searchtype=group&amp;field=name&amp;name.value=TestGroup</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=request-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Response Body (Raw)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=#response-body-raw &gt; pre</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>// List Group ...</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.request-method-icon.icon-chevron-down</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=GET</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=request-url</td>
+	<td>${currentEnvironment}/media/services/rest/search.xml?catalogid=system&amp;searchtype=group&amp;operation=exact&amp;field=id&amp;id.value=TestGroup</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=request-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Response Body (Raw)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=#response-body-raw &gt; pre</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>// Edit Group ...</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.request-method-icon.icon-chevron-down</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=POST</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=request-url</td>
+	<td>${currentEnvironment}/media/services/rest/savedata.xml?catalogid=system&amp;searchtype=group&amp;id=TestGroup&amp;field=enabled&amp;enabled.value=true</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=request-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Response Body (Raw)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=#response-body-raw &gt; pre</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>// List Group Again...</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.request-method-icon.icon-chevron-down</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=GET</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=request-url</td>
+	<td>${currentEnvironment}/media/services/rest/search.xml?catalogid=system&amp;searchtype=group&amp;operation=exact&amp;field=id&amp;id.value=TestGroup</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=request-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Response Body (Raw)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=#response-body-raw &gt; pre</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>// Delete Group ...</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.request-method-icon.icon-chevron-down</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=POST</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=request-url</td>
+	<td>${currentEnvironment}/media/services/rest/deletedata.xml?catalogid=system&amp;searchtype=group&amp;id=TestGroup</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=request-button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Response Body (Raw)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=#response-body-raw &gt; pre</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
