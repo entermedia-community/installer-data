@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://demo.entermediasoftware.com/" />
+<title>Cleanup</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Cleanup</td></tr>
+</thead><tbody>
+<tr>
+	<td>echo</td>
+	<td>*** CLEAN UP ***</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>// Delete Test Assets</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${currentEnvironment}/${currentApplication}/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=keywordsvalue</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.small</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=pagetoggle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=a[title=&quot;Edit one or more selected records&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>// Delete Test User</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${currentEnvironment}/${currentApplication}/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Settings</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Users</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=description.value</td>
+	<td>test577215</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='emselectable']/table/tbody/tr/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Delete User</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#eml-tab-subnav &gt; ul &gt; li.current &gt; a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>// Delete Hot Folder 1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${currentEnvironment}/${currentApplication}/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Settings</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=module-dropdown</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Assets</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Hot Folders</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>// Delete Test Library</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>// Delete &quot;New Group&quot;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>// Delete &quot;Vendors&quot; Role</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>// Delete XXX Catalog</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>// Remove Tags and Author from Search Box</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>// Remove File Size From Results Column</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

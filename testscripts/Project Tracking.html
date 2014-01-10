@@ -13,7 +13,7 @@
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>${currentEnvironment}/${currentApplication}/index.html</td>
+	<td>${currentEnvironment}/${currentApplication}</td>
 	<td></td>
 </tr>
 <tr>
@@ -22,14 +22,54 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=list-division</td>
+	<td>label=Creative Services</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=name.value</td>
+	<td>Test_Library</td>
+</tr>
+<tr>
 	<td>click</td>
-	<td>css=#s2id_sidebarlibraryvalue &gt; a.select2-choice.select2-default</td>
+	<td>css=form[name=&quot;adder&quot;] &gt; input.btn.small</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.select2-choice &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=b</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.ajax &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=name.value</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>name=name.value</td>
-	<td>Test</td>
+	<td>Test_Collection</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -49,7 +89,7 @@
 <tr>
 	<td>type</td>
 	<td>name=file.asset</td>
-	<td>C:\Entermedia\Codebase\installer-data\testscripts\uploads\glitter heart.jpg</td>
+	<td>${uploadDirectory}\glitter heart.jpg</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -59,21 +99,6 @@
 <tr>
 	<td>clickAndWait</td>
 	<td>//div[@id='projectscontent']/div[2]/ul/li/a/span</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>css=span.text</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Delete</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertConfirmation</td>
-	<td>Are you sure?</td>
 	<td></td>
 </tr>
 </tbody></table>
