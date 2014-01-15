@@ -12,6 +12,11 @@
 <tr><td rowspan="1" colspan="3">New Test</td></tr>
 </thead><tbody>
 <tr>
+	<td>store</td>
+	<td>${numResultsPerPage}</td>
+	<td>totalSelected</td>
+</tr>
+<tr>
 	<td>open</td>
 	<td>${currentEnvironment}/${currentApplication}/index.html</td>
 	<td></td>
@@ -59,7 +64,7 @@
 <tr>
 	<td>verifyText</td>
 	<td>css=a.drag-columns-text</td>
-	<td>15 selected</td>
+	<td>${totalSelected} selected</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -72,9 +77,14 @@
 	<td></td>
 </tr>
 <tr>
+	<td>storeEval</td>
+	<td>${totalSelected} + ${numResultsPerPage}</td>
+	<td>totalSelected</td>
+</tr>
+<tr>
 	<td>verifyText</td>
 	<td>css=a.drag-columns-text</td>
-	<td>30 selected</td>
+	<td>${totalSelected} selected</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -117,9 +127,14 @@
 	<td></td>
 </tr>
 <tr>
+	<td>store</td>
+	<td>${numResultsPerPage}</td>
+	<td>totalSelected</td>
+</tr>
+<tr>
 	<td>verifyText</td>
 	<td>css=a.drag-columns-text</td>
-	<td>15 selected</td>
+	<td>${totalSelected} selected</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -137,9 +152,14 @@
 	<td></td>
 </tr>
 <tr>
+	<td>storeEval</td>
+	<td>${totalSelected} + ${numResultsPerPage}</td>
+	<td>totalSelected</td>
+</tr>
+<tr>
 	<td>verifyText</td>
 	<td>css=a.drag-columns-text</td>
-	<td>30 selected</td>
+	<td>${totalSelected} selected</td>
 </tr>
 <tr>
 	<td>click</td>
