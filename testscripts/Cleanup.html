@@ -13,52 +13,317 @@
 </thead><tbody>
 <tr>
 	<td>echo</td>
-	<td>*** CLEAN UP ***</td>
+	<td>======== // CLEAN UP // ========</td>
 	<td></td>
 </tr>
 <tr>
 	<td>echo</td>
-	<td>// Delete Test Assets</td>
+	<td>======== // Delete Test Assets // ========</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${currentEnvironment}/${currentApplication}/views/modules/asset/index.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=ul.select2-choices</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=keywordsvalue</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.small</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=pagetoggle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=a[title=&quot;Edit one or more selected records&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Edit All</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Delete Assets</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=deleteoriginal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=form[name=&quot;deleteoption&quot;] &gt; input.btn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${currentEnvironment}/${currentApplication}</td>
 	<td></td>
 </tr>
 <tr>
 	<td>echo</td>
-	<td>// Delete Test User</td>
+	<td>======== // Remove Tags and Author from Search Box // ========</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#detail_keywords &gt; div.emsearchfield &gt; a &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#detail_creator &gt; div.emsearchfield &gt; a &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Done</td>
 	<td></td>
 </tr>
 <tr>
 	<td>echo</td>
-	<td>// Delete Hot Folder 1</td>
+	<td>======== // Delete Test User // ========</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Settings</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Users</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=description.value</td>
+	<td>test577215</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='emselectable']/table/tbody/tr/td[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//table[@id='main-results-table']/tbody/tr/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Delete User</td>
 	<td></td>
 </tr>
 <tr>
 	<td>echo</td>
-	<td>// Delete Test Library</td>
+	<td>======== // Delete Hot Folder 1 // ========</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${currentEnvironment}/${currentApplication}/views/settings/modules/asset/hotfolders/index.html</td>
 	<td></td>
 </tr>
 <tr>
 	<td>echo</td>
-	<td>// Delete &quot;New Group&quot;</td>
+	<td>======== // Delete Test Library // ========</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${currentEnvironment}/${currentApplication}/views/modules/library/index.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name.value</td>
+	<td>${possibleLibrary}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.small</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=module</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//table[@id='main-results-table']/tbody/tr/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure?</td>
 	<td></td>
 </tr>
 <tr>
 	<td>echo</td>
-	<td>// Delete &quot;Vendors&quot; Role</td>
+	<td>======== // Delete Test Division // ========</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${currentEnvironment}/${currentApplication}/views/modules/division/index.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name.value</td>
+	<td>Test_Division_577215</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.small</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//table[@id='main-results-table']/tbody/tr/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure?</td>
 	<td></td>
 </tr>
 <tr>
 	<td>echo</td>
-	<td>// Delete XXX Catalog</td>
+	<td>======== // Delete Test Group // ========</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${currentEnvironment}/${currentApplication}/views/settings/users/usermanager/groups/index.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=groupselect</td>
+	<td>label=${testGroup}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Delete Group</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=a.oestandard-button &gt; input[type=&quot;button&quot;]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>echo</td>
-	<td>// Remove Tags and Author from Search Box</td>
+	<td>======== // Delete &quot;Vendors&quot; Role // ========</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${currentEnvironment}/${currentApplication}/views/settings/users/permissions/index.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=roles</td>
+	<td>label=Vendors</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure you want to delete the security group Vendors</td>
 	<td></td>
 </tr>
 <tr>
 	<td>echo</td>
-	<td>// Remove File Size From Results Column</td>
+	<td>======== // Delete XXX Catalog // ========</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${currentEnvironment}/manager/views/catalogs/index.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=XXX</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.alias</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Delete Catalog</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 </tbody></table>
