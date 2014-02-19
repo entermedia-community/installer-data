@@ -12,6 +12,41 @@
 <tr><td rowspan="1" colspan="3">Basket Dynamics</td></tr>
 </thead><tbody>
 <tr>
+	<td>open</td>
+	<td>${currentEnvironment}/${currentApplication}/views/basket/index.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>css=p.info</td>
+	<td>isBasketEmpty</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${isBasketEmpty}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['isBasketEmpty']==true</td>
+	<td>BASKETEMPTY</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=pagetoggle</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>BASKETEMPTY</td>
+	<td></td>
+</tr>
+<tr>
 	<td>store</td>
 	<td>0</td>
 	<td>numBasketItems</td>
