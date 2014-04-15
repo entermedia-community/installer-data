@@ -3,7 +3,7 @@
   <property id="id" index="true" keyword="true" stored="true" searchtype="asset">Id</property>
   <property id="name" index="true" keyword="true" stored="true" sortable="true" searchtype="asset" defaultoperation="contains">File Name</property>
   <property id="catalogid" catalogid="entermedia" viewtype="list" searchtype="asset" internalfield="true" listid="catalogs">Catalog</property>
-  <property id="description" searchtype="asset" defaultoperation="contains">All Fields</property>
+  <property id="description" searchtype="asset" defaultoperation="freeform">All Fields</property>
   <property id="sourcepath" index="true" stored="true" searchtype="asset" internalfield="true">Source Path</property>
   <property id="category" keyword="true" stored="true" editable="true" type="list" viewtype="category" searchtype="asset" query="assetcategory.assetid = asset.id" externalidXXX="assetcategory.categoryid" listid="category" datatype="list">Categories</property>
   <property id="division" index="true" keyword="true" stored="true" editable="true" type="list" searchtype="asset" datatype="list">Division</property>
