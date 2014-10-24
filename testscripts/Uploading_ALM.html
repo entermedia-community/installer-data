@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://demo.entermediasoftware.com/" />
+<title>New Test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">New Test</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>${currentEnvironment}:${port}/${currentApplication}/index.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Upload JPG ...</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Upload Media</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>#Check to make sure Tags field is available on Upload Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>id=detail_keywords</td>
+	<td>isTagsVisible</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${isTagsVisible}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['isTagsVisible']==true</td>
+	<td>TAGS_VISIBLE</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>#Tags not visible. Enable it in view</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Settings</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#module-dropdown &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Assets</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Views</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=System</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Multiple Upload</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=newone</td>
+	<td>label=Keywords</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Upload Media</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>TAGS_VISIBLE</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=filePicker</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=upload_field</td>
+	<td>${uploadDirectory}\Multiple\image\Image_JPEG.jpg</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=keywords.value</td>
+	<td>test577215</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=list-division</td>
+	<td>label=The Recorder</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=startbutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>60000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=module</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Upload DOC ....</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Upload Media</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=filePicker</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=upload_field</td>
+	<td>${uploadDirectory}\Multiple\doc\3Page_DOC.doc</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=keywords.value</td>
+	<td>test577215</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=list-division</td>
+	<td>label=The Recorder</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=startbutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>60000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=module</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Upload PDF ...</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Upload Media</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=filePicker</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=upload_field</td>
+	<td>${uploadDirectory}\Multiple\doc\2Page_PDF.pdf</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=keywords.value</td>
+	<td>test577215</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=list-division</td>
+	<td>label=The Recorder</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=startbutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>60000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=module</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Upload WMV ...</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Upload Media</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=filePicker</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=upload_field</td>
+	<td>${uploadDirectory}\Multiple\video\Video_WMV.wmv</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=keywords.value</td>
+	<td>test577215</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=list-division</td>
+	<td>label=The Recorder</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=startbutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>60000</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
