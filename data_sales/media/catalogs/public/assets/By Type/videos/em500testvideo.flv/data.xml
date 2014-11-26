@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<asset name="em500testvideo.flv" id="109">
+  <keyword><![CDATA[Promotional]]></keyword>
+  <keyword><![CDATA[Product]]></keyword>
+  <category id="by_type_videos"/>
+  <category id="2012_10"/>
+  <property name="fileformat">flv</property>
+  <property name="datatype">original</property>
+  <property name="owner">admin</property>
+  <property name="assetaddeddate">2011-07-29 17:00:25 -0400</property>
+  <property name="assetviews">0</property>
+  <property name="importstatus">complete</property>
+  <property name="assetmodificationdate">2012-10-23 10:01:14 -0400</property>
+  <property name="filesize">2910173</property>
+  <property name="length">25</property>
+  <property name="width">500</property>
+  <property name="height">300</property>
+  <property name="recordmodificationdate">2013-10-25 14:29:30 -0400</property>
+  <property name="assettype">1348758017361</property>
+  <property name="assetviewsexpires">1348677495094</property>
+  <property name="previewstatus">generated</property>
+  <property name="assetcreationdate">07/20/2007</property>
+  <property name="longcaption">Blink and you will miss it.</property>
+  <property name="libraries">crossroads | oceanography</property>
+  <property name="videocodec">vp6f</property>
+  <property name="audiocodec">mp3</property>
+  <property name="copyrightstatus">False</property>
+  <property name="purpose">1</property>
+  <property name="editstatus">rejected</property>
+</asset>

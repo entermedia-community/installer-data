@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<asset name="CoffieCup.jpg" id="127">
+  <keyword><![CDATA[Product]]></keyword>
+  <keyword><![CDATA[Energy]]></keyword>
+  <category id="by_type_photos"/>
+  <property name="fileformat">jpg</property>
+  <property name="datatype">original</property>
+  <property name="owner">admin</property>
+  <property name="assetaddeddate">2011-07-29 17:00:42 -0400</property>
+  <property name="assetviews">0</property>
+  <property name="importstatus">complete</property>
+  <property name="assetmodificationdate">2012-10-23 10:01:14 -0400</property>
+  <property name="filesize">433381</property>
+  <property name="bitspersample">8</property>
+  <property name="width">1024</property>
+  <property name="height">765</property>
+  <property name="previewstatus">generated</property>
+  <property name="recordmodificationdate">2013-10-25 14:46:49 -0400</property>
+  <property name="assettype">photo</property>
+  <property name="assetviewsexpires">1348676177776</property>
+  <property name="longcaption">Good way to start the day.</property>
+  <property name="libraries">oceanography</property>
+  <property name="contact">johndoe</property>
+</asset>

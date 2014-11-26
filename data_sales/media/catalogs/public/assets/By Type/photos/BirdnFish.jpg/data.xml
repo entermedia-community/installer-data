@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<asset name="BirdnFish.jpg" id="115">
+  <keyword><![CDATA[Wildlife]]></keyword>
+  <keyword><![CDATA[Bird]]></keyword>
+  <category id="by_type_photos"/>
+  <property name="fileformat">jpg</property>
+  <property name="datatype">original</property>
+  <property name="owner">admin</property>
+  <property name="assetaddeddate">2011-07-29 17:00:30 -0400</property>
+  <property name="assetviews">2</property>
+  <property name="importstatus">complete</property>
+  <property name="assetmodificationdate">2012-10-23 10:01:14 -0400</property>
+  <property name="filesize">256906</property>
+  <property name="bitspersample">8</property>
+  <property name="width">1024</property>
+  <property name="height">815</property>
+  <property name="previewstatus">generated</property>
+  <property name="recordmodificationdate">2013-10-25 14:46:17 -0400</property>
+  <property name="assetviewsexpires">1348677404087</property>
+  <property name="assettype">photo</property>
+  <property name="longcaption">Grace and precision</property>
+  <property name="assetcreationdate">09/06/2012</property>
+  <property name="libraries">oceanography</property>
+  <property name="copyrightstatus">False</property>
+  <property name="purpose">1</property>
+  <property name="editstatus">rejected</property>
+  <property name="contact">susansmith</property>
+</asset>

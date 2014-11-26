@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root> 
+  <data id="assetsecure" module="asset" systemdefined="false" ordering="1350917789183">Secure</data>  
+  <data id="contactcontact_information" name="Contact Information" module="contact" systemdefined="false" ordering="1382724459871"/>  
+  <data id="contactcompany_information" name="Company Information" module="contact" systemdefined="false" ordering="1382724466302"></data>
+</root>

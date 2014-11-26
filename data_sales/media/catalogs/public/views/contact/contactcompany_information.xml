@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root> 
+  <property id="companyname"/>  
+  <property id="companyaddress"/>  
+  <property id="jobtitle"/>  
+  <property id="jobdescription"/>  
+  <property id="activeprojects"/>
+</root>

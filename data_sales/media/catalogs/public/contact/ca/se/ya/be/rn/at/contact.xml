@@ -1,0 +1,4 @@
+
+<contacts>
+  <contact id="caseyabernathy" name="Casey Abernathy" firstname="Casey" lastname="Abernathy" phonenumber="555-555-5555" department="Sales and Marketing" companyname="EnterMedia" companyaddress="123 Main St." activeprojects="Client A, Client B, Client C" jobdescription="Documents new features. Creates release notes. Provides product demonstration. " jobtitle="Account Manager"/>
+</contacts>

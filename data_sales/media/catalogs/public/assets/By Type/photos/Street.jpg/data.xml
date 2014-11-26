@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<asset name="Street.jpg" id="122">
+  <category id="by_type_photos"/>
+  <property name="fileformat">jpg</property>
+  <property name="datatype">original</property>
+  <property name="owner">admin</property>
+  <property name="assetaddeddate">2011-07-29 17:00:37 -0400</property>
+  <property name="assetviews">0</property>
+  <property name="importstatus">complete</property>
+  <property name="assetmodificationdate">2012-10-23 10:01:14 -0400</property>
+  <property name="filesize">464832</property>
+  <property name="bitspersample">8</property>
+  <property name="width">1024</property>
+  <property name="height">768</property>
+  <property name="previewstatus">generated</property>
+  <property name="recordmodificationdate">2013-10-25 14:45:51 -0400</property>
+  <property name="assettype">photo</property>
+  <property name="assetviewsexpires">1348676290706</property>
+  <property name="longcaption">Bikes and cars separated by walls</property>
+  <property name="assetcreationdate">03/13/2003</property>
+  <property name="libraries">johnsonwedding</property>
+  <property name="copyrightnotice">This file is reserved for private use within the company. Please refer to company policy for more information.</property>
+  <property name="copyrightstatus">True</property>
+  <property name="purpose">2 | 5</property>
+  <property name="editstatus">1</property>
+  <property name="assetid">122</property>
+  <property name="contact">christopherburkey</property>
+</asset>

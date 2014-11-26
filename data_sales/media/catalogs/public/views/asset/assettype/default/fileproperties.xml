@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<properties usagelabel="File Details"> 
+  <property id="cammodel"/>  
+  <property id="cameramodel"/>  
+  <property id="iso"/>  
+  <property id="width"/>  
+  <property id="height"/>  
+  <property id="fileformat"/>  
+  <property id="pages"/>
+</properties>

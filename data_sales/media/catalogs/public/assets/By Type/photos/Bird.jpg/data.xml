@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<asset name="Bird.jpg" id="131">
+  <keyword><![CDATA[Wildlife]]></keyword>
+  <keyword><![CDATA[Bird]]></keyword>
+  <keyword><![CDATA[A tag]]></keyword>
+  <category id="by_type_photos"/>
+  <property name="fileformat">jpg</property>
+  <property name="datatype">original</property>
+  <property name="owner">admin</property>
+  <property name="assetaddeddate">2011-07-29 17:00:46 -0400</property>
+  <property name="assetviews">2</property>
+  <property name="importstatus">complete</property>
+  <property name="assetmodificationdate">2012-10-23 10:01:14 -0400</property>
+  <property name="filesize">391869</property>
+  <property name="bitspersample">8</property>
+  <property name="width">1024</property>
+  <property name="height">836</property>
+  <property name="previewstatus">1</property>
+  <property name="recordmodificationdate">2013-10-25 14:23:44 -0400</property>
+  <property name="assettype">photo</property>
+  <property name="assetviewsexpires">1348676062919</property>
+  <property name="longcaption">Flight and song.</property>
+  <property name="libraries">oceanography</property>
+  <property name="copyrightstatus">False</property>
+  <property name="purpose">3</property>
+  <property name="editstatus">6</property>
+</asset>

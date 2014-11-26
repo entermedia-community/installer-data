@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<user enabled="true">
+  <user-name><![CDATA[gatekeeper]]></user-name>
+  <password><![CDATA[DES:F7GS3T20Dfw47RMMVoR5Tg==]]></password>
+  <creation-date>1382724831614</creation-date>
+  <lastLogined-Time>2013-10-25 14:13:51 -0400</lastLogined-Time>
+  <properties>
+    <property name="enabled" value="true"/>
+    <property name="lastName" value="Abernathy"/>
+    <property name="email" value="gatekeeper@entermediasoftware.com"/>
+    <property name="userName" value="gatekeeper"/>
+    <property name="notes" value=""/>
+    <property name="firstName" value="Casey"/>
+  </properties>
+  <group id="$content.mastergroup"/>
+</user>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<user enabled="true">
+  <user-name>John</user-name>
+  <password>DES:F7GS3T20Dfw47RMMVoR5Tg==</password>
+  <creation-date>1348673290154</creation-date>
+  <lastLogined-Time>2012-09-26 15:28:10 +0000</lastLogined-Time>
+  <properties>
+    <property name="enabled" value="true"/>
+    <property name="lastName" value="Doe"/>
+    <property name="email" value="john@generic.com"/>
+    <property name="userName" value="John"/>
+    <property name="notes" value=""/>
+    <property name="firstName" value="John"/>
+  </properties>
+  <group id="$content.mastergroup"/>
+</user>

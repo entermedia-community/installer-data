@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<userprofiles> 
+  <userprofile id="admin" settingsgroup="administrator" lastcatalog="media/catalogs/public" resultview="table" maximize_screen="true" maximize_player="false" view_asset_advancedsearch="description assettype contact filesize purpose" assetsort="librariesDown" conversiontasksort="statusUp" last_selected_module="asset" view_asset_resultstable="name purpose keywords filesize" minimizeasearchcontent="false" expand_media_sidebar="false" minimizefilterscontent="false"><![CDATA[The Administrator]]></userprofile> 
+</userprofiles>

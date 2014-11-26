@@ -1,0 +1,6 @@
+
+<root>
+  <property id="author"/>
+  <property id="wordcount"/>
+  <property id="longcaption"/>
+</root>
