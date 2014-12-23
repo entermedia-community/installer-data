@@ -17,34 +17,19 @@
 	<td></td>
 </tr>
 <tr>
-	<td>storeElementPresent</td>
-	<td>id=creator.value</td>
-	<td>isAuthorFieldVisible</td>
-</tr>
-<tr>
-	<td>echo</td>
-	<td>${isAuthorFieldVisible}</td>
-	<td></td>
-</tr>
-<tr>
-	<td>gotoIf</td>
-	<td>storedVars['isAuthorFieldVisible']==true</td>
-	<td>AUTHORVISIBLE</td>
-</tr>
-<tr>
 	<td>click</td>
 	<td>link=Edit</td>
 	<td></td>
 </tr>
 <tr>
 	<td>pause</td>
-	<td>1000</td>
+	<td>4000</td>
 	<td></td>
 </tr>
 <tr>
 	<td>select</td>
 	<td>css=select[name=&quot;field&quot;]</td>
-	<td>label=Author</td>
+	<td>label=Instructions</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -53,18 +38,13 @@
 </tr>
 <tr>
 	<td>pause</td>
-	<td>1000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>label</td>
-	<td>AUTHORVISIBLE</td>
+	<td>5000</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=creator.value</td>
-	<td>Mary</td>
+	<td>id=instructions.value</td>
+	<td>TestEdit</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
