@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Test Suite</title>
+</head>
+<body>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="API cases/Authenticate">Authenticate</a></td></tr>
+<tr><td><a href="API cases/Create New">Asset Create</a></td></tr>
+<tr><td><a href="API cases/Asset Details">Asset Details</a></td></tr>
+<tr><td><a href="API cases/Search Assets">Asset Search</a></td></tr>
+<tr><td><a href="API cases/Asset Version History">Asset Version History</a></td></tr>
+<tr><td><a href="API cases/Asset List Attachments">Asset List Attachments</a></td></tr>
+<tr><td><a href="API cases/Asset Delete">Asset Delete</a></td></tr>
+<tr><td><a href="API cases/Asset Update">Asset Update</a></td></tr>
+<tr><td><a href="API cases/Asset Remove Generated">Asset Remove Generated</a></td></tr>
+<tr><td><a href="API cases/Asset Run Conversion">Asset Run Conversion</a></td></tr>
+<tr><td><a href="API cases/Asset Custom Thumbnail">Asset Custom Thumbnail</a></td></tr>
+<tr><td><a href="API cases/Asset List Conversions">Asset List Conversions</a></td></tr>
+<tr><td><a href="API cases/Data Search Table">Data Search</a></td></tr>
+<tr><td><a href="API cases/Data Create Table">Data Create</a></td></tr>
+<tr><td><a href="API cases/Data Load">Data Load</a></td></tr>
+<tr><td><a href="API cases/Data Update">Data Update</a></td></tr>
+<tr><td><a href="API cases/Data Delete">Data Delete</a></td></tr>
+<tr><td><a href="API cases/System Show Cache">System Show Cache</a></td></tr>
+<tr><td><a href="API cases/Table List">Tables Search</a></td></tr>
+<tr><td><a href="API cases/Tables Create">Tables Create</a></td></tr>
+<tr><td><a href="API cases/Tables Add Field">Tables Add Field</a></td></tr>
+<tr><td><a href="API cases/Tables Save Field">Tables Save Field</a></td></tr>
+<tr><td><a href="API cases/Tables List Fields">Tables Search Fields</a></td></tr>
+<tr><td><a href="API cases/Tables Remove Field">Tables Remove Field</a></td></tr>
+<tr><td><a href="API cases/Tables Delete">Tables Delete</a></td></tr>
+<tr><td><a href="API cases/Tables Reindex">Tables Reindex</a></td></tr>
+<tr><td><a href="API cases/Tables Import CSV">Tables Import CSV</a></td></tr>
+<tr><td><a href="API cases/Tables Reload Data">Tables Reload Data</a></td></tr>
+<tr><td><a href="API cases/Events List">Events List</a></td></tr>
+<tr><td><a href="API cases/Events Details">Events Details</a></td></tr>
+<tr><td><a href="API cases/Events Update">Events Update</a></td></tr>
+<tr><td><a href="API cases/Events Execute">Events Execute</a></td></tr>
+<tr><td><a href="API cases/Modules Delete">Modules Delete</a></td></tr>
+<tr><td><a href="API cases/Modules Search">Modules Search</a></td></tr>
+<tr><td><a href="API cases/Modules Update">Modules Update</a></td></tr>
+</tbody></table>
+</body>
+</html>
