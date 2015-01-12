@@ -12,6 +12,11 @@
 <tr><td rowspan="1" colspan="3">Asset Update</td></tr>
 </thead><tbody>
 <tr>
+	<td>open</td>
+	<td>${mainpage}</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>link=Asset Data</td>
 	<td></td>

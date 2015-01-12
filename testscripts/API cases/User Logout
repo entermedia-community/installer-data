@@ -4,12 +4,12 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://localhost:8080/" />
-<title>Tables Reload Data</title>
+<title>User Logout</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">Tables Reload Data</td></tr>
+<tr><td rowspan="1" colspan="3">User Logout</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
@@ -18,17 +18,22 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>link=Data Manager</td>
+	<td>link=User</td>
 	<td></td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>link=Reload Data</td>
+	<td>link=User Logout</td>
 	<td></td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>id=process</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -43,14 +48,15 @@
 </tr>
 <tr>
 	<td>storeEval</td>
-	<td>JSON.parse(JSON.stringify(${response})).response.status</td>
-	<td>status</td>
+	<td>JSON.parse(JSON.stringify(${response})).results.status</td>
+	<td>logout</td>
 </tr>
 <tr>
 	<td>assertEval</td>
-	<td>&quot;${status}&quot; == &quot;ok&quot;</td>
+	<td>&quot;${logout}&quot; == &quot;logout&quot;</td>
 	<td>true</td>
 </tr>
+
 </tbody></table>
 </body>
 </html>

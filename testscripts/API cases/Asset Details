@@ -13,7 +13,7 @@
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>/mediadb/docs/showdoc.html?id=getasset</td>
+	<td>${mainpage}</td>
 	<td></td>
 </tr>
 <tr>

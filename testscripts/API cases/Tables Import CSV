@@ -12,6 +12,11 @@
 <tr><td rowspan="1" colspan="3">Tables Import CSV</td></tr>
 </thead><tbody>
 <tr>
+	<td>open</td>
+	<td>${mainpage}</td>
+	<td></td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>link=Data Manager</td>
 	<td></td>

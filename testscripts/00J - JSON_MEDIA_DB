@@ -8,14 +8,15 @@
 <body>
 <table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
 <tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="API cases/Set API Environment">Set API Environment</a></td></tr>
 <tr><td><a href="API cases/Authenticate">Authenticate</a></td></tr>
 <tr><td><a href="API cases/Create New">Asset Create</a></td></tr>
 <tr><td><a href="API cases/Asset Details">Asset Details</a></td></tr>
 <tr><td><a href="API cases/Search Assets">Asset Search</a></td></tr>
 <tr><td><a href="API cases/Asset Version History">Asset Version History</a></td></tr>
 <tr><td><a href="API cases/Asset List Attachments">Asset List Attachments</a></td></tr>
-<tr><td><a href="API cases/Asset Delete">Asset Delete</a></td></tr>
 <tr><td><a href="API cases/Asset Update">Asset Update</a></td></tr>
+<tr><td><a href="API cases/Asset Delete">Asset Delete</a></td></tr>
 <tr><td><a href="API cases/Asset Remove Generated">Asset Remove Generated</a></td></tr>
 <tr><td><a href="API cases/Asset Run Conversion">Asset Run Conversion</a></td></tr>
 <tr><td><a href="API cases/Asset Custom Thumbnail">Asset Custom Thumbnail</a></td></tr>
@@ -40,9 +41,9 @@
 <tr><td><a href="API cases/Events Details">Events Details</a></td></tr>
 <tr><td><a href="API cases/Events Update">Events Update</a></td></tr>
 <tr><td><a href="API cases/Events Execute">Events Execute</a></td></tr>
-<tr><td><a href="API cases/Modules Delete">Modules Delete</a></td></tr>
-<tr><td><a href="API cases/Modules Search">Modules Search</a></td></tr>
 <tr><td><a href="API cases/Modules Update">Modules Update</a></td></tr>
+<tr><td><a href="API cases/Modules Search">Modules Search</a></td></tr>
+<tr><td><a href="API cases/Modules Delete">Modules Delete</a></td></tr>
 </tbody></table>
 </body>
 </html>
