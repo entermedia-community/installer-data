@@ -27,6 +27,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>type</td>
+	<td>id=request</td>
+	<td>{&quot;assetid&quot;:&quot;${assetid}&quot;, &quot;presetid&quot;:&quot;imagepreviewfpo&quot;}</td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>id=process</td>
 	<td></td>
@@ -48,7 +53,7 @@
 </tr>
 <tr>
 	<td>assertEval</td>
-	<td>&quot;${status}&quot; != &quot;500&quot;;</td>
+	<td>&quot;${status}&quot; == &quot;ok&quot;;</td>
 	<td>true</td>
 </tr>
 </tbody></table>

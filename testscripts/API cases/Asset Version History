@@ -27,6 +27,16 @@
 	<td></td>
 </tr>
 <tr>
+	<td>type</td>
+	<td>id=url</td>
+	<td>/mediadb/services/modules/assets/versions/getrevisions</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=request</td>
+	<td>{&quot;assetid&quot;:&quot;${assetid}&quot;}</td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>id=process</td>
 	<td></td>
@@ -43,12 +53,12 @@
 </tr>
 <tr>
 	<td>storeEval</td>
-	<td>JSON.parse(JSON.stringify(${response})).response;</td>
+	<td>JSON.parse(JSON.stringify(${response})).response.totalhits;</td>
 	<td>result</td>
 </tr>
 <tr>
 	<td>assertEval</td>
-	<td>${result} != null;</td>
+	<td>${result} &gt;= 0;</td>
 	<td>true</td>
 </tr>
 </tbody></table>

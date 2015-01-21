@@ -27,6 +27,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>type</td>
+	<td>id=request</td>
+	<td>{&quot;assetid&quot;:&quot;${assetid}&quot;}</td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>id=process</td>
 	<td></td>
@@ -43,12 +48,12 @@
 </tr>
 <tr>
 	<td>storeEval</td>
-	<td>JSON.parse(JSON.stringify(${response})).status;</td>
+	<td>JSON.parse(JSON.stringify(${response})).response;</td>
 	<td>status</td>
 </tr>
 <tr>
 	<td>assertEval</td>
-	<td>&quot;${status}&quot; != &quot;500&quot;;</td>
+	<td>&quot;${status}&quot; == &quot;ok&quot;;</td>
 	<td>true</td>
 </tr>
 </tbody></table>
