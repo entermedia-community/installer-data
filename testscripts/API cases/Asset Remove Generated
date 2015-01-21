@@ -37,6 +37,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>storeValue</td>
 	<td>id=test</td>
 	<td>response</td>
@@ -48,7 +53,7 @@
 </tr>
 <tr>
 	<td>storeEval</td>
-	<td>JSON.parse(JSON.stringify(${response})).response;</td>
+	<td>JSON.parse(JSON.stringify(${response})).response.status;</td>
 	<td>status</td>
 </tr>
 <tr>

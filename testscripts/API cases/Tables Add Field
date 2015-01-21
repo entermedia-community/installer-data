@@ -32,8 +32,28 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>id=test</td>
+	<td>response</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${response}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>var results = JSON.parse(JSON.stringify(${response})).results; var has = 0; for (i=0;i&lt;results.length;i++){ if (results[i].id == &quot;${fieldname}&quot;) {has = 1; break;} } has</td>
+	<td>check</td>
+</tr>
+<tr>
 	<td>assertEval</td>
-	<td>1 == 5</td>
+	<td>${check} == 1</td>
 	<td>true</td>
 </tr>
 </tbody></table>

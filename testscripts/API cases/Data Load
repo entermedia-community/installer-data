@@ -18,7 +18,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>link=Lists</td>
+	<td>link=Data Lists</td>
 	<td></td>
 </tr>
 <tr>
@@ -29,6 +29,11 @@
 <tr>
 	<td>click</td>
 	<td>id=process</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>
@@ -43,12 +48,12 @@
 </tr>
 <tr>
 	<td>storeEval</td>
-	<td>JSON.parse(JSON.stringify(${response})).status;</td>
+	<td>JSON.parse(JSON.stringify(${response})).response.status;</td>
 	<td>status</td>
 </tr>
 <tr>
 	<td>assertEval</td>
-	<td>&quot;${status}&quot; != &quot;500&quot;;</td>
+	<td>&quot;${status}&quot; == &quot;ok&quot;;</td>
 	<td>true</td>
 </tr>
 </tbody></table>

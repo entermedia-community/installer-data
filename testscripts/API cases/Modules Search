@@ -18,7 +18,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>link=Modules</td>
+	<td>link=Data Modules</td>
 	<td></td>
 </tr>
 <tr>
@@ -29,6 +29,11 @@
 <tr>
 	<td>click</td>
 	<td>id=process</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>

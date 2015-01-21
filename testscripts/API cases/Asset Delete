@@ -37,6 +37,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>storeValue</td>
 	<td>id=test</td>
 	<td>response</td>
@@ -49,7 +54,7 @@
 <tr>
 	<td>storeEval</td>
 	<td>JSON.parse(JSON.stringify(${response})).response.id;</td>
-	<td>id</td>
+	<td>deleteid</td>
 </tr>
 <tr>
 	<td>storeEval</td>
@@ -58,7 +63,7 @@
 </tr>
 <tr>
 	<td>assertEval</td>
-	<td>${id} == ${assetid} &amp;&amp; ${deleted} != null;</td>
+	<td>${deleteid} == ${assetid} &amp;&amp; ${deleted} != null;</td>
 	<td>true</td>
 </tr>
 </tbody></table>

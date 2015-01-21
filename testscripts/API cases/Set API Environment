@@ -31,6 +31,11 @@
 	<td>&quot;testmodule&quot;</td>
 	<td>modulename</td>
 </tr>
+<tr>
+	<td>store</td>
+	<td>&quot;testfield&quot;</td>
+	<td>fieldname</td>
+</tr>
 </tbody></table>
 </body>
 </html>
