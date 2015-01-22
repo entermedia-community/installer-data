@@ -37,8 +37,23 @@
 	<td></td>
 </tr>
 <tr>
+	<td>storeValue</td>
+	<td>id=test</td>
+	<td>response</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${response}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>JSON.parse(JSON.stringify(${response})).response.totalhits;</td>
+	<td>hits</td>
+</tr>
+<tr>
 	<td>assertEval</td>
-	<td>1 == 2</td>
+	<td>${hits}&gt; 0;</td>
 	<td>true</td>
 </tr>
 </tbody></table>
