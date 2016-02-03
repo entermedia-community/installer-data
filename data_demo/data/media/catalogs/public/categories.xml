@@ -1,0 +1,82 @@
+
+<catalog id="index" name="Archive">
+  <property id="categoryhome">/media/catalogs/public/categories/</property>
+  <catalog id="1454525052366" name="2015">
+    <property id="parentid">index</property>
+    <catalog id="1454525070202" name="Q1 (January - March)">
+      <property id="parentid">1454525052366</property>
+    </catalog>
+    <catalog id="1454525083122" name="Q2 (April - June)">
+      <property id="parentid">1454525052366</property>
+    </catalog>
+    <catalog id="1454525097560" name="Q3 (July - September)">
+      <property id="parentid">1454525052366</property>
+    </catalog>
+    <catalog id="1454525109313" name="Q4 (October - December)">
+      <property id="parentid">1454525052366</property>
+    </catalog>
+  </catalog>
+  <catalog id="1454525058416" name="2016">
+    <property id="parentid">index</property>
+    <catalog id="1454525120543" name="Q1 (January - March)">
+      <property id="parentid">1454525058416</property>
+    </catalog>
+  </catalog>
+  <catalog id="1454525284255" name="By Location">
+    <property id="parentid">index</property>
+    <catalog id="1454525319281" name="Cincinnati, Ohio">
+      <property id="parentid">1454525284255</property>
+    </catalog>
+    <catalog id="1454525328724" name="Maui, Hawaii">
+      <property id="parentid">1454525284255</property>
+    </catalog>
+  </catalog>
+  <catalog id="by_type" name="By Type">
+    <property id="parentid">index</property>
+    <catalog id="by_type_audio" name="Audio">
+      <property id="parentid">by_type</property>
+    </catalog>
+    <catalog id="by_type_documents" name="Documents">
+      <property id="parentid">by_type</property>
+    </catalog>
+    <catalog id="1454524938543" name="Other">
+      <property id="parentid">by_type</property>
+    </catalog>
+    <catalog id="by_type_photos" name="Photos">
+      <property id="parentid">by_type</property>
+    </catalog>
+    <catalog id="by_type_videos" name="Videos">
+      <property id="parentid">by_type</property>
+    </catalog>
+    <catalog id="1454524931794" name="Web">
+      <property id="parentid">by_type</property>
+    </catalog>
+  </catalog>
+  <catalog id="1454525155100" name="Freelance Photographers">
+    <property id="parentid">index</property>
+    <catalog id="1454525175964" name="Dorothy Lane">
+      <property id="parentid">1454525155100</property>
+    </catalog>
+    <catalog id="1454525210648" name="Jonathan Bell">
+      <property id="parentid">1454525155100</property>
+    </catalog>
+  </catalog>
+  <catalog id="users" name="Users">
+    <property id="parentid">index</property>
+    <catalog id="1454524963035" name="Adam Bellows">
+      <property id="parentid">users</property>
+    </catalog>
+    <catalog id="1454525018925" name="Ashley Dobroszi">
+      <property id="parentid">users</property>
+    </catalog>
+    <catalog id="1454524947295" name="Casey Abernathy">
+      <property id="parentid">users</property>
+    </catalog>
+    <catalog id="1454524956255" name="Christopher Burkey">
+      <property id="parentid">users</property>
+    </catalog>
+    <catalog id="1454524971742" name="Jenny Monet">
+      <property id="parentid">users</property>
+    </catalog>
+  </catalog>
+</catalog>

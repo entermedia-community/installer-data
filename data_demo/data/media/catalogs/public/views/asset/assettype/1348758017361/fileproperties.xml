@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root> 
+  <property id="length"/>  
+  <property id="language"/>  
+  <property id="artist"/>
+  <property id="videocodec"/>  
+  <property id="assetaddeddate"/>  
+  <property id="assetcreationdate"/>  
+  <property id="longcaption"/> 
+</root>

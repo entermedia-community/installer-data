@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<librarycollections> 
+  <librarycollection name="Queen City" library="501" owner="gatekeeper" id="101" deliverydate="2016-07-31 00:00:00 -0400" notes="For the promotion of tourism in Cincinnati" addnotifypolicy="2"/>  
+  <librarycollection name="Flying Pig Marathon" library="501" owner="gatekeeper" id="102" deliverydate="2016-08-31 00:00:00 -0400" notes="For the promotion of the Flying Pig Marathon in Cincinnati, Ohio" addnotifypolicy="3"/>  
+  <librarycollection name="New Employee Welcome Package" library="504" owner="cburkey" id="103" deliverydate="2016-06-15 00:00:00 -0400" notes="These materials will be shared with each new employee within 3 days of hire." addnotifypolicy="5"/>  
+  <librarycollection name="Expectations and Standards" library="504" owner="cburkey" id="104" deliverydate="2016-12-31 00:00:00 -0500" notes="Ongoing expectations for all enrolled employees." addnotifypolicy="5"/>  
+  <librarycollection name="Human Achievements" library="503" owner="admin" id="105" deliverydate="2016-10-31 00:00:00 -0400" notes="Human progress throughout history." addnotifypolicy="1"/>  
+  <librarycollection name="Web Promotion" library="502" owner="tgardener" id="106" deliverydate="2016-11-05 00:00:00 -0400" notes="These assets are for the promotion of the new campaign." addnotifypolicy="4"/>  
+  <librarycollection name="Outdoor Advertising" library="502" owner="tgardener" id="107" deliverydate="2016-04-19 00:00:00 -0400" notes="These materials will be used for billboards, bench ads and other strategic physical placement throughout the city." addnotifypolicy="4"/>  
+  <librarycollection library="505" owner="gatekeeper" id="108" deliverydate="2016-02-28 00:00:00 -0500" addnotifypolicy="1"> 
+    <name><![CDATA[Writer's Retreat]]></name>  
+    <notes><![CDATA[Best of from the 2015 Writer's Retreat]]></notes><![CDATA[Writer's Retreat]]> 
+  </librarycollection>  
+  <librarycollection name="Hot Spots" library="505" owner="gatekeeper" id="109" deliverydate="2016-03-20 00:00:00 -0400" notes="Places to be in 2016!" addnotifypolicy="2"/> 
+</librarycollections>

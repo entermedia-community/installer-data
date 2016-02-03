@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<properties> 
+  <property id="contactadvancedsearch" module="contact" systemdefined="true" byassettype="false">Advanced Search</property>  
+  <property id="contactresultstable" module="contact" systemdefined="true" byassettype="false">Results Table</property>  
+  <property id="contactbatchedit" module="contact" systemdefined="true" byassettype="false">Batch Edit</property>  
+  <property id="contactpopupdetail" module="contact" systemdefined="true" byassettype="false">Popup Details</property>  
+  <property id="contactheaderdetail" module="contact" systemdefined="true" byassettype="false">Header Details</property> 
+</properties>

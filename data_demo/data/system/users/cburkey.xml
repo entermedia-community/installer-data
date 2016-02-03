@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<user enabled="true">
+  <user-name><![CDATA[cburkey]]></user-name>
+  <password><![CDATA[DES:F7GS3T20DfxK8btyxu45Kw==]]></password>
+  <creation-date>1454528032965</creation-date>
+  <lastLogined-Time>2016-02-03 14:33:52 -0500</lastLogined-Time>
+  <properties>
+    <property name="enabled" value="true"/>
+    <property name="lastName" value="Burkey"/>
+    <property name="email" value="cburkey@entermediadb.org"/>
+    <property name="userName" value="cburkey"/>
+    <property name="notes" value=""/>
+    <property name="firstName" value="Christopher"/>
+  </properties>
+  <group id="$content.mastergroup"/>
+</user>

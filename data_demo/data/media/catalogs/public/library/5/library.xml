@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<libraries> 
+  <library name="Cincinnati - Flying Pigs" id="501" project="1454525614969" projectstatus="active" projecttype="print" thumbnail="154"/>  
+  <library name="Marketing Media" project="1454525629233" projectstatus="active" projecttype="website" id="502" thumbnail="199"/>  
+  <library name="Historical Archive" project="1454525649901" projectstatus="archived" projecttype="legacy" id="503" thumbnail="202"/>  
+  <library name="Educational Materials" project="1454525614969" projectstatus="active" projecttype="website" id="504" thumbnail="187"/>  
+  <library name="Travel Blog Photos" project="1454525629233" projectstatus="complete" projecttype="website" id="505" thumbnail="179"/> 
+</libraries>

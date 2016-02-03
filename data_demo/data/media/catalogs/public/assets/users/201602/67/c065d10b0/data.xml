@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<asset name="Copyright Assignment.doc" id="190">
+  <keyword><![CDATA[Training]]></keyword>
+  <keyword><![CDATA[Documentation]]></keyword>
+  <keyword><![CDATA[Best Practices]]></keyword>
+  <category id="1454525109313"/>
+  <category id="by_type_documents"/>
+  <category id="1454524963035"/>
+  <property name="isfolder">true</property>
+  <property name="primaryfile">Copyright Assignment.doc</property>
+  <property name="datatype">original</property>
+  <property name="editstatus">1</property>
+  <property name="fileformat">doc</property>
+  <property name="owner">gatekeeper</property>
+  <property name="assetaddeddate">2016-02-03 14:22:47 -0500</property>
+  <property name="assetviews">1</property>
+  <property name="assettype">document</property>
+  <property name="importstatus">complete</property>
+  <property name="pushstatus">resend</property>
+  <property name="assetmodificationdate">2016-02-03 14:22:47 -0500</property>
+  <property name="filesize">30720</property>
+  <property name="hasfulltext">true</property>
+  <property name="width">612</property>
+  <property name="height">792</property>
+  <property name="pages">4</property>
+  <property name="assettitle">COPYRIGHT ASSIGNMENT</property>
+  <property name="assetcreationdate">2010-05-10 20:44:00 -0400</property>
+  <property name="libraries">504</property>
+  <property name="project">1454525629233</property>
+  <property name="previewtatus">0</property>
+  <property name="recordmodificationdate">2016-02-03 14:49:44 -0500</property>
+  <property name="previewstatus">2</property>
+  <property name="longcaption">Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, beliefs, and habits. Educational methods include storytelling, discussion, teaching, training, and directed research. Education frequently takes place under the guidance of educators, but learners may also educate themselves.[1] Education can take place in formal or informal settings and any experience that has a formative effect on the way one thinks, feels, or acts may be considered educational. The methodology of teaching is called pedagogy.</property>
+  <property name="purpose">training</property>
+  <property name="rightsusageterms">Information and training materials are intended for the training of Company, Inc. employees only.</property>
+  <property name="copyrightnotice">All rights reserved.</property>
+  <property name="copyrightstatus">True</property>
+</asset>

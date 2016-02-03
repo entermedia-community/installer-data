@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<asset name="Snowboarding Trick.mp4" id="198">
+  <keyword><![CDATA[Video]]></keyword>
+  <keyword><![CDATA[Commerical]]></keyword>
+  <keyword><![CDATA[Advertisement]]></keyword>
+  <keyword><![CDATA[Television]]></keyword>
+  <keyword><![CDATA[YouTube]]></keyword>
+  <keyword><![CDATA[Promotion]]></keyword>
+  <category id="by_type_videos"/>
+  <category id="1454524963035"/>
+  <property name="isfolder">true</property>
+  <property name="primaryfile">Snowboarding Trick.mp4</property>
+  <property name="datatype">original</property>
+  <property name="editstatus">1</property>
+  <property name="fileformat">mp4</property>
+  <property name="owner">admin</property>
+  <property name="assetaddeddate">2016-02-03 14:32:19 -0500</property>
+  <property name="assetviews">1</property>
+  <property name="assettype">1348758017361</property>
+  <property name="importstatus">complete</property>
+  <property name="pushstatus">resend</property>
+  <property name="assetmodificationdate">2016-02-03 14:32:19 -0500</property>
+  <property name="filesize">1339817</property>
+  <property name="assetcreationdate">1904-01-01 00:00:00 -0500</property>
+  <property name="duration">0:00:11.511512</property>
+  <property name="length">12</property>
+  <property name="framerate">29.97</property>
+  <property name="width">1920</property>
+  <property name="height">1080</property>
+  <property name="videocodec">h264</property>
+  <property name="aspect_ratio">16:9</property>
+  <property name="libraries">502</property>
+  <property name="project">1454525597856</property>
+  <property name="previewtatus">0</property>
+  <property name="recordmodificationdate">2016-02-03 14:49:43 -0500</property>
+  <property name="previewstatus">2</property>
+  <property name="purpose">marketing</property>
+  <property name="longcaption">Marketing is a widely used term to describe the means of communication between the company and the consumer audience. Marketing is the adaptation of the commercial activities and use of institutions by the organizations with a purpose to induce behavioral change on a short-term or permanent basis.[1] The American Marketing Association most recently defined Marketing as "the activity, set of institutions, and processes for creating, communicating, delivering, and exchanging offerings that have value for customers, clients, partners, and society at large." - Wikipedia</property>
+</asset>

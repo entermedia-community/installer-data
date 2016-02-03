@@ -1,0 +1,183 @@
+How to use this Cash Flow Tracker
+Step 1 Set a starting point
+Enter a start date and opening cash balance: Start date 1/1/2006
+Opening cash balance $31,000
+Step 2 Forecast future cash flows
+Enter forecast income and expenses for each month on the Cash Flow sheet .
+Step 3 Record incoming cash
+If you have cash sales, record cash sales for each month on the Cash Flow sheet.
+Step 4 Record outgoing cash
+Record expenses paid each month on the Outgoings sheet. The Cash Flow sheet will be automatically updated.
+Step 5 Track results
+Tips
+■ Enter figures in any white field. The yellow fields are calculated for you.
+■
+■ Enter as much or as little information as you like. The more information you record, the better your analysis.
+■
+■
+Important information
+This Cash Flow Tracker spreadsheet was prepared with the assistance of PKF Australia.
+Save the template (XLT file) to your computer. Double-click on it to create a new Tracker, then follow these 
+steps:
+If you have accounts receivable, record details of invoices and amounts received on the Accounts Receivable sheet. 
+The Cash Flow sheet will be automatically updated.
+Check the Cash Flow sheet to see your current cash position, or go to the Dashboard for graphs and key cash flow 
+indicators.
+To turn on field help, click the View menu, then click Comments. A red triangle in the corner of a field means there is 
+field help.
+By default, the sheets in this Tracker are locked so that the formulas cannot be changed. If you are a confident Excel 
+user, you may wish to unlock a sheet and modify it. Select the sheet you want to unlock, click on the Tools menu, then 
+click Unprotect Sheet.
+Please send any feedback or questions to cashflow@cba.com.au
+The figures shown in the Cash Flow Tracker Spreadsheet are intended as a guide only. It has been prepared 
+without considering your objectives, financial situation or needs. Before acting on the calculations in this 
+spreadsheet, you should consider its appropriateness to your circumstances. The Commonwealth Bank and PKF 
+Australia accept no responsibility for any financial loss resulting from the use of this spreadsheet. We recommend 
+you seek professional advice before acting on the information or calculations contained in it.
+Cash flow
+Using this sheet
+1. At the beginning of the year, enter your forecast income and outgoings for each month.
+2. If you make cash sales, enter your actual cash sales onto this sheet each month. Enter collections from accounts receivable on the Accounts Receivable sheet.
+3. Use this sheet to check your current and forecast cash position.
+Jan Feb Mar Apr May Jun Jul
+Forecast Actual Forecast Actual Forecast Actual Forecast Actual Forecast Actual Forecast Actual Forecast
+Starting cash position $31,000.00 $31,000.00 $21,000.00 $55,825.00 $11,000.00 $47,978.00 $1,000.00 -$4,482.00 $11,000.00 -$71,542.00 $16,000.00 -$24,282.00 $26,000.00
+Incoming
+Cash sales $0.00 $0.00 $0.00 $0.00 $0.00 $0.00 $0.00 $0.00 $0.00 $0.00 $0.00 $0.00 $0.00
+Collections from accounts receivable $100,000.00 $137,000.00 $90,000.00 $106,000.00 $60,000.00 $43,000.00 $50,000.00 $0.00 $50,000.00 $98,000.00 $75,000.00 $18,000.00 $90,000.00
+Other cash receipts $0.00 $0.00 $0.00 $0.00 $0.00 $0.00 $0.00 $0.00 $0.00 $0.00 $0.00 $0.00 $0.00
+Total $100,000.00 $137,000.00 $90,000.00 $106,000.00 $60,000.00 $43,000.00 $50,000.00 $0.00 $50,000.00 $98,000.00 $75,000.00 $18,000.00 $90,000.00
+Outgoing
+Fixed expenses $20,000.00 $21,500.00 $20,000.00 $21,500.00 $20,000.00 $21,500.00 $20,000.00 $21,500.00 $20,000.00 $21,500.00 $20,000.00 $21,500.00 $20,000.00
+Variable expenses $90,000.00 $90,675.00 $80,000.00 $92,347.00 $50,000.00 $73,960.00 $20,000.00 $45,560.00 $25,000.00 $29,240.00 $45,000.00 $26,490.00 $60,000.00
+Total $110,000.00 $112,175.00 $100,000.00 $113,847.00 $70,000.00 $95,460.00 $40,000.00 $67,060.00 $45,000.00 $50,740.00 $65,000.00 $47,990.00 $80,000.00
+Result
+Change during month -$10,000.00 $24,825.00 -$10,000.00 -$7,847.00 -$10,000.00 -$52,460.00 $10,000.00 -$67,060.00 $5,000.00 $47,260.00 $10,000.00 -$29,990.00 $10,000.00
+Closing cash position $21,000.00 $55,825.00 $11,000.00 $47,978.00 $1,000.00 -$4,482.00 $11,000.00 -$71,542.00 $16,000.00 -$24,282.00 $26,000.00 -$54,272.00 $36,000.00
+Summary
+Summary
+Incoming Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec
+Forecast $100,000 $90,000 $60,000 $50,000 $50,000 $75,000 $90,000 $100,000 $90,000 $80,000 $90,000 $100,000
+Actual $137,000 $106,000 $43,000 $0 $98,000 $18,000 $61,000 $167,000 $132,500 $0 $128,000 $109,000
+Outgoing Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec
+Forecast $110,000 $100,000 $70,000 $40,000 $45,000 $65,000 $80,000 $85,000 $80,000 $83,000 $98,000 $93,000
+Actual $112,175 $113,847 $95,460 $67,060 $50,740 $47,990 $33,740 $33,970 $47,340 $64,230 $99,700 $122,140
+Cash balance Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec
+Forecast $21,000 $11,000 $1,000 $11,000 $16,000 $26,000 $36,000 $51,000 $61,000 $58,000 $50,000 $57,000
+Actual $55,825 $47,978 -$4,482 -$71,542 -$24,282 -$54,272 -$27,012 $106,018 $191,178 $126,948 $155,248 $142,108
+Jul Aug Sep Oct Nov Dec Totals
+Actual Forecast Actual Forecast Actual Forecast Actual Forecast Actual Forecast Actual Forecast Actual
+-$54,272.00 $36,000.00 -$27,012.00 $51,000.00 $106,018.00 $61,000.00 $191,178.00 $58,000.00 $126,948.00 $50,000.00 $155,248.00
+$0.00 $0.00 $0.00 $0.00 $0.00 $0.00 $0.00 $0.00 $0.00 $0.00 $0.00 $0.00 $0.00
+$61,000.00 $100,000.00 $167,000.00 $90,000.00 $132,500.00 $80,000.00 $0.00 $90,000.00 $128,000.00 $100,000.00 $109,000.00 $975,000.00 $999,500.00
+$0.00 $0.00 $0.00 $0.00 $0.00 $0.00 $0.00 $0.00 $0.00 $0.00 $0.00 $0.00 $0.00
+$61,000.00 $100,000.00 $167,000.00 $90,000.00 $132,500.00 $80,000.00 $0.00 $90,000.00 $128,000.00 $100,000.00 $109,000.00 $975,000.00 $999,500.00
+$21,500.00 $20,000.00 $21,500.00 $20,000.00 $21,500.00 $18,000.00 $21,500.00 $18,000.00 $21,500.00 $18,000.00 $21,500.00 $234,000.00 $258,000.00
+$12,240.00 $65,000.00 $12,470.00 $60,000.00 $25,840.00 $65,000.00 $42,730.00 $80,000.00 $78,200.00 $75,000.00 $100,640.00 $715,000.00 $630,392.00
+$33,740.00 $85,000.00 $33,970.00 $80,000.00 $47,340.00 $83,000.00 $64,230.00 $98,000.00 $99,700.00 $93,000.00 $122,140.00 $949,000.00 $888,392.00
+$27,260.00 $15,000.00 $133,030.00 $10,000.00 $85,160.00 -$3,000.00 -$64,230.00 -$8,000.00 $28,300.00 $7,000.00 -$13,140.00
+-$27,012.00 $51,000.00 $106,018.00 $61,000.00 $191,178.00 $58,000.00 $126,948.00 $50,000.00 $155,248.00 $57,000.00 $142,108.00
+Accounts receivable
+Using this sheet
+You only need to use this sheet if you have accounts receivable. Record cash sales directly on the Cash Flow sheet.
+Go to the Dashboard to view key indicators for your accounts receivable cycle.
+Client Job Invoice amount Due date Date paid Amount paid Status
+AV Whittaker 92 Short Street 9/16/2005 12/23/2005 12/23/2005 $137,000 1/23/2006 1/24/2006 $137,000 Paid in full
+112 Rowntree Street 11/16/2005 1/31/2006 1/12/2006 $106,000 2/12/2006 2/12/2006 $106,000 Paid in full
+JL Rowse 2 Ruess Street 1/5/2006 3/22/2006 3/25/2006 $67,000 4/25/2006 5/11/2006 $67,000 Paid in full
+PVB Pty Ltd 112 Commercial Rd 1/9/2006 2/12/2006 2/12/2006 $43,000 3/12/2006 3/11/2006 $43,000 Paid in full
+16 Albermarle Street 2/2/2006 4/23/2006 4/28/2006 $31,000 5/28/2006 5/28/2006 $31,000 Paid in full
+Jeff McCarthy 71 Curtis Rd 3/11/2006 5/19/2006 5/20/2006 $18,000 6/20/2006 6/1/2006 $18,000 Paid in full
+Just Curtains 13a Johnston St 4/19/2006 6/11/2006 6/11/2006 $14,000 6/11/2006 8/9/2006 $14,000 Paid in full
+Best Bikes 56 Westbridge Dr 3/14/2006 6/8/2006 7/5/2006 $38,000 8/5/2006 8/5/2006 $38,000 Paid in full
+CT Patrick 61 Canal Ave 4/19/2006 6/12/2006 6/12/2006 $61,000 7/12/2006 7/14/2006 $61,000 Paid in full
+Hannibal Café 12/1 Fountaingate Close 6/2/2006 7/19/2006 7/19/2006 $115,000 8/19/2006 8/19/2006 $115,000 Paid in full
+Doors Direct 13a Johnston St 6/23/2006 8/4/2006 8/4/2006 $148,000 9/4/2006 9/16/2006 $132,500 Paid in part
+13a Johnston St 9/14/2006 10/30/2006 10/30/2006 $128,000 11/30/2006 11/30/2006 $128,000 Paid in full
+ER Griffiths 100 Haberfield Rd 7/8/2006 8/11/2006 8/11/2006 $13,000 9/11/2006 Overdue
+Hibernian Printing 62 Beresford St 8/6/2006 11/4/2006 11/4/2006 $109,000 11/5/2006 12/2/2006 $109,000 Paid in full
+62 Beresford St 12/15/2006 Not invoiced
+Use this sheet to track work in progress, invoices sent and payments received. The Cash Flow sheet is automatically updated to show 
+your entries.
+Date work 
+started
+Date work 
+finished
+Date invoice 
+issued
+Totals $1,028,000 $999,500
+Outgoings
+Using this sheet
+Record actual expenses paid each month on this sheet.
+The Cash Flow sheet is automatically updated to show your entries.
+Go to the Dashboard to compare forecast and actual outgoings.
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Totals
+Fixed expenses $21,500.00 $21,500.00 $21,500.00 $21,500.00 $21,500.00 $21,500.00 $21,500.00 $21,500.00 $21,500.00 $21,500.00 $21,500.00 $21,500.00 $258,000.00
+Administration $6,000.00 $6,000.00 $6,000.00 $6,000.00 $6,000.00 $6,000.00 $6,000.00 $6,000.00 $6,000.00 $6,000.00 $6,000.00 $6,000.00 $72,000.00
+Marketing $500.00 $500.00 $500.00 $500.00 $500.00 $500.00 $500.00 $500.00 $500.00 $500.00 $500.00 $500.00 $6,000.00
+Operations $15,000.00 $15,000.00 $15,000.00 $15,000.00 $15,000.00 $15,000.00 $15,000.00 $15,000.00 $15,000.00 $15,000.00 $15,000.00 $15,000.00 $180,000.00
+$0.00
+$0.00
+$0.00
+$0.00
+$0.00
+$0.00
+Variable expenses $90,675.00 $92,347.00 $73,960.00 $45,560.00 $29,240.00 $26,490.00 $12,240.00 $12,470.00 $25,840.00 $42,730.00 $78,200.00 $100,640.00 $630,392.00
+Administration $1,500.00 $2,175.00 $1,200.00 $1,250.00 $6,125.00
+Marketing $8,200.00 $5,410.00 $2,950.00 $16,560.00
+Operations $89,175.00 $81,972.00 $72,760.00 $45,560.00 $29,240.00 $21,080.00 $12,240.00 $9,520.00 $25,840.00 $41,480.00 $78,200.00 $100,640.00 $607,707.00
+$0.00
+$0.00
+$0.00
+$0.00
+$0.00
+$0.00
+Totals $112,175.00 $113,847.00 $95,460.00 $67,060.00 $50,740.00 $47,990.00 $33,740.00 $33,970.00 $47,340.00 $64,230.00 $99,700.00 $122,140.00 $888,392.00
+Dashboard
+Incoming cash Outgoing cash
+Cash balance Accounts receivable
+Invoiced $1,028,000.00
+Received $999,500.00
+Difference $28,500.00
+Are your customers paying on time?
+Number Percent Value Percent by value
+Invoices paid on time 7 50% $479,000.00 47%
+Invoiced paid late 6 43% $536,000.00 52%
+Invoices currently overdue 1 7% $13,000.00 1%
+How long does it take?
+From To Average days
+Sending an invoice Being paid 33
+Starting work Sending an invoice 64
+Starting work Being paid 100
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec
+$0
+$20,000
+$40,000
+$60,000
+$80,000
+$100,000
+$120,000
+$140,000
+$160,000
+$180,000
+Forecast Actual
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec
+$0
+$20,000
+$40,000
+$60,000
+$80,000
+$100,000
+$120,000
+$140,000
+Forecast Actual
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec
+-$100,000
+-$50,000
+$0
+$50,000
+$100,000
+$150,000
+$200,000
+$250,000
+Forecast Actual

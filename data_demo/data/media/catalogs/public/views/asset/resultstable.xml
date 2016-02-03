@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<properties usagelabel="Specify columns used on results Table Data view"> 
+  <property id="assettype"/>  
+  <property id="name"/>  
+  <property id="keywords"/>  
+  <property id="libraries"/>  
+  <property id="purpose"/>
+  <property id="assetaddeddate"/> 
+</properties>

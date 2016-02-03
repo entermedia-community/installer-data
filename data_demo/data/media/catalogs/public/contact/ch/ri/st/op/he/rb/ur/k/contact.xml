@@ -1,0 +1,4 @@
+
+<contacts>
+  <contact id="christopherburkey" name="Christopher Burkey" firstname="Christopher" lastname="Burkey" phonenumber="555-555-5551" department="Software Development" companyname="Open Edit" companyaddress="789 Dunham Dr." activeprojects="Client Upgrade, New Feature Creation" jobdescription="Code and Deploy according to contract specifications" jobtitle="CEO"/>
+</contacts>

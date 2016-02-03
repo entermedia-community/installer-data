@@ -1,0 +1,165 @@
+Simplified link budget for GSM system
+Downlink unit
+Transmitter characteristics Transmitter power 20 W
+43.0103 dBm
+TX antenna gain 17.42531 dBi
+TX cable loss -4 dB
+TX Body loss 0 dB
+Combiner loss -4 dB
+Transmitter EIRP 52.43561 dBm
+Receiver characteristics RX antenna gain 0 dBi
+RX sensitivity 102 dBm
+RX Cable loss 0 dB
+RX Body loss -2 dB
+Diversity gain 0 dB
+Total receiver gain 100 dB
+System gain 152.4356 dB
+Margins Coverage probability (cell edge) 0.9
+Shadow fading std deviation 6 dB
+Shadow Fading Margin 7.5 dB
+Indoor penetration loss 0 dB
+Total margin 7.5 dB
+Allowed propagation loss 144.9356 dB
+Shadow Fading Margin (cell edge approach) Given coverage probability on cell edge (P)
+Shadow fading standard deviation
+1-P
+Closest 1-P in table
+Argument (inverse of Q)
+Shadow fading margin
+Antenna Gain Horizontal 3dB beam width
+Horizontal gain
+Number of dipoles
+Vertical gain (dBd)
+Vertical gain (dBi)
+Total antenna gain
+Range (Okumura-Hata path loss model)
+Carrier frequency
+BS antenna height
+MS antenna height
+Parameter A
+Parameter B
+Parameter C
+MS antenna gain function (large city)
+Path loss exponent
+Path loss constant
+Downlink range
+Uplink range
+Cell range
+Uplink unit
+2 W
+33.0103 dBm
+0 dBi Note: Gain computed below
+0 dB
+-2 dB
+0 dB
+31.0103 dBm
+17.42531 dBi
+104 dBm
+-4 dB
+0 dB
+3 dB
+120.4253 dB
+151.4356 dB
+0.9 Note: Usually we use cell coverge probability
+6 dB
+7.5 dB Note: Margin computed below
+0 dB
+7.5 dB
+143.9356 dB
+Given coverage probability on cell edge (P) 0.9 1-P(=Q) Argument
+Shadow fading standard deviation 6 dB 0.5 0
+0.1 0.4 0.25
+0.1 0.3 0.5
+1.25 0.22 0.75
+7.5 dB 0.17 1
+0.1 1.25
+0.07 1.5
+0.04 1.75
+0.023 2
+65 degrees 0.01 2.25
+7.493795 dB
+6
+7.781513 dBd
+9.931513 dBi
+17.42531 dBi
+Unit
+1800 MHz
+25 m
+1.5 m
+0 0.5 1 1.5 2 2.5 3 3.5 4
+10
+­5
+10
+­4
+10
+­3
+10
+­2
+10
+­1
+10
+0
+x
+Q
+(x
+)
+46.3
+33.9
+44.9
+-0.000919
+3.574349
+137.3351 dB
+1.631697 km
+1.529898 km
+1.529898 km
+0 0.5 1 1.5 2 2.5 3 3.5 4
+10
+­5
+10
+­4
+10
+­3
+10
+­2
+10
+­1
+10
+0
+x
+Q
+(x
+)
+0 0.5 1 1.5 2 2.5 3 3.5 4
+10
+­5
+10
+­4
+10
+­3
+10
+­2
+10
+­1
+10
+0
+x
+Q
+(x
+)
+0 0.5 1 1.5 2 2.5 3 3.5 4
+10
+­5
+10
+­4
+10
+­3
+10
+­2
+10
+­1
+10
+0
+x
+Q
+(x
+)

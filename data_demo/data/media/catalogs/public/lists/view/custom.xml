@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root> 
+  <data id="assetsecure" module="asset" systemdefined="false" ordering="1350917789183" recordstatus="deleted">Secure</data>  
+  <data id="contactcontact_information" name="Contact Information" module="contact" systemdefined="false" ordering="1382724459871"/>  
+  <data id="contactcompany_information" name="Company Information" module="contact" systemdefined="false" ordering="1382724466302"/>  
+  <data id="assetcopyright_information" name="Copyright Information" module="asset" systemdefined="false" ordering="1454526323861"/>  
+  <data id="librarycollectionadvancedsearch" module="librarycollection" systemdefined="true" byassettype="false" ordering="0">Advanced Search</data>  
+  <data id="librarycollectionresultstable" module="librarycollection" systemdefined="true" byassettype="false" ordering="1">Results Table</data>  
+  <data id="librarycollectionheaderdetail" module="librarycollection" systemdefined="true" byassettype="false" ordering="2">Edit Header</data> 
+</root>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<publishqueues> 
+  <publishqueue assetid="123" assetsourcepath="By Type/photos/Concert.jpg" publishdestination="0" presetid="largeimage" exportname="ConcertL.jpg" status="complete" date="2016-02-03 12:20:56 -0500" id="108" errordetails=" "><![CDATA[]]></publishqueue> 
+</publishqueues>

@@ -1,0 +1,8 @@
+
+<conversiontasks>
+  <conversiontask id="286" status="complete" assetid="118" presetid="largeimage" ordering="01" submitted="2012-10-23 10:27:18 -0400"></conversiontask>
+  <conversiontask id="287" status="complete" assetid="118" presetid="mediumimage" ordering="02" submitted="2012-10-23 10:27:19 -0400"></conversiontask>
+  <conversiontask id="288" status="complete" assetid="118" presetid="thumbimage" ordering="03" submitted="2012-10-23 10:27:19 -0400"></conversiontask>
+  <conversiontask id="289" status="complete" assetid="118" presetid="imagecrop" ordering="06" submitted="2012-10-23 10:27:19 -0400"></conversiontask>
+  <conversiontask id="290" status="complete" assetid="118" presetid="imagepreviewfpo" ordering="01" submitted="2012-10-23 10:27:20 -0400"></conversiontask>
+</conversiontasks>

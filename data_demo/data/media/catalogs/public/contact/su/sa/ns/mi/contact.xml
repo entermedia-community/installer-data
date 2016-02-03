@@ -1,0 +1,4 @@
+
+<contacts>
+  <contact id="susansmith" name="Susan Smith" firstname="Susan" lastname="Smith" phonenumber="555-555-5556" department="Accounting" companyname="Counting Corp." companyaddress="867 Flamingo Dr. " activeprojects="CPA for Burns Corp." jobdescription="Provides accounting services for business clients" jobtitle="CPA"/>
+</contacts>

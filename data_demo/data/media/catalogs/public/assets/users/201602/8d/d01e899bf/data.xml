@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<asset name="Annual Projected Profit and Loss.xls" id="189">
+  <keyword><![CDATA[Training]]></keyword>
+  <keyword><![CDATA[Documentation]]></keyword>
+  <keyword><![CDATA[Best Practices]]></keyword>
+  <category id="1454525109313"/>
+  <category id="by_type_documents"/>
+  <property name="isfolder">true</property>
+  <property name="primaryfile">Annual Projected Profit and Loss.xls</property>
+  <property name="datatype">original</property>
+  <property name="editstatus">1</property>
+  <property name="fileformat">xls</property>
+  <property name="owner">gatekeeper</property>
+  <property name="assetaddeddate">2016-02-03 14:22:46 -0500</property>
+  <property name="assetviews">0</property>
+  <property name="assettype">document</property>
+  <property name="importstatus">complete</property>
+  <property name="pushstatus">resend</property>
+  <property name="assetmodificationdate">2016-02-03 14:22:46 -0500</property>
+  <property name="filesize">27648</property>
+  <property name="hasfulltext">true</property>
+  <property name="width">792</property>
+  <property name="height">612</property>
+  <property name="pages">4</property>
+  <property name="assetcreationdate">2000-06-09 16:14:06 -0400</property>
+  <property name="libraries">504</property>
+  <property name="project">1454525629233</property>
+  <property name="previewtatus">0</property>
+  <property name="recordmodificationdate">2016-02-03 14:48:59 -0500</property>
+  <property name="previewstatus">2</property>
+  <property name="longcaption">Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, beliefs, and habits. Educational methods include storytelling, discussion, teaching, training, and directed research. Education frequently takes place under the guidance of educators, but learners may also educate themselves.[1] Education can take place in formal or informal settings and any experience that has a formative effect on the way one thinks, feels, or acts may be considered educational. The methodology of teaching is called pedagogy.</property>
+  <property name="purpose">training</property>
+  <property name="rightsusageterms">Information and training materials are intended for the training of Company, Inc. employees only.</property>
+  <property name="copyrightnotice">All rights reserved.</property>
+  <property name="copyrightstatus">True</property>
+  <property name="assetviewsexpires">1454531313969</property>
+  <property name="assetid">189</property>
+  <property name="creator">Accounting Department</property>
+</asset>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root> 
+  <property id="cameramodel"/>  
+  <property id="focallength"/>  
+  <property id="framerate"/>  
+  <property id="aperture"/>  
+  <property id="iso"/>  
+  <property id="length"/>  
+  <property id="width"/>  
+  <property id="height"/>  
+  <property id="assetcreationdate"/>
+</root>

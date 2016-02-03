@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root> 
+  <property id="thumbnail"/>  
+  <property id="name"/>  
+  <property id="project"/>  
+  <property id="folder"/>  
+  <property id="projectstatus"/>  
+  <property id="projecttype"/>  
+  <property id="description"/> 
+</root>

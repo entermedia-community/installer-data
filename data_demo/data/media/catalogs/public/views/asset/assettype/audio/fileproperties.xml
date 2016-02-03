@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root> 
+  <property id="length"/>  
+  <property id="artist"/>  
+  <property id="digitalalbum"/>  
+  <property id="track"/>  
+  <property id="assetcreationdate"/>  
+  <property id="audiocodec"/>
+</root>

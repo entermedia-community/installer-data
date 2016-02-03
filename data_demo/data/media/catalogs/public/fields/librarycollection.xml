@@ -1,0 +1,17 @@
+
+<properties beanname="dataSearcher">
+  <property id="id" index="true" stored="true" editable="true" searchtype="librarycollection" internalfield="true">Id</property>
+  <property id="name" index="true" stored="true" editable="true" sortable="true" searchtype="librarycollection">Name</property>
+  <property id="deliverydate" index="true" stored="true" editable="true" sortable="true" type="date" searchtype="librarycollection" datatype="date">Delivery Date</property>
+  <property id="recorddate" index="true" stored="true" editable="true" sortable="true" type="date" searchtype="librarycollection" datatype="date">Update Date</property>
+  <property id="owner" index="true" stored="true" editable="true" type="list" viewtype="user" searchtype="user" internalfield="false" datatype="list" listid="user" foreignkeyid="user">Owner</property>
+  <property id="creationdate" index="true" stored="true" editable="true" sortable="true" type="date" searchtype="librarycollection" datatype="date">Created Date</property>
+  <property id="sourcepath" searchtype="librarycollection">SourcePath</property>
+  <property id="library" index="true" stored="true" editable="true" sortable="true" type="list" searchtype="librarycollection" listid="library" datatype="list">Library</property>
+  <property id="notes" index="true" stored="true" editable="true" searchtype="librarycollection">Notes</property>
+  <property id="addnotifypolicy" index="true" stored="true" editable="true" type="list" searchtype="librarycollection" listid="librarycollection/addnotifypolicy" datatype="list" note="Who do we notify when assets are added">Send Notifications</property>
+  <property id="assigned" index="true" stored="true" editable="true" type="list" viewtype="list" searchtype="projecttask" internalfield="false" listid="userprofile" datatype="list">Assigned To</property>
+  <property id="taskstatus" index="true" stored="true" editable="true" type="list" viewtype="list" searchtype="projecttask" internalfield="false" datatype="list">Task Status</property>
+  <property id="taskdescription" index="true" stored="true" editable="true" viewtype="html" searchtype="projecttask" internalfield="false">Task Description</property>
+  <property id="asset" index="true" stored="true" editable="true" type="list" viewtype="asset" searchtype="projecttask" internalfield="false" datatype="list">Asset</property>
+</properties>

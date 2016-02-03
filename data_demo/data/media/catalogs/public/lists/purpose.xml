@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<properties> 
+  <purpose id="sales" name="Sales"/>  
+  <purpose id="marketing" name="Marketing"/>  
+  <purpose id="training" name="Training"/>  
+  <purpose id="entertainment" name="Entertainment"/>  
+  <purpose id="publicservice" name="Public Service"/>  
+  <purpose id="recordkeeping" name="Record Keeping"/>  
+  <purpose id="analytics" name="Analytics"/>
+</properties>
