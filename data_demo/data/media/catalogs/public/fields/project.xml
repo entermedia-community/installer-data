@@ -1,0 +1,10 @@
+
+<properties>
+  <property id="id" index="true" stored="true" editable="true" searchtype="project">Id</property>
+  <property id="name" index="true" stored="true" editable="true" searchtype="project">Name</property>
+  <property id="folder" index="true" stored="true" editable="true" searchtype="project" note="Top level folder name ie projects/1234">Folder Name</property>
+  <property id="projectstartdate" index="true" stored="true" editable="true" sortable="true" type="date" viewtype="date" searchtype="project" internalfield="false" datatype="date">Project Start Date</property>
+  <property id="projectenddate" index="true" stored="true" editable="true" sortable="true" type="date" viewtype="date" searchtype="project" internalfield="false" datatype="date">Project End Date</property>
+  <property id="budget" index="true" stored="true" editable="true" searchtype="project">Budget</property>
+  <property id="purpose" index="true" stored="true" editable="true" type="list" searchtype="project" internalfield="false" listid="purpose" datatype="list" foreignkeyid="purpose">Purpose</property>
+</properties>

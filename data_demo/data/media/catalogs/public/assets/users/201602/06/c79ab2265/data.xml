@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<asset name="NeoMobile logo.png" id="206">
+  <category id="users_201602_06_c79ab2265"/>
+  <property name="isfolder">true</property>
+  <property name="primaryfile">NeoMobile logo.png</property>
+  <property name="datatype">original</property>
+  <property name="editstatus">1</property>
+  <property name="fileformat">png</property>
+  <property name="owner">admin</property>
+  <property name="assetaddeddate">2016-02-04 15:03:58 -0500</property>
+  <property name="assetviews">2</property>
+  <property name="assettype">photo</property>
+  <property name="importstatus">complete</property>
+  <property name="pushstatus">resend</property>
+  <property name="assetmodificationdate">2016-02-04 15:03:58 -0500</property>
+  <property name="filesize">5955</property>
+  <property name="compression">0</property>
+  <property name="width">242</property>
+  <property name="height">85</property>
+  <property name="recordmodificationdate">2016-02-04 15:11:15 -0500</property>
+  <property name="previewstatus">2</property>
+  <property name="assetviewsexpires">1454620241495</property>
+  <property name="assetid">206</property>
+  <property name="purpose">sales</property>
+  <property name="longcaption">NeoMobile is a company based out of Milan, Italy.</property>
+  <property name="libraries">502</property>
+  <property name="language">2 | 5</property>
+</asset>

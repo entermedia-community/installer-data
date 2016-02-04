@@ -1,0 +1,6 @@
+
+<properties>
+  <property id="id" index="true" stored="true" editable="true" searchtype="state" internalfield="true">Id</property>
+  <property id="name" index="true" stored="true" editable="true" searchtype="state">Name</property>
+  <property id="country" index="true" stored="true" editable="true" searchtype="state" internalfield="false" listid="country" foreignkeyid="country">Country</property>
+</properties>

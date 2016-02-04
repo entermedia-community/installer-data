@@ -4,5 +4,7 @@
   <property id="copyrightnotice"/>  
   <property id="copyrightstatus"/>  
   <property id="rightsusageterms"/>  
-  <property id="editstatus"/>
+  <property id="editstatus"/>  
+  <property id="country"/>  
+  <property id="state"/>
 </root>

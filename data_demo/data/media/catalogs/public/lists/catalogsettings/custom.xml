@@ -1,5 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
 
-<root>
-  <property id="push_masterswitch" value="false">Push Enabled</property>
-  <data id="push_asset_prefix"/>
+<root> 
+  <property id="push_masterswitch" value="false">Push Enabled</property>  
+  <data id="push_asset_prefix"/>  
+  <data id="catalogassetviewispublic" value="false" name="Default Assets To Public (true/false)"/>
 </root>

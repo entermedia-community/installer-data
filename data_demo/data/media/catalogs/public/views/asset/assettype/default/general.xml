@@ -5,5 +5,6 @@
   <property id="assettype"/>  
   <property id="purpose"/>  
   <property id="longcaption"/>  
-  <property id="libraries"/> 
+  <property id="libraries"/>  
+  <property id="language"/>
 </properties>

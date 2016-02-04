@@ -2,16 +2,17 @@
 
 <user enabled="true">
   <user-name><![CDATA[tgardener]]></user-name>
-  <password><![CDATA[DES:F7GS3T20DfygccD04ob+Lw==]]></password>
+  <password><![CDATA[DES:F7GS3T20Dfw47RMMVoR5Tg==]]></password>
   <creation-date>1454527989605</creation-date>
-  <lastLogined-Time>2016-02-03 14:33:09 -0500</lastLogined-Time>
+  <lastLogined-Time>2016-02-04 14:07:25 -0500</lastLogined-Time>
   <properties>
-    <property name="enabled" value="true"/>
     <property name="lastName" value="Gardener"/>
+    <property name="enabled" value="true"/>
     <property name="email" value="tgardener@dpci.com"/>
     <property name="userName" value="tgardener"/>
-    <property name="notes" value=""/>
     <property name="firstName" value="Tracy"/>
+    <property name="notes" value=""/>
+    <property name="catalogid" value="system"/>
   </properties>
   <group id="$content.mastergroup"/>
 </user>
