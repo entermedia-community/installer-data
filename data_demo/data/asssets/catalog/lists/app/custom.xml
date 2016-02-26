@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<apps> 
+  <app deploypath="/assets/emshare" module="asset" name="EM Share" id="1456508182804"/>  
+  <app deploypath="/assets/mediadb" module="asset" name="MediaDB" id="1456508187028"/>
+</apps>
+
