@@ -1,4 +1,6 @@
 
 <root>
+
+  <data id="media/catalogs/public" name="Demo Site" rootpath="/"/>
   <data id="assets/catalog" name="Asset Archive" rootpath="/assets"/>
 </root>
