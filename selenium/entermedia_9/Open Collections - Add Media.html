@@ -13,7 +13,7 @@
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>/openinstitute/emshare/index.html</td>
+	<td>${currentServer}/${currentApplication}/index.html</td>
 	<td></td>
 </tr>
 <tr>
@@ -59,7 +59,7 @@
 <tr>
 	<td>type</td>
 	<td>id=upload_field</td>
-	<td>C:\Users\Casey\Documents\Media\Multiple\image\Image_JPEG_2.jpg</td>
+	<td>${uploadDirectory}/Image_JPEG_2.jpg</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -67,11 +67,15 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
-	<td>id=viewassets</td>
+	<td>pause</td>
+	<td>3000</td>
 	<td></td>
 </tr>
-
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.ui-widget-content &gt; #viewassets</td>
+	<td></td>
+</tr>
 </tbody></table>
 </body>
 </html>

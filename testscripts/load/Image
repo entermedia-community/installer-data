@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://demo.entermediasoftware.com/" />
+<link rel="selenium.base" href="http://localhost:8080" />
 <title>New Test</title>
 </head>
 <body>
@@ -12,38 +12,43 @@
 <tr><td rowspan="1" colspan="3">New Test</td></tr>
 </thead><tbody>
 <tr>
-	<td>pause</td>
-	<td>1000</td>
+	<td>getEval</td>
+	<td>index = 0;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>index &lt; 100;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>index</td>
+	<td>value</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${value}</td>
 	<td></td>
 </tr>
 <tr>
 	<td>open</td>
-	<td>${currentServer}/${currentApplication}/views/modules/asset/index.html</td>
+	<td>http://localhost:8080/media/catalogs/public/downloads/preview/crop/HotFolder/originals/originals/photos/Bird.jpg/thumb.jpg</td>
 	<td></td>
 </tr>
 <tr>
-	<td>type</td>
-	<td>css=input.select2-search__field</td>
-	<td>${keywordtag}</td>
+	<td>open</td>
+	<td>http://localhost:8080/media/catalogs/public/downloads/preview/crop/HotFolder/originals/originals/photos/BirdnFish.jpg/thumb.jpg</td>
+	<td></td>
 </tr>
 <tr>
-	<td>sendKeys</td>
-	<td>css=input.select2-search__field</td>
-	<td> ${KEY_ENTER}</td>
+	<td>getEval</td>
+	<td>index++;</td>
+	<td></td>
 </tr>
 <tr>
-	<td>sendKeys</td>
-	<td>css=input.select2-search__field</td>
-	<td> ${KEY_ENTER}</td>
-</tr>
-<tr>
-	<td>sendKeys</td>
-	<td>css=input.select2-search__field</td>
-	<td> ${KEY_ENTER}</td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>css=input.btn.small</td>
+	<td>endWhile</td>
+	<td></td>
 	<td></td>
 </tr>
 </tbody></table>

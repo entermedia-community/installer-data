@@ -33,112 +33,12 @@
 </tr>
 <tr>
 	<td>echo</td>
-	<td>#Check to make sure Tags field is available on Upload Page</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>storeElementPresent</td>
-	<td>id=detail_keywords</td>
-	<td>isTagsVisible</td>
-</tr>
-<tr>
-	<td>echo</td>
-	<td>${isTagsVisible}</td>
-	<td></td>
-</tr>
-<tr>
-	<td>gotoIf</td>
-	<td>storedVars['isTagsVisible']==true</td>
-	<td>TAGS_VISIBLE</td>
-</tr>
-<tr>
-	<td>echo</td>
-	<td>#Tags not visible. Enable it in view</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>link=Home</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=#module-dropdown &gt; span</td>
-	<td></td>
-</tr>
-<tr>
-	<td>storeElementPresent</td>
-	<td>isTextPresent('Assets Settings Area')</td>
-	<td>isAssetsSettings</td>
-</tr>
-<tr>
-	<td>gotoIf</td>
-	<td>storedVars['isAssetsSettings'] == true</td>
-	<td>ASSETS_SETTINGS</td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>link=Settings</td>
-	<td></td>
-</tr>
-<tr>
-	<td>label</td>
-	<td>ASSETS_SETTINGS</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>link=Views</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>link=System</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>link=Multiple Upload</td>
-	<td></td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>name=newone</td>
-	<td>label=Keywords</td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>link=Upload Media</td>
-	<td></td>
-</tr>
-<tr>
-	<td>label</td>
-	<td>TAGS_VISIBLE</td>
-	<td></td>
-</tr>
-<tr>
-	<td>echo</td>
 	<td>----------------------------------------------------------------------------------------------------- Upload JPG</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
-	<td>css=span.select2-selection__arrow</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAt</td>
-	<td>css=.select2-results__option:contains('Test_Library')</td>
+	<td>echo</td>
+	<td>${uploadDirectory}\Image_EPS.eps</td>
 	<td></td>
 </tr>
 <tr>
@@ -152,9 +52,29 @@
 	<td>${keywordtag}</td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>sendKeys</td>
 	<td>css=input.select2-search__field</td>
-	<td>${KEY_TAB}</td>
+	<td> ${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=input.select2-search__field</td>
+	<td> ${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=input.select2-search__field</td>
+	<td> ${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=list-copyrightstatus</td>
+	<td>label=Public Domain</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -164,7 +84,7 @@
 <tr>
 	<td>type</td>
 	<td>id=upload_field</td>
-	<td>${uploadDirectory}\Multiple\image\Image_JPEG.jpg</td>
+	<td>${uploadDirectory}Image_JPEG.jpg</td>
 </tr>
 <tr>
 	<td>pause</td>
@@ -194,7 +114,7 @@
 <tr>
 	<td>type</td>
 	<td>id=upload_field</td>
-	<td>${uploadDirectory}\Multiple\doc\2Page_PDF.pdf</td>
+	<td>${uploadDirectory}2Page_PDF.pdf</td>
 </tr>
 <tr>
 	<td>echo</td>
@@ -214,7 +134,7 @@
 <tr>
 	<td>type</td>
 	<td>id=upload_field</td>
-	<td>${uploadDirectory}\Multiple\doc\3Page_DOC.docx</td>
+	<td>${uploadDirectory}3Page_DOC.docx</td>
 </tr>
 <tr>
 	<td>echo</td>
@@ -234,7 +154,7 @@
 <tr>
 	<td>type</td>
 	<td>id=upload_field</td>
-	<td>${uploadDirectory}\Multiple\video\Video_MP4.mp4</td>
+	<td>${uploadDirectory}Video_MP4.mp4</td>
 </tr>
 <tr>
 	<td>echo</td>
@@ -254,7 +174,7 @@
 <tr>
 	<td>type</td>
 	<td>id=upload_field</td>
-	<td>${uploadDirectory}\Multiple\image\Image_WEBP.webp</td>
+	<td>${uploadDirectory}Image_WEBP.webp</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -284,7 +204,7 @@
 <tr>
 	<td>type</td>
 	<td>id=upload_field</td>
-	<td>${uploadDirectory}\Multiple\image\Image_EPS.eps</td>
+	<td>${uploadDirectory}Image_EPS.eps</td>
 </tr>
 <tr>
 	<td>click</td>

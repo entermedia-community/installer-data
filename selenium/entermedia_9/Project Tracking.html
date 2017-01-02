@@ -13,17 +13,22 @@
 </thead><tbody>
 <tr>
 	<td>open</td>
+	<td>${currentServer}/${currentApplication}/components/libraries/addassettocollection.html?collectionid=105&amp;assetid=AVVKhPk9X6umoHWGYgtE</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
 	<td>${currentServer}/${currentApplication}/views/modules/asset/index.html</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAt</td>
-	<td>//form[@id='librarychange']/div/span/span/span/span[2]</td>
+	<td>click</td>
+	<td>css=i.glyphicon.glyphicon-search</td>
 	<td></td>
 </tr>
 <tr>
@@ -32,8 +37,18 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAt</td>
-	<td>css=.select2-results__option:contains('Test_Library')</td>
+	<td>type</td>
+	<td>id=name.value</td>
+	<td>Human</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//table[@id='main-results-table']/tbody[2]/tr/td</td>
 	<td></td>
 </tr>
 <tr>
@@ -58,7 +73,7 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=form[name=&quot;adder&quot;] &gt; input.btn.small</td>
+	<td>css=input.btn.btn-sm</td>
 	<td></td>
 </tr>
 <tr>
@@ -68,7 +83,7 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>//div[@id='projectscontent']/div[2]/ul/li/a/span</td>
+	<td>xpath=(//span[@text='${possibleCollection}'])</td>
 	<td></td>
 </tr>
 <tr>
@@ -99,7 +114,7 @@
 <tr>
 	<td>type</td>
 	<td>id=upload_field</td>
-	<td>${uploadDirectory}\Multiple\image\Image_PNG.png</td>
+	<td>/home/shanti/Pictures/Hilborn.jpg</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -149,6 +164,26 @@
 <tr>
 	<td>click</td>
 	<td>id=viewassets</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>name=uploader1475523656651</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=count</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Remove from Collection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Remove from collection?</td>
 	<td></td>
 </tr>
 </tbody></table>
