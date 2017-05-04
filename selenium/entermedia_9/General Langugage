@@ -27,17 +27,62 @@
 	<td></td>
 </tr>
 <tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>clickAndWait</td>
 	<td>link=Español</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
-	<td>link=Agregar medios</td>
+	<td>pause</td>
+	<td>3000</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
+	<td>clickAt</td>
+	<td>css=#left-col-opencollections &gt; div.ui-widget-header.sidetoggle &gt; span.widget-header-right &gt; a.emdialog.sidebarsubmenu &gt; i.glyphicon.glyphicon-search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name.value</td>
+	<td>${possibleCollection}</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=name.value</td>
+	<td> ${KEY_TAB}</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//table[@id='main-results-table']/tbody[2]/tr</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=addmediatab</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
 	<td>css=a.ajax.btnthumbnail &gt; img</td>
 	<td></td>
 </tr>
@@ -54,12 +99,12 @@
 <tr>
 	<td>type</td>
 	<td>id=upload_field</td>
-	<td>${uploadDirectory}/Image_JPEG_2.jpg</td>
+	<td>${uploadDirectory}Image_JPEG_7.jpg</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=languages_headline_1_value</td>
-	<td>Flor Roja</td>
+	<td>Castillo</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -74,12 +119,12 @@
 <tr>
 	<td>type</td>
 	<td>id=languages_headline_2_value</td>
-	<td>Red Flower</td>
+	<td>Castle</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=longcaption.value</td>
-	<td>Rosa</td>
+	<td>Building</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -87,13 +132,53 @@
 	<td></td>
 </tr>
 <tr>
+	<td>type</td>
+	<td>//div[@id='detail_keywords']/div/span/span/span/ul/li/input</td>
+	<td>${keywordtag}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>//div[@id='detail_keywords']/div/span/span/span/ul/li/input</td>
+	<td> ${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>//div[@id='detail_keywords']/div/span/span/span/ul/li/input</td>
+	<td> ${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>//div[@id='detail_keywords']/div/span/span/span/ul/li/input</td>
+	<td> ${KEY_TAB}</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>//div[@id='detail_keywords']/div/span/span/span/ul/li/input</td>
+	<td> ${KEY_ENTER}</td>
+</tr>
+<tr>
 	<td>click</td>
 	<td>id=startbutton</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
-	<td>id=viewassets</td>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='header']/span/ul/li[3]/a/span</td>
 	<td></td>
 </tr>
 <tr>
@@ -103,30 +188,9 @@
 </tr>
 <tr>
 	<td>click</td>
-	<td>css=img[title=&quot;Editar columnas&quot;]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>3000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>name=addcolumn</td>
-	<td>label=Titular</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=Español</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
 	<td>link=English</td>
 	<td></td>
 </tr>
-
 </tbody></table>
 </body>
 </html>

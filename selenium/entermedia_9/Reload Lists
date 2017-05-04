@@ -13,17 +13,7 @@
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>/openinstitute/emshare/index.html</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>link=Settings</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>link=Server</td>
+	<td>${currentServer}/${currentApplication}/views/settings/status/tools/index.html</td>
 	<td></td>
 </tr>
 <tr>
