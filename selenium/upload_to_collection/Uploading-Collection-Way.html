@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://demo.entermediasoftware.com/" />
+<title>New Test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">New Test</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/index.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=select2-collectionid-container</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=span.select2-search input.select2-search__field</td>
+	<td>${possibleCollection}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//ul[@id='select2-collectionid-results']/li[contains(text(),'${possibleCollection}')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=addmediatab</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.ajax.btnthumbnail &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div[@id='detail_keywords']/div/span/span/span/ul/li/input</td>
+	<td>${keywordtag}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>//div[@id='detail_keywords']/div/span/span/span/ul/li/input</td>
+	<td> ${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>//div[@id='detail_keywords']/div/span/span/span/ul/li/input</td>
+	<td> ${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>//div[@id='detail_keywords']/div/span/span/span/ul/li/input</td>
+	<td> ${KEY_TAB}</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>//div[@id='detail_keywords']/div/span/span/span/ul/li/input</td>
+	<td> ${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=filePicker</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>Preferences.getString(TestSuite.TEST_SUITE_DIRECTORY_PREF);</td>
+	<td>runningPath</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${runningPath}${uploadDirectory}olv-sydney.jpg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=upload_field</td>
+	<td>${runningPath}${uploadDirectory}olv-sydney.jpg</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>id=nav</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>----------------------------------------------------------------------------------------------------- Upload PDF</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=filePicker</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=upload_field</td>
+	<td>${runningPath}${uploadDirectory}olv-butterfly.jpg</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>----------------------------------------------------------------------------------------------------- Upload DOC</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=filePicker</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=upload_field</td>
+	<td>${runningPath}${uploadDirectory}3Page_DOC.docx</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>----------------------------------------------------------------------------------------------------- Upload MP4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=filePicker</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=upload_field</td>
+	<td>${runningPath}${uploadDirectory}Video_MP4.mp4</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>----------------------------------------------------------------------------------------------------- Upload WEBP</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=filePicker</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=upload_field</td>
+	<td>${runningPath}${uploadDirectory}Image_WEBP.webp</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=startbutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>----------------------------------------------------------------------------------------------------- Upload EPS</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=filePicker</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=upload_field</td>
+	<td>${runningPath}${uploadDirectory}Image_EPS.eps</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=startbutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Uploading</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=viewassetsbtn</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
