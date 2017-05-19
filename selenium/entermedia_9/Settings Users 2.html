@@ -4,12 +4,12 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://demo.entermediasoftware.com/" />
-<title>Settings Users</title>
+<title>Settings Users 2</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">Settings Users</td></tr>
+<tr><td rowspan="1" colspan="3">Settings Users 2</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
@@ -34,17 +34,17 @@
 <tr>
 	<td>type</td>
 	<td>id=firstName.value</td>
-	<td>${testUser1Name}</td>
+	<td>${testUser2Name}</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=lastName.value</td>
-	<td>${testUser1LastName}</td>
+	<td>${testUser2LastName}</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=email.value</td>
-	<td>${testUser1Email}</td>
+	<td>${testUser2Email}</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -59,7 +59,7 @@
 <tr>
 	<td>type</td>
 	<td>id=id.value</td>
-	<td>${testUser}</td>
+	<td>${testUser2}</td>
 </tr>
 <tr>
 	<td>select</td>
@@ -129,61 +129,6 @@
 <tr>
 	<td>click</td>
 	<td>link=Save Changes</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>link=Logout</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>id=accountname</td>
-	<td>${testUser}</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>name=password</td>
-	<td>${testUserPassword}</td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>id=login-submit</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>//a[contains(@href, 'logout.html')]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>name=accountname</td>
-	<td>${currentUser}</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>name=password</td>
-	<td>${currentPassword}</td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>id=login-submit</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=English</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2000</td>
 	<td></td>
 </tr>
 </tbody></table>

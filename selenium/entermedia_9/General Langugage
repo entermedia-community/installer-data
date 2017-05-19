@@ -103,7 +103,7 @@
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=languages_headline_1_value</td>
+	<td>name=headline.es.value</td>
 	<td>Castillo</td>
 </tr>
 <tr>
@@ -118,7 +118,7 @@
 </tr>
 <tr>
 	<td>type</td>
-	<td>id=languages_headline_2_value</td>
+	<td>name=headline.de.value</td>
 	<td>Castle</td>
 </tr>
 <tr>
