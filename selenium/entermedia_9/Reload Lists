@@ -21,6 +21,11 @@
 	<td>link=Reindex</td>
 	<td></td>
 </tr>
+<tr>
+	<td>verifyNotText</td>
+	<td>id=eml-tab-green-container</td>
+	<td>*Exception*</td>
+</tr>
 </tbody></table>
 </body>
 </html>

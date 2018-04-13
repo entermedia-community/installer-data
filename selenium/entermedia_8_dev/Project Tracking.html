@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://demo.entermediasoftware.com/" />
+<title>Project Tracking</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Project Tracking</td></tr>
+</thead><tbody>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/modules/asset/index.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div[@id='s2id_sidebarlibraryvalue']/a/div/b</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>css=.select2-result-label:contains('${possibleLibrary}')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='createnewarea']/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=name.value</td>
+	<td>${possibleCollection}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=form[name=&quot;adder&quot;] &gt; input.btn.small</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='projectscontent']/div[2]/ul/li/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>//***** Upload Assets to Collection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=addmediatab</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.ajax.btnthumbnail &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=filePicker</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=upload_field</td>
+	<td>${uploadDirectory}\Multiple\image\Image_PNG.png</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=filePicker</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=upload_field</td>
+	<td>${uploadDirectory}\Multiple\image\Image_JPEG_3.jpg</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=list-project</td>
+	<td>label=${possibleDivision}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>css=#s2id_librariesvalue &gt; a.select2-choice &gt; div &gt; b</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>css=.select2-result-label:contains('${possibleLibrary}')</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=form[id='uploaddata'] input[name='keywords.value']</td>
+	<td>${keywordtag}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=startbutton</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://demo.entermediasoftware.com/" />
+<title>Cleanup</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Cleanup</td></tr>
+</thead><tbody>
+<tr>
+	<td>echo</td>
+	<td>======== // CLEAN UP // ========</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>======== // Delete Test Assets // ========</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/modules/asset/index.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input.select2-search__field</td>
+	<td>${keywordtag}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=input.select2-search__field</td>
+	<td> ${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=input.select2-search__field</td>
+	<td> ${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=input.select2-search__field</td>
+	<td> ${KEY_TAB}</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=input.select2-search__field</td>
+	<td> ${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.small</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.anchor &gt; div.select-dropdown-open</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Deselect All</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.anchor &gt; div.select-dropdown-open</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Select All Results')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Multi Edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Delete Assets</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=deleteoriginal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submitbutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/modules/asset/index.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>======== // Remove Tags and Author from Search Box // ========</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.glyphicon.glyphicon-edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#detail_keywords &gt; div.emsearchfield &gt; a &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#detail_instructions &gt; div.emsearchfield &gt; a &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Done</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>======== // Delete Hot Folder 1 // ========</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.alias</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/settings/modules/asset/hotfolders/index.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>======== // Delete Test Library // ========</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/modules/library/index.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name.value</td>
+	<td>${possibleLibrary}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.small</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//table[@id='main-results-table']/tbody/tr/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>======== // Delete Test Division // ========</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/modules/project/index.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name.value</td>
+	<td>${possibleDivision}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.small</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//table[@id='main-results-table']/tbody/tr/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//ul[@id='assetmenu']/li/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>======== // Delete Test Group // ========</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/settings/users/usermanager/groups/index.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=groupselect</td>
+	<td>label=${testGroup}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Delete Group</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=a.oestandard-button &gt; input[type=&quot;button&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>======== // Delete &quot;Vendors&quot; Role // ========</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/settings/users/permissions/index.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=roles</td>
+	<td>label=Vendors</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>======== // Delete XXX Catalog // ========</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/manager/views/catalogs/edit.html?appcatalogid=${possibleApp}/catalog</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Delete Catalog</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>======== // Delete Test User // ========</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/modules/asset/index.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Settings</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Users</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=description.value</td>
+	<td>${testUser}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div[@id='emselectable']/table/tbody/tr/td[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Delete User</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/modules/asset/index.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=AVmOUIK2jQddBKctkIcB_display</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=AVmOUIK2jQddBKctkIcB_display</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[@id='AVmOUIK2jQddBKctkIcB_row']/div/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=AVmOUIK2jQddBKctkIcB_display</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=right-col</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=AVmOU7JMjQddBKctkIcF_display</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=right-col</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[@id='AVmOU7JMjQddBKctkIcF_row']/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=module</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='header']/span/ul/li[6]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Collections</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=count</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//table[@id='main-results-table']/tbody/tr/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=mediatab</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=settingstab</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

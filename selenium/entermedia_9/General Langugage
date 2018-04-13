@@ -159,11 +159,6 @@
 <tr>
 	<td>sendKeys</td>
 	<td>//div[@id='detail_keywords']/div/span/span/span/ul/li/input</td>
-	<td> ${KEY_TAB}</td>
-</tr>
-<tr>
-	<td>sendKeys</td>
-	<td>//div[@id='detail_keywords']/div/span/span/span/ul/li/input</td>
 	<td> ${KEY_ENTER}</td>
 </tr>
 <tr>
