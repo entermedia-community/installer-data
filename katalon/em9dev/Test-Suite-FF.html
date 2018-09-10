@@ -1,0 +1,4112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>Test-Suite</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Authentication</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/authentication/login.html<datalist><option>${currentServer}/${currentApplication}/authentication/login.html</option><option>${currentServer}/${currentApplication}/authentication/login.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=accountname<datalist><option>name=accountname</option></datalist></td>
+	<td>${currentUser}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=password<datalist><option>name=password</option></datalist></td>
+	<td>${currentPassword}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=login-submit<datalist><option>id=login-submit</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Add Library</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/modules/library/index.html?field=last_selected_module&amp;last_selected_module.value=library<datalist><option>${currentServer}/${currentApplication}/views/modules/library/index.html?field=last_selected_module&amp;last_selected_module.value=library</option><option>${currentServer}/${currentApplication}/views/modules/library/index.html?field=last_selected_module&amp;last_selected_module.value=library</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Add New<datalist><option>link=Add New</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name.value<datalist><option>id=name.value</option><option>name=name.value</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Library Name'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Edit'])[1]/following::input[12]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Delete'])[2]/preceding::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='EnterMediadb.org'])[1]/preceding::input[2]</option><option>//input[@id='name.value']</option><option>//td[@id='detail_name']/input[2]</option><option>//td[2]/input[2]</option></datalist></td>
+	<td>${possibleLibrary}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=dataeditor<datalist><option>name=dataeditor</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#dataeditor &gt; input.btn<datalist><option>css=#dataeditor &gt; input.btn</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Add Collection</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/index.html<datalist><option>${currentServer}/${currentApplication}/index.html</option><option>${currentServer}/${currentApplication}/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=select2-collectionid-container<datalist><option>id=select2-collectionid-container</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=span.select2-search input.select2-search__field<datalist><option>css=span.select2-search input.select2-search__field</option></datalist></td>
+	<td>New</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=span.select2-search.select2-search--dropdown &gt; input.select2-search__field<datalist><option>css=span.select2-search.select2-search--dropdown &gt; input.select2-search__field</option></datalist></td>
+	<td>Add</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//li[contains(text(),'Add New')]<datalist><option>//li[contains(text(),'Add New')]</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>id=select2-list-libraryvalue-container<datalist><option>id=select2-list-libraryvalue-container</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=select2-list-libraryvalue-container<datalist><option>id=select2-list-libraryvalue-container</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//li[contains(text(),'${possibleLibrary}')]<datalist><option>//li[contains(text(),'${possibleLibrary}')]</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name.value<datalist><option>id=name.value</option></datalist></td>
+	<td>${possibleCollection}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submitbutton<datalist><option>id=submitbutton</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Collections<datalist><option>link=Collections</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Set Environment</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>store</td>
+	<td>http://em9dev.entermediadb.org<datalist><option>http://em9dev.entermediadb.org</option></datalist></td>
+	<td>currentServer</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>openinstitute/emshare<datalist><option>openinstitute/emshare</option></datalist></td>
+	<td>currentApplication</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>admin<datalist><option>admin</option></datalist></td>
+	<td>currentUser</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>admin<datalist><option>admin</option></datalist></td>
+	<td>currentPassword</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Test Library<datalist><option>Test Library</option></datalist></td>
+	<td>possibleLibrary</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Collection Aug 2018<datalist><option>Collection May 2017</option><option>Collection Aug 2018</option></datalist></td>
+	<td>possibleCollection</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Nueva Categoria<datalist><option>Nueva Categoria</option></datalist></td>
+	<td>possibleCategory</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Users<datalist><option>Users</option></datalist></td>
+	<td>possibleRole</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Users<datalist><option>Users</option></datalist></td>
+	<td>possibleGroup</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>/home/cristobal/git/installer-data/selenium/downloads/<datalist><option>/home/cristobal/git/installer-data/selenium/downloads</option><option>/home/cristobal/git/installer-data/selenium/downloads/</option></datalist></td>
+	<td>uploadDirectory</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>cristobal@openedit.org<datalist><option>cristobal@openedit.org</option></datalist></td>
+	<td>emailRecipient</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Test Library<datalist><option>Test Library</option></datalist></td>
+	<td>Historical</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>15<datalist><option>15</option></datalist></td>
+	<td>numResultsPerPage</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>id=instructions.value<datalist><option>id=instructions.value</option></datalist></td>
+	<td>metadata_id1</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>id=copyrightnotice.value<datalist><option>id=copyrightnotice.value</option></datalist></td>
+	<td>metadata_id2</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>id=assettitle.value<datalist><option>id=assettitle.value</option></datalist></td>
+	<td>metadata_id3</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>3<datalist><option>3</option></datalist></td>
+	<td>appLearnMoreIndex</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>None.presetid.value<datalist><option>None.presetid.value</option></datalist></td>
+	<td>videoDownloadName</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Test_Group_577215<datalist><option>Test_Group_577215</option></datalist></td>
+	<td>testGroup</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>8080<datalist><option>8080</option></datalist></td>
+	<td>port</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>seleniumapp<datalist><option>seleniumapp</option></datalist></td>
+	<td>possibleApp</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>TestKw5566<datalist><option>TestKw5566</option></datalist></td>
+	<td>keywordtag</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Test_User_5566<datalist><option>Test_User_5566</option></datalist></td>
+	<td>testUser</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Test123!<datalist><option>Test123!</option></datalist></td>
+	<td>testUserPassword</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>/media/services/hotfolder_1<datalist><option>/media/services/hotfolder_1</option></datalist></td>
+	<td>hotFolderPath</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Test_Hotfolder_3388<datalist><option>Test_Hotfolder_3388</option></datalist></td>
+	<td>hotFolderName</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Collection 2<datalist><option>Collection 2</option></datalist></td>
+	<td>possibleCollection2</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Global Film Festival<datalist><option>Global Film Festival</option></datalist></td>
+	<td>SearchableCategory</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1 Test Category 34<datalist><option>1 Test Category 34</option></datalist></td>
+	<td>NewCategory</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Test_User_1234<datalist><option>Test_User_1234</option></datalist></td>
+	<td>testUser2</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>thomas@entermediadb.org<datalist><option>thomas@entermediadb.org</option></datalist></td>
+	<td>testUser1Email</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>cristobal@entermediadb.org<datalist><option>cristobal@entermediadb.org</option></datalist></td>
+	<td>testUser2Email</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Jhon 2<datalist><option>Jhon</option><option>Jhon 2</option></datalist></td>
+	<td>testUser1Name</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Smith 2<datalist><option>Smith</option><option>Smith 2</option></datalist></td>
+	<td>testUser1LastName</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Juan<datalist><option>Juan</option></datalist></td>
+	<td>testUser2Name</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Perez<datalist><option>Perez</option></datalist></td>
+	<td>testUser2LastName</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>/media/services/publishing<datalist><option>/media/services/publishing</option></datalist></td>
+	<td>PublishingPath</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Add Assets to Collection</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/index.html<datalist><option>${currentServer}/${currentApplication}/index.html</option><option>${currentServer}/${currentApplication}/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=select2-collectionid-container<datalist><option>id=select2-collectionid-container</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=span.select2-search input.select2-search__field<datalist><option>css=span.select2-search input.select2-search__field</option></datalist></td>
+	<td>${possibleCollection}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//ul[@id='select2-collectionid-results']/li[contains(text(),'${possibleCollection}')]<datalist><option>//ul[@id='select2-collectionid-results']/li[contains(text(),'${possibleCollection}')]</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000<datalist><option>3000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=addmediatab<datalist><option>id=addmediatab</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.ajax.btnthumbnail &gt; img<datalist><option>css=a.ajax.btnthumbnail &gt; img</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div[@id='detail_keywords']/div/span/span/span/ul/li/input<datalist><option>//div[@id='detail_keywords']/div/span/span/span/ul/li/input</option></datalist></td>
+	<td>${keywordtag}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>2000</option><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>//div[@id='detail_keywords']/div/span/span/span/ul/li/input<datalist><option>//div[@id='detail_keywords']/div/span/span/span/ul/li/input</option></datalist></td>
+	<td> ${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=list-copyrightstatus<datalist><option>id=list-copyrightstatus</option></datalist></td>
+	<td>label=Public Domain</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=filePicker<datalist><option>id=filePicker</option></datalist></td>
+	<td></td>
+</tr>
+<tr><td>pause</td><td>500<datalist><option>1000</option><option>500</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=filePicker<datalist><option>id=filePicker</option><option>link=Pick Files...</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Upload Media'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Show Only Selections'])[1]/following::a[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Shift'])[1]/preceding::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Drop files here!'])[1]/preceding::a[1]</option><option>//a[contains(text(),'Pick Files...')]</option><option>//a[@id='filePicker']</option><option>//div[@id='right-sidebar']/div/a</option><option>xpath=(//a[contains(@href, '#')])[8]</option><option>//div[2]/div/div/div/div/div/a</option><option>css=#filePicker</option></datalist></td><td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=upload_field<datalist><option>id=upload_field</option></datalist></td>
+	<td>${uploadDirectory}Image_JPEG.jpg</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>----------------------------------------------------------------------------------------------------- Upload PDF<datalist><option>----------------------------------------------------------------------------------------------------- Upload PDF</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500<datalist><option>1000</option><option>500</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=filePicker<datalist><option>id=filePicker</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=upload_field<datalist><option>id=upload_field</option></datalist></td>
+	<td>${uploadDirectory}2Page_PDF.pdf</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>----------------------------------------------------------------------------------------------------- Upload DOC<datalist><option>----------------------------------------------------------------------------------------------------- Upload DOC</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500<datalist><option>1000</option><option>500</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=filePicker<datalist><option>id=filePicker</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=upload_field<datalist><option>id=upload_field</option></datalist></td>
+	<td>${uploadDirectory}3Page_DOC.docx</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>----------------------------------------------------------------------------------------------------- Upload MP4<datalist><option>----------------------------------------------------------------------------------------------------- Upload MP4</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500<datalist><option>1000</option><option>500</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=filePicker<datalist><option>id=filePicker</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=upload_field<datalist><option>id=upload_field</option></datalist></td>
+	<td>${uploadDirectory}Video_MP4.mp4</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>----------------------------------------------------------------------------------------------------- Upload WEBP<datalist><option>----------------------------------------------------------------------------------------------------- Upload WEBP</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500<datalist><option>1000</option><option>500</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=filePicker<datalist><option>id=filePicker</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=upload_field<datalist><option>id=upload_field</option></datalist></td>
+	<td>${uploadDirectory}Image_WEBP.webp</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>----------------------------------------------------------------------------------------------------- Upload EPS<datalist><option>----------------------------------------------------------------------------------------------------- Upload EPS</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500<datalist><option>1000</option><option>500</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=filePicker<datalist><option>id=filePicker</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=upload_field<datalist><option>id=upload_field</option></datalist></td>
+	<td>${uploadDirectory}Image_EPS.eps</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=startbutton<datalist><option>id=startbutton</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>3000</option><option>500</option><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotText</td>
+	<td>id=up-files-list-completed<datalist><option>id=viewassetsbtn</option><option>link=View Uploads</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Upload Queue'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='+ New Location'])[1]/following::a[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='aurora.jpeg'])[1]/preceding::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Finished'])[1]/preceding::a[1]</option><option>//a[contains(text(),'View Uploads')]</option><option>//a[@id='viewassetsbtn']</option><option>//div[@id='completed-uploads']/div/div[2]/a</option><option>//a[contains(@href, '/openinstitute/emshare/views/search/search.html?hitssessionid=$hits.getSessionId()&amp;sortby=assetaddeddateDown')]</option><option>//div[2]/div/div/div[2]/a</option><option>css=#viewassetsbtn</option><option>id=up-files-list-completed</option></datalist></td>
+	<td>Uploading</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000<datalist><option>4000</option><option>5000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=viewassetsbtn<datalist><option>id=viewassetsbtn</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Collection Approve Assets</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/index.html<datalist><option>${currentServer}/${currentApplication}/index.html</option><option>${currentServer}/${currentApplication}/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=select2-collectionid-container<datalist><option>id=select2-collectionid-container</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=span.select2-search input.select2-search__field<datalist><option>css=span.select2-search input.select2-search__field</option></datalist></td>
+	<td>${possibleCollection}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//ul[@id='select2-collectionid-results']/li[contains(text(),'${possibleCollection}')]<datalist><option>//ul[@id='select2-collectionid-results']/li[contains(text(),'${possibleCollection}')]</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000<datalist><option>3000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.select-dropdown-open<datalist><option>css=div.select-dropdown-open</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Deselect All<datalist><option>link=Deselect All</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.select-dropdown-open<datalist><option>css=div.select-dropdown-open</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Select All Results')])[2]<datalist><option>xpath=(//a[contains(text(),'Select All Results')])[2]</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Approve<datalist><option>link=Approve</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=textarea<datalist><option>css=textarea</option></datalist></td>
+	<td>Testing Approve<br></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submitbutton<datalist><option>id=submitbutton</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#okform &gt; input[type="submit"]<datalist><option>css=#okform &gt; input[type="submit"]</option></datalist></td>
+	<td></td>
+</tr>
+<tr><td>click</td><td>//a[@id='table-editor']<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Show Only Selections'])[1]/following::img[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Select All Results'])[1]/following::img[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Results 1 - 3 of 3'])[1]/preceding::img[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Select This Page'])[2]/preceding::img[1]</option><option>//img[@title='Edit Columns']</option><option>//a[@id='table-editor']/img</option><option>//li[7]/a/img</option><option>css=img[title="Edit Columns"]</option><option>//a[@id='table-editor']</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=addcolumn<datalist><option>name=addcolumn</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Show Only Selections'])[1]/following::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Select All Results'])[1]/following::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Drag columns to move them'])[1]/preceding::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Select This Page'])[2]/preceding::select[1]</option><option>//select[@name='addcolumn']</option><option>//ul[@id='sub-nav']/li[8]/select</option><option>//li[8]/select</option><option>css=select[name="addcolumn"]</option></datalist></td><td></td>
+</tr>
+<tr><td>select</td><td>name=addcolumn<datalist><option>name=addcolumn</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Show Only Selections'])[1]/following::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Select All Results'])[1]/following::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Drag columns to move them'])[1]/preceding::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Select This Page'])[2]/preceding::select[1]</option><option>//select[@name='addcolumn']</option><option>//ul[@id='sub-nav']/li[8]/select</option><option>//li[8]/select</option><option>css=select[name="addcolumn"]</option></datalist></td><td>label=Edit Status</td>
+</tr>
+<tr><td>click</td><td>name=addcolumn<datalist><option>name=addcolumn</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Show Only Selections'])[1]/following::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Select All Results'])[1]/following::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Drag columns to move them'])[1]/preceding::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Select This Page'])[2]/preceding::select[1]</option><option>//select[@name='addcolumn']</option><option>//ul[@id='sub-nav']/li[8]/select</option><option>//li[8]/select</option><option>css=select[name="addcolumn"]</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Export_Assets_View</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/settings/users/permissions/index.html<datalist><option>${currentServer}/${currentApplication}/views/modules/asset/index.html?field=last_selected_module&amp;last_selected_module.value=asset</option><option>${currentServer}/${currentApplication}/settings/users/permissions/index.html</option><option>${currentServer}/${currentApplication}/emshare/settings/users/permissions/index.html</option><option>${currentServer}/${currentApplication}/views/settings/users/permissions/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr><td>select</td><td>id=roles<datalist><option>id=roles</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Choose Role:'])[1]/following::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Advanced Privileges'])[1]/following::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Choose View:'])[1]/preceding::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='EnterMediadb.org'])[1]/preceding::select[2]</option><option>//select[@id='roles']</option><option>//div[@id='eml-tab-green-container']/div/select</option><option>//div/select</option><option>css=#roles</option></datalist></td><td>label=Administrators</td>
+</tr>
+<tr><td>click</td><td>id=roles<datalist><option>id=roles</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Choose Role:'])[1]/following::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Advanced Privileges'])[1]/following::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Choose View:'])[1]/preceding::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='EnterMediadb.org'])[1]/preceding::select[2]</option><option>//select[@id='roles']</option><option>//div[@id='eml-tab-green-container']/div/select</option><option>//div/select</option><option>css=#roles</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=checkbox-exportdata<datalist><option>id=checkbox-exportdata</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Enables downloading of the original asset.'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Download Original'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Export Data'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Enables exporting of data to CSV'])[1]/preceding::input[1]</option><option>//input[@id='checkbox-exportdata']</option><option>//div[@id='permissions-div']/form/div[2]/table/tbody/tr[13]/td/input</option><option>//tr[13]/td/input</option><option>css=#checkbox-exportdata</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//input[@value='Save']<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Delete'])[2]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Shows Fatwire Status.'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='EnterMediadb.org'])[1]/preceding::input[1]</option><option>//input[@value='Save']</option><option>//div[@id='permissions-div']/form/input[9]</option><option>//input[9]</option><option>css=input.btn.small</option></datalist></td><td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>200<datalist><option>200</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/modules/asset/index.html?field=last_selected_module&amp;last_selected_module.value=asset<datalist><option>${currentServer}/${currentApplication}/views/modules/asset/index.html?field=last_selected_module&amp;last_selected_module.value=asset</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.select-dropdown-open<datalist><option>css=div.select-dropdown-open</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Deselect All<datalist><option>link=Deselect All</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.select-dropdown-open<datalist><option>css=div.select-dropdown-open</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=ul.select-dropdown &gt; li &gt; a.ajax.selectpage<datalist><option>css=ul.select-dropdown &gt; li &gt; a.ajax.selectpage</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Export results<datalist><option>link=Export results</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Multi Edit'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Add To Collection'])[1]/following::a[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Export results (friendly)'])[1]/preceding::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Delete Assets'])[1]/preceding::a[2]</option><option>//a[contains(text(),'Export results')]</option><option>//ul[@id='sub-nav']/li[6]/ul/li[4]/a</option><option>//a[contains(@href, '/openinstitute/emshare/views/modules/asset/export/download/export_asset.csv?hitssessionid=hitsassetopeninstitute/catalog&amp;searchtype=asset')]</option><option>//li[6]/ul/li[4]/a</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Settings Users</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/modules/asset/index.html<datalist><option>${currentServer}/${currentApplication}/views/modules/asset/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[contains(@href, 'settings/modules/asset/index.html')]<datalist><option>//a[contains(@href, 'settings/modules/asset/index.html')]</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Users<datalist><option>link=Users</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Create User<datalist><option>link=Create User</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=firstName.value<datalist><option>id=firstName.value</option></datalist></td>
+	<td>${testUser1Name}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lastName.value<datalist><option>id=lastName.value</option></datalist></td>
+	<td>${testUser1LastName}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email.value<datalist><option>id=email.value</option></datalist></td>
+	<td>${testUser1Email}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enabled.value<datalist><option>id=enabled.value</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=id.value<datalist><option>id=id.value</option></datalist></td>
+	<td>${testUser}</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=list-settingsgroup<datalist><option>id=list-settingsgroup</option></datalist></td>
+	<td>label=Users</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.small<datalist><option>css=input.btn.small</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Edit Password<datalist><option>link=Edit Password</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=password<datalist><option>name=password</option></datalist></td>
+	<td>${testUserPassword}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=retypedPassword<datalist><option>name=retypedPassword</option></datalist></td>
+	<td>${testUserPassword}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn<datalist><option>css=input.btn</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Settings<datalist><option>link=Settings</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Users<datalist><option>link=Users</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=description.value<datalist><option>id=description.value</option></datalist></td>
+	<td>${testUser}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@onclick='jQuery("#usersearchform").submit();']<datalist><option>//a[@onclick='jQuery("#usersearchform").submit();']</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//table[@id='main-results-table']/tbody/tr/td<datalist><option>//table[@id='main-results-table']/tbody/tr/td</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=list-settingsgroup<datalist><option>id=list-settingsgroup</option></datalist></td>
+	<td>label=Users</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save Changes<datalist><option>link=Save Changes</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout<datalist><option>link=Logout</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=accountname<datalist><option>id=accountname</option></datalist></td>
+	<td>${testUser}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=password<datalist><option>name=password</option></datalist></td>
+	<td>${testUserPassword}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=login-submit<datalist><option>id=login-submit</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[contains(@href, 'logout.html')]<datalist><option>//a[contains(@href, 'logout.html')]</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=accountname<datalist><option>name=accountname</option></datalist></td>
+	<td>${currentUser}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=password<datalist><option>name=password</option></datalist></td>
+	<td>${currentPassword}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=login-submit<datalist><option>id=login-submit</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=English<datalist><option>link=English</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Settings Groups</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/modules/asset/index.html<datalist><option>${currentServer}/${currentApplication}/views/modules/asset/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Settings<datalist><option>link=Settings</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Groups<datalist><option>link=Groups</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=groupname<datalist><option>name=groupname</option></datalist></td>
+	<td>${testGroup}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.btn.small<datalist><option>css=input.btn.small</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>id=groupselect<datalist><option>id=groupselect</option></datalist></td>
+	<td>label=${testGroup}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enabled.value<datalist><option>id=enabled.value</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save Changes<datalist><option>link=Save Changes</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=addUsernames<datalist><option>id=addUsernames</option></datalist></td>
+	<td>${testUser}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input[name="Add One"]<datalist><option>css=input[name="Add One"]</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save Changes<datalist><option>link=Save Changes</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Settings Users 2</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/modules/asset/index.html<datalist><option>${currentServer}/${currentApplication}/views/modules/asset/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[contains(@href, 'settings/modules/asset/index.html')]<datalist><option>//a[contains(@href, 'settings/modules/asset/index.html')]</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Users<datalist><option>link=Users</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Create User<datalist><option>link=Create User</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=firstName.value<datalist><option>id=firstName.value</option></datalist></td>
+	<td>${testUser2Name}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lastName.value<datalist><option>id=lastName.value</option></datalist></td>
+	<td>${testUser2LastName}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email.value<datalist><option>id=email.value</option></datalist></td>
+	<td>${testUser2Email}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enabled.value<datalist><option>id=enabled.value</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=id.value<datalist><option>id=id.value</option></datalist></td>
+	<td>${testUser2}</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=list-settingsgroup<datalist><option>id=list-settingsgroup</option></datalist></td>
+	<td>label=Users</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.small<datalist><option>css=input.btn.small</option></datalist></td>
+	<td></td>
+</tr>
+<tr><td>select </td><td>id=groupselect<datalist><option>id=list-settingsgroup</option><option>id=groupselect</option></datalist></td><td>${testGroup}</td>
+</tr>
+<tr><td>clickAndWait</td><td>link=Save Changes<datalist><option>link=Save Changes</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Notes'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Email'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Delete User'])[1]/preceding::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Edit Password'])[1]/preceding::a[2]</option><option>//a[contains(text(),'Save Changes')]</option><option>//a[@onclick="$('#usereditform').submit();"]</option><option>//form[@id='usereditform']/a</option><option>xpath=(//a[contains(@href, '#')])[4]</option><option>//div[2]/form/a</option><option>css=a.btn</option></datalist></td><td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Edit Password<datalist><option>link=Edit Password</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=password<datalist><option>name=password</option></datalist></td>
+	<td>${testUserPassword}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=retypedPassword<datalist><option>name=retypedPassword</option></datalist></td>
+	<td>${testUserPassword}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn<datalist><option>css=input.btn</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Settings<datalist><option>link=Settings</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Users<datalist><option>link=Users</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=description.value<datalist><option>id=description.value</option></datalist></td>
+	<td>${testUser}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[@onclick='jQuery("#usersearchform").submit();']<datalist><option>//a[@onclick='jQuery("#usersearchform").submit();']</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//table[@id='main-results-table']/tbody/tr/td<datalist><option>//table[@id='main-results-table']/tbody/tr/td</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=list-settingsgroup<datalist><option>id=list-settingsgroup</option></datalist></td>
+	<td>label=Users</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Save Changes<datalist><option>link=Save Changes</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Settings Permissions</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/settings/users/permissions/index.html<datalist><option>${currentServer}/${currentApplication}/views/settings/users/permissions/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=roles<datalist><option>id=roles</option></datalist></td>
+	<td>label=Administrators</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@value='printpreview'])<datalist><option>xpath=(//input[@value='printpreview'])</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.small<datalist><option>css=input.btn.small</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=roles<datalist><option>id=roles</option></datalist></td>
+	<td>label=-- Add New Role --</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name.value<datalist><option>id=name.value</option></datalist></td>
+	<td>Vendors</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.small<datalist><option>css=input.btn.small</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@value='viewvoting'])<datalist><option>xpath=(//input[@value='viewvoting'])</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.small<datalist><option>css=input.btn.small</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Advanced Privileges<datalist><option>link=Advanced Privileges</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Advanced Privileges<datalist><option>link=Advanced Privileges</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='emselectable']/form/table/tbody/tr[2]/td<datalist><option>//div[@id='emselectable']/form/table/tbody/tr[2]/td</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=addgroup<datalist><option>name=addgroup</option></datalist></td>
+	<td>label=Anyone</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.btn<datalist><option>css=input.btn</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=addgroup<datalist><option>name=addgroup</option></datalist></td>
+	<td>label=Nobody</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.btn<datalist><option>css=input.btn</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(text(),'Reset to defaults')]<datalist><option>//a[contains(text(),'Reset to defaults')]</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Advanced Privileges<datalist><option>link=Advanced Privileges</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Settings Hot Folder</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/modules/asset/index.html?field=last_selected_module&amp;last_selected_module.value=asset<datalist><option>${currentServer}/${currentApplication}/views/modules/asset/index.html?field=last_selected_module&amp;last_selected_module.value=asset</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Settings<datalist><option>link=Settings</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Hot Folders<datalist><option>link=Hot Folders</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Add Hot Folder<datalist><option>link=Add Hot Folder</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=externalpath.value<datalist><option>name=externalpath.value</option></datalist></td>
+	<td>${hotFolderPath}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=name.value<datalist><option>name=name.value</option></datalist></td>
+	<td>${hotFolderName}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=excludes.value<datalist><option>name=excludes.value</option></datalist></td>
+	<td>*/.*</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=enabled.value<datalist><option>name=enabled.value</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn<datalist><option>css=input.btn</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Schedule Importing<datalist><option>link=Schedule Importing</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Run Now<datalist><option>link=Run Now</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Settings Data Manager</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/modules/asset/index.html<datalist><option>${currentServer}/${currentApplication}/views/modules/asset/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Settings<datalist><option>link=Settings</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Data Manager<datalist><option>link=Data Manager</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>name=searchtype<datalist><option>name=searchtype</option></datalist></td>
+	<td>label=searchtypes</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Data<datalist><option>link=Data</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div/table/tbody/tr[2]/td[2]<datalist><option>//div/table/tbody/tr[2]/td[2]</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000<datalist><option>4000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#dataeditor &gt; input.btn.right<datalist><option>css=#dataeditor &gt; input.btn.right</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Settings Advanced Search</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/modules/asset/index.html<datalist><option>${currentServer}/${currentApplication}/views/modules/asset/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.glyphicon.glyphicon-edit<datalist><option>css=i.glyphicon.glyphicon-edit</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//form[@id='searchaddfield']/span/span/span/span<datalist><option>//form[@id='searchaddfield']/span/span/span/span</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input.select2-search__field<datalist><option>css=input.select2-search__field</option></datalist></td>
+	<td>Tags</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//li[contains(text(),'Tags')]<datalist><option>//li[contains(text(),'Tags')]</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Done<datalist><option>link=Done</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input.select2-search__field<datalist><option>css=input.select2-search__field</option></datalist></td>
+	<td>${keywordtag}</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=input.select2-search__field<datalist><option>css=input.select2-search__field</option></datalist></td>
+	<td> ${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.small<datalist><option>css=input.btn.small</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Settings Collections Box</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/modules/asset/index.html<datalist><option>${currentServer}/${currentApplication}/views/modules/asset/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Settings<datalist><option>link=Settings</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#permissions &gt; a<datalist><option>css=#permissions &gt; a</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=roles<datalist><option>id=roles</option></datalist></td>
+	<td>label=Administrators</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=checkbox-viewopencollections<datalist><option>id=checkbox-viewopencollections</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.small<datalist><option>css=input.btn.small</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Assets<datalist><option>link=Assets</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Searching Edit Search</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/modules/asset/index.html<datalist><option>${currentServer}/${currentApplication}/views/modules/asset/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.glyphicon.glyphicon-edit<datalist><option>css=i.glyphicon.glyphicon-edit</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000<datalist><option>4000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name="field"]<datalist><option>css=select[name="field"]</option></datalist></td>
+	<td>label=Instructions</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Done<datalist><option>link=Done</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000<datalist><option>5000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=instructions.value<datalist><option>id=instructions.value</option></datalist></td>
+	<td>TestEdit</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.small<datalist><option>css=input.btn.small</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Search Categories</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/index.html<datalist><option>${currentServer}/${currentApplication}/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.glyphicon.glyphicon-edit<datalist><option>css=i.glyphicon.glyphicon-edit</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name="field"]<datalist><option>css=select[name="field"]</option></datalist></td>
+	<td>label=Categories</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Done<datalist><option>link=Done</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Pick Categories<datalist><option>link=Pick Categories</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='main-results-table']/tbody[2]/tr[12]/td<datalist><option>//table[@id='main-results-table']/tbody[2]/tr[12]/td</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=modals<datalist><option>id=modals</option></datalist></td>
+	<td>0,0</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.small<datalist><option>css=input.btn.small</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Asset Edit</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/modules/asset/index.html<datalist><option>${currentServer}/${currentApplication}/views/modules/asset/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Clear<datalist><option>link=Clear</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=description.value<datalist><option>id=description.value</option></datalist></td>
+	<td>JPEG</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.small<datalist><option>css=input.btn.small</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=td.resultstablecell.thumbnail<datalist><option>css=td.resultstablecell.thumbnail</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#detaileditor-metadatageneral &gt; a.ajax.tooltip &gt; span.icon<datalist><option>css=#detaileditor-metadatageneral &gt; a.ajax.tooltip &gt; span.icon</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000<datalist><option>3000</option></datalist></td>
+	<td></td>
+</tr>
+<tr><td>storeElementPresent</td><td>css=a.ajax.btn<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Complete'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Import Status'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Edit'])[3]/preceding::a[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Edit'])[4]/preceding::a[4]</option><option>xpath=(//a[contains(text(),'Edit')])[2]</option><option>//div[@id='asset/assetgeneraleditor']/p/a</option><option>//a[contains(@href, '/openinstitute/emshare/components/detaileditor/generic.html?catalogid=openinstitute/catalog&amp;searchtype=asset&amp;id=AWW10B3xtLqOUVRpYIxO&amp;view=asset/assetgeneral&amp;assetid=AWW10B3xtLqOUVRpYIxO&amp;edit=1&amp;oemaxlevel=1')]</option><option>//p/a</option><option>css=a.ajax.btn</option></datalist></td><td>tabExpanded</td>
+</tr>
+<tr><td>if</td><td>${tabExpanded}!=true<datalist><option>!${tabExpanded}</option><option>${tabExpanded}!=true</option><option>${tabExpanded}</option></datalist></td><td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>css=div.toggler<datalist><option>css=div.toggler</option></datalist></td>
+	<td></td>
+</tr>
+<tr><td>endIf</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.ajax.btn<datalist><option>css=a.ajax.btn</option></datalist></td>
+	<td></td>
+</tr>
+<tr><td>type</td><td>id=assettitle.value<datalist><option>id=assettitle.value</option><option>name=assettitle.value</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Asset Title'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='×'])[1]/following::input[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Description'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Edit Status'])[1]/preceding::input[3]</option><option>//input[@id='assettitle.value']</option><option>//td[@id='detail_assettitle']/input[2]</option><option>//td[2]/input[2]</option></datalist></td><td>New Picture title</td>
+</tr>
+<tr><td>type</td><td>//td[@id='detail_keywords']/div/span/span/span/ul/li/input<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Tags'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='+ New Import Status'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Edit'])[2]/preceding::input[2]</option><option>//input[@type='search']</option><option>//td[@id='detail_keywords']/div/span/span/span/ul/li/input</option><option>//li/input</option><option>css=input.select2-search__field</option></datalist></td><td>New Tag</td>
+</tr>
+<tr><td>sendKeys</td><td>//td[@id='detail_keywords']/div/span/span/span/ul/li/input<datalist><option>id=formeditasset/assetgeneral</option><option>//td[@id='detail_keywords']/div/span/span/span/ul/li/input</option></datalist></td><td>${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000<datalist><option>3000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.btn<datalist><option>css=input.btn</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=p.btns &gt; input.btn<datalist><option>css=p.btns &gt; input.btn</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Asset Multi Edit</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/modules/asset/index.html<datalist><option>${currentServer}/${currentApplication}/views/modules/asset/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=keywords.value<datalist><option>name=keywords.value</option></datalist></td>
+	<td>${keywordtag}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.small<datalist><option>css=input.btn.small</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>css=span.ui-icon.ui-icon-closethick<datalist><option>css=span.ui-icon.ui-icon-closethick</option></datalist></td>
+	<td>areSelected</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=pagetoggle<datalist><option>name=pagetoggle</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[contains(text(),'Multi Edit')]<datalist><option>//a[contains(text(),'Multi Edit')]</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Edit All<datalist><option>link=Edit All</option></datalist></td>
+	<td></td>
+</tr>
+<tr><td>storeElementPresent</td><td>css=a.ajax.btn<datalist><option>css=a.ajax.btn</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Complete'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Import Status'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Edit'])[3]/preceding::a[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Edit'])[4]/preceding::a[4]</option><option>xpath=(//a[contains(text(),'Edit')])[2]</option><option>//div[@id='asset/assetgeneraleditor']/p/a</option><option>//a[contains(@href, '/openinstitute/emshare/components/detaileditor/generic.html?catalogid=openinstitute/catalog&amp;searchtype=asset&amp;id=AWW10B3xtLqOUVRpYIxO&amp;view=asset/assetgeneral&amp;assetid=AWW10B3xtLqOUVRpYIxO&amp;edit=1&amp;oemaxlevel=1')]</option><option>//p/a</option></datalist></td><td>tabExpanded</td>
+</tr>
+<tr><td>if</td><td>${tabExpanded}!=true<datalist><option>${tabExpanded}!=true</option><option>!${tabExpanded}</option><option>${tabExpanded}</option></datalist></td><td></td>
+</tr>
+<tr><td>clickAt</td><td>css=div.toggler<datalist><option>css=div.toggler</option></datalist></td><td></td>
+</tr>
+<tr><td>endIf</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.ajax.btn<datalist><option>css=a.ajax.btn</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr><td>type</td><td>id=longcaption.value<datalist><option>id=longcaption.value</option><option>name=longcaption.value</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Description'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Asset Title'])[1]/following::input[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Edit Status'])[1]/preceding::input[1]</option><option>//input[@id='longcaption.value']</option><option>//td[@id='detail_longcaption']/input[2]</option><option>//tr[3]/td[2]/input[2]</option></datalist></td><td>Multi Edited Text</td>
+</tr>
+<tr><td>type</td><td>//td[@id='detail_keywords']/div/span/span/span/ul/li/input<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Tags'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='+ New Import Status'])[1]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Edit'])[2]/preceding::input[2]</option><option>//input[@type='search']</option><option>//td[@id='detail_keywords']/div/span/span/span/ul/li/input</option><option>//li/input</option><option>css=input.select2-search__field</option></datalist></td><td>New Tag2</td>
+</tr>
+<tr><td>sendKeys</td><td>//td[@id='detail_keywords']/div/span/span/span/ul/li/input<datalist><option>//td[@id='detail_keywords']/div/span/span/span/ul/li/input</option></datalist></td><td>${KEY_ENTER}</td>
+</tr>
+<tr><td>click</td><td>//input[@value='Save values']<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='×'])[5]/following::input[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Edit'])[2]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Edit'])[3]/preceding::input[1]</option><option>//input[@value='Save values']</option><option>//form[@id='formeditasset/assetgeneral']/p/input</option><option>//p/input</option><option>css=input.btn</option></datalist></td><td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/modules/asset/index.html<datalist><option>${currentServer}/${currentApplication}/views/modules/asset/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.anchor &gt; div.select-dropdown-open<datalist><option>css=div.anchor &gt; div.select-dropdown-open</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Deselect All<datalist><option>link=Deselect All</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Asset Email</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/modules/asset/index.html?page=1<datalist><option>${currentServer}/${currentApplication}/views/modules/asset/index.html?page=1</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=description.value<datalist><option>id=description.value</option></datalist></td>
+	<td>*.jpg</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.small<datalist><option>css=input.btn.small</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//table[@id='main-results-table']/tbody/tr[2]/td[2]<datalist><option>//table[@id='main-results-table']/tbody/tr[2]/td[2]</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Email<datalist><option>link=Email</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sharewithemail.value<datalist><option>id=sharewithemail.value</option></datalist></td>
+	<td>${emailRecipient}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sharenote<datalist><option>id=sharenote</option></datalist></td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=share-submit<datalist><option>id=share-submit</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.small<datalist><option>css=input.btn.small</option></datalist></td>
+	<td></td>
+</tr>
+<tr><td>clickAndWait</td><td>css=input.btn.small<datalist><option>css=input.btn.small</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Asset Download</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/modules/asset/index.html<datalist><option>${currentServer}/${currentApplication}/views/modules/asset/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=description.value<datalist><option>id=description.value</option></datalist></td>
+	<td>2Page_PDF.pdf</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.small<datalist><option>css=input.btn.small</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//table[@id='main-results-table']/tbody/tr[2]/td[2]<datalist><option>//table[@id='main-results-table']/tbody/tr[2]/td[2]</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Download<datalist><option>link=Download</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000<datalist><option>5000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=submit<datalist><option>name=submit</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000<datalist><option>10000</option><option>5000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Download<datalist><option>link=Download</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000<datalist><option>2000</option><option>5000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/modules/asset/index.html<datalist><option>${currentServer}/${currentApplication}/views/modules/asset/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=description.value<datalist><option>id=description.value</option></datalist></td>
+	<td>Video_MP4</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.small<datalist><option>css=input.btn.small</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//table[@id='main-results-table']/tbody/tr[2]/td[2]<datalist><option>//table[@id='main-results-table']/tbody/tr[2]/td[2]</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Download<datalist><option>link=Download</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000<datalist><option>5000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=submit<datalist><option>name=submit</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000<datalist><option>10000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Download<datalist><option>link=Download</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Asset PDF Viewer</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/modules/asset/index.html<datalist><option>${currentServer}/${currentApplication}/views/modules/asset/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=description.value<datalist><option>id=description.value</option></datalist></td>
+	<td>2Page_PDF.pdf</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.small<datalist><option>css=input.btn.small</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//table[@id='main-results-table']/tbody/tr[2]/td[2]<datalist><option>//table[@id='main-results-table']/tbody/tr[2]/td[2]</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=pagejumper<datalist><option>id=pagejumper</option></datalist></td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=gotopage<datalist><option>id=gotopage</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=prevpage<datalist><option>id=prevpage</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=nextpage<datalist><option>id=nextpage</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Multi Language Asset Title</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/modules/asset/index.html<datalist><option>${currentServer}/${currentApplication}/views/modules/asset/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=description.value<datalist><option>id=description.value</option></datalist></td>
+	<td>Image_JPEG.jpg</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.small<datalist><option>css=input.btn.small</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=img.smallthumb.assetdragdrop<datalist><option>css=img.smallthumb.assetdragdrop</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#detaileditor-metadatageneral &gt; a.ajax.tooltip &gt; span.text<datalist><option>css=#detaileditor-metadatageneral &gt; a.ajax.tooltip &gt; span.text</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=headline.en.value<datalist><option>name=headline.en.value</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='×'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Asset Title'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Description'])[1]/preceding::input[3]</option><option>//input[@name='headline.en.value']</option><option>//td[@id='detail_headline']/div/div/div/div[2]/input</option><option>//div[2]/input</option><option>css=input[name="headline.en.value"]</option></datalist></td>
+	<td>English Title</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.languagesavebtn &gt; img<datalist><option>css=a.languagesavebtn &gt; img</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=headline.de.value<datalist><option>name=headline.de.value</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='×'])[2]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Asset Title'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Description'])[1]/preceding::input[3]</option><option>//input[@name='headline.de.value']</option><option>//div[@id='languagesextra_headline']/div/div[2]/input</option><option>//div[2]/div/div[2]/input</option><option>css=input[name="headline.de.value"]</option></datalist></td>
+	<td>Deutsche Title</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.btn<datalist><option>css=input.btn</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000<datalist><option>3000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.ajax.btn<datalist><option>css=a.ajax.btn</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Asset Category Picker</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/index.html<datalist><option>${currentServer}/${currentApplication}/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>contextMenu</td>
+	<td>//li[@id='index_row']/div<datalist><option>//li[@id='index_row']/div</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=createnode<datalist><option>id=createnode</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input.field.autosavename<datalist><option>css=input.field.autosavename</option></datalist></td>
+	<td>${possibleCategory}</td>
+</tr>
+<tr><td>sendKeys</td><td>css=input.field.autosavename<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Nueva 3'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Nueva 2'])[1]/following::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Filters'])[1]/preceding::input[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='File Format'])[1]/preceding::input[2]</option><option>//input[@value='New node']</option><option>//span[@id='${cat.id}_display']/input</option><option>//span/input</option><option>css=input.field.autosavename</option></datalist></td><td>${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//a[contains(@href, 'logout.html')]<datalist><option>//a[contains(@href, 'logout.html')]</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=accountname<datalist><option>name=accountname</option></datalist></td>
+	<td>${currentUser}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=password<datalist><option>name=password</option></datalist></td>
+	<td>${currentPassword}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=login-submit<datalist><option>id=login-submit</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='header']/span/ul/li[3]/a/span<datalist><option>//div[@id='header']/span/ul/li[3]/a/span</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000<datalist><option>3000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=English<datalist><option>link=English</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000<datalist><option>3000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/index.html<datalist><option>${currentServer}/${currentApplication}/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>contextMenu</td>
+	<td>//span[contains(text(),'${possibleCategory}')]<datalist><option>//span[contains(text(),'${possibleCategory}')]</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=addmedia<datalist><option>id=addmedia</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.ajax.btnthumbnail &gt; img<datalist><option>css=a.ajax.btnthumbnail &gt; img</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=filePicker<datalist><option>id=filePicker</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=upload_field<datalist><option>id=upload_field</option></datalist></td>
+	<td>${uploadDirectory}Image_Portrait.jpg</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=startbutton<datalist><option>id=startbutton</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Uploading<datalist><option>Uploading</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=viewassetsbtn<datalist><option>id=viewassetsbtn</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=module<datalist><option>id=module</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=description.value<datalist><option>id=description.value</option></datalist></td>
+	<td>Image_Portrait.jpg</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.small<datalist><option>css=input.btn.small</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=img.smallthumb.assetdragdrop<datalist><option>css=img.smallthumb.assetdragdrop</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#detaileditor-editassetcategories &gt; a.ajax.tooltip &gt; span.text<datalist><option>css=#detaileditor-editassetcategories &gt; a.ajax.tooltip &gt; span.text</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='addcategory']/a<datalist><option>//div[@id='addcategory']/a</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='main-results-table']/tbody[2]/tr[2]/td<datalist><option>//table[@id='main-results-table']/tbody[2]/tr[2]/td</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=closebutton<datalist><option>id=closebutton</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=module<datalist><option>id=module</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#index_row &gt; ul.open &gt; li.noderow &gt; div<datalist><option>css=#index_row &gt; ul.open &gt; li.noderow &gt; div</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=img.smallthumb.assetdragdrop<datalist><option>css=img.smallthumb.assetdragdrop</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Annotations</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>echo</td>
+	<td># Testing Annotations<datalist><option># Testing Annotations</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/modules/asset/index.html<datalist><option>${currentServer}/${currentApplication}/views/modules/asset/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='opencollectionscontent']/div/ul/li/div/a/span<datalist><option>//div[@id='opencollectionscontent']/div/ul/li/div/a/span</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=emannotationstab<datalist><option>id=emannotationstab</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td># Click on thumbnails<datalist><option># Click on thumbnails</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000<datalist><option>3000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[2]/a/img<datalist><option>//li[2]/a/img</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td># Test out toolbar<datalist><option># Test out toolbar</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=svg.icon.icon-draw &gt; use<datalist><option>css=svg.icon.icon-draw &gt; use</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=emannotationstab<datalist><option>id=emannotationstab</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=svg.icon.icon-rectangle<datalist><option>css=svg.icon.icon-rectangle</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=svg.icon.icon-move &gt; use<datalist><option>css=svg.icon.icon-move &gt; use</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=rectangletool<datalist><option>id=rectangletool</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Crop</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}<datalist><option>${currentServer}/${currentApplication}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=module<datalist><option>id=module</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Clear<datalist><option>link=Clear</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=description.value<datalist><option>id=description.value</option></datalist></td>
+	<td>Image_JPEG.jpg</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.small<datalist><option>css=input.btn.small</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=img.smallthumb.assetdragdrop<datalist><option>css=img.smallthumb.assetdragdrop</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#detaileditor-viewconversions &gt; a..tooltip &gt; span.text<datalist><option>css=#detaileditor-viewconversions &gt; a..tooltip &gt; span.text</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Crop<datalist><option>link=Crop</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=submitbutton<datalist><option>name=submitbutton</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Asset Edit Attachments</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/modules/asset/index.html<datalist><option>${currentServer}/${currentApplication}/views/modules/asset/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input.select2-search__field<datalist><option>css=input.select2-search__field</option></datalist></td>
+	<td>${keywordtag}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=input.select2-search__field<datalist><option>css=input.select2-search__field</option></datalist></td>
+	<td> ${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=input.select2-search__field<datalist><option>css=input.select2-search__field</option></datalist></td>
+	<td> ${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=input.select2-search__field<datalist><option>css=input.select2-search__field</option></datalist></td>
+	<td> ${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=input.select2-search__field<datalist><option>css=input.select2-search__field</option></datalist></td>
+	<td> ${KEY_TAB}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.small<datalist><option>css=input.btn.small</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//table[@id='main-results-table']/tbody/tr[2]/td[2]<datalist><option>//table[@id='main-results-table']/tbody/tr[2]/td[2]</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#detaileditor-viewattachments &gt; a<datalist><option>css=#detaileditor-viewattachments &gt; a</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Upload New File<datalist><option>link=Upload New File</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=file<datalist><option>name=file</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>typeAndWait</td>
+	<td>name=file<datalist><option>name=file</option></datalist></td>
+	<td>${uploadDirectory}Image_JPEG_3.jpg</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">GeoLocation</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/index.html<datalist><option>${currentServer}/${currentApplication}/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=description.value<datalist><option>id=description.value</option></datalist></td>
+	<td>Pyramid</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.small<datalist><option>css=input.btn.small</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=img.smallthumb.assetdragdrop<datalist><option>css=img.smallthumb.assetdragdrop</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#detaileditor-viewmap &gt; a..tooltip &gt; span.text<datalist><option>css=#detaileditor-viewmap &gt; a..tooltip &gt; span.text</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=geo_point_address<datalist><option>id=geo_point_address</option></datalist></td>
+	<td>Chichen Itza Mexico</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=geo_point_search<datalist><option>id=geo_point_search</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000<datalist><option>5000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.right<datalist><option>css=input.btn.right</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=geo_point_latandlong<datalist><option>id=geo_point_latandlong</option></datalist></td>
+	<td>*20.6842*</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Collection Owner and Follower</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/index.html<datalist><option>${currentServer}/${currentApplication}/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=select2-collectionid-container<datalist><option>id=select2-collectionid-container</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=span.select2-search input.select2-search__field<datalist><option>css=span.select2-search input.select2-search__field</option></datalist></td>
+	<td>${possibleCollection}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//ul[@id='select2-collectionid-results']/li[contains(text(),'${possibleCollection}')]<datalist><option>//ul[@id='select2-collectionid-results']/li[contains(text(),'${possibleCollection}')]</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000<datalist><option>3000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=settingstab<datalist><option>id=settingstab</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=select2-list-ownervalue-container<datalist><option>id=select2-list-ownervalue-container</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=span.select2-search input.select2-search__field<datalist><option>css=span.select2-search input.select2-search__field</option></datalist></td>
+	<td>${testUser1Name} ${testUser1LastName}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//ul[@id='select2-list-ownervalue-results']/li[contains(text(),'${testUser1Name} ${testUser1LastName}')]<datalist><option>//ul[@id='select2-list-ownervalue-results']/li[contains(text(),'${testUser1Name} ${testUser1LastName}')]</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#dataeditor &gt; input.btn<datalist><option>css=#dataeditor &gt; input.btn</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=sharetab<datalist><option>id=sharetab</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add New<datalist><option>link=Add New</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=select2-list-followeruservalue-container<datalist><option>id=select2-list-followeruservalue-container</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=span.select2-search input.select2-search__field<datalist><option>css=span.select2-search input.select2-search__field</option></datalist></td>
+	<td>${testUser2Name} ${testUser2LastName}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//ul[@id='select2-list-followeruservalue-results']/li[contains(text(),'${testUser2Name} ${testUser2LastName}')]<datalist><option>//ul[@id='select2-list-followeruservalue-results']/li[contains(text(),'${testUser2Name} ${testUser2LastName}')]</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@value='Save Values']<datalist><option>//input[@value='Save Values']</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Publishing Local File</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}<datalist><option>${currentServer}/${currentApplication}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Settings<datalist><option>link=Settings</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Preferences<datalist><option>link=Preferences</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Publishing<datalist><option>link=Publishing</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='emselectable']/table/tbody/tr[6]/td<datalist><option>//div[@id='emselectable']/table/tbody/tr[6]/td</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=url.value<datalist><option>id=url.value</option></datalist></td>
+	<td>${PublishingPath}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Save<datalist><option>link=Save</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=module<datalist><option>id=module</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//table[@id='main-results-table']/tbody/tr[3]/td[2]/div/img<datalist><option>//table[@id='main-results-table']/tbody/tr[3]/td[2]/div/img</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Publish<datalist><option>link=Publish</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=list-publishdestination<datalist><option>id=list-publishdestination</option></datalist></td>
+	<td>label=Local File Copy</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=submit<datalist><option>name=submit</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.small<datalist><option>css=input.btn.small</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000<datalist><option>5000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.ui-widget-content.clearfix<datalist><option>css=div.ui-widget-content.clearfix</option></datalist></td>
+	<td>Published 1 with 0 errors</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Results Table Edit</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/modules/asset/index.html<datalist><option>${currentServer}/${currentApplication}/views/modules/asset/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=img[title="Edit Columns"]<datalist><option>css=img[title="Edit Columns"]</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//img[@title='Remove'])[1]<datalist><option>xpath=(//img[@title='Remove'])[1]</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=addcolumn<datalist><option>name=addcolumn</option></datalist></td>
+	<td>label=File Size</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=addcolumn<datalist><option>name=addcolumn</option></datalist></td>
+	<td>label=File Name</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=addcolumn<datalist><option>name=addcolumn</option></datalist></td>
+	<td>label=Tags</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=option[value="filesize"]<datalist><option>css=option[value="filesize"]</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=img[title="Cancel"]<datalist><option>css=img[title="Cancel"]</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">General Langugage</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/index.html<datalist><option>${currentServer}/${currentApplication}/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=module<datalist><option>id=module</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=English<datalist><option>link=English</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000<datalist><option>5000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Español<datalist><option>link=Español</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000<datalist><option>3000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>css=#left-col-opencollections &gt; div.ui-widget-header.sidetoggle &gt; span.widget-header-right &gt; a.emdialog.sidebarsubmenu &gt; i.glyphicon.glyphicon-search<datalist><option>css=#left-col-opencollections &gt; div.ui-widget-header.sidetoggle &gt; span.widget-header-right &gt; a.emdialog.sidebarsubmenu &gt; i.glyphicon.glyphicon-search</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name.value<datalist><option>id=name.value</option></datalist></td>
+	<td>${possibleCollection}</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=name.value<datalist><option>id=name.value</option></datalist></td>
+	<td> ${KEY_TAB}</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//table[@id='main-results-table']/tbody[2]/tr<datalist><option>//table[@id='main-results-table']/tbody[2]/tr</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000<datalist><option>3000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=addmediatab<datalist><option>id=addmediatab</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000<datalist><option>3000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>css=a.ajax.btnthumbnail &gt; img<datalist><option>css=a.ajax.btnthumbnail &gt; img</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000<datalist><option>3000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=filePicker<datalist><option>id=filePicker</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=upload_field<datalist><option>id=upload_field</option></datalist></td>
+	<td>${uploadDirectory}Image_JPEG_7.jpg</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=headline.es.value<datalist><option>name=headline.es.value</option></datalist></td>
+	<td>Castillo</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.languagesavebtn &gt; img<datalist><option>css=a.languagesavebtn &gt; img</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=headline.de.value<datalist><option>name=headline.de.value</option></datalist></td>
+	<td>Castle</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=longcaption.value<datalist><option>id=longcaption.value</option></datalist></td>
+	<td>Building</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.select2-search__field<datalist><option>css=input.select2-search__field</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div[@id='detail_keywords']/div/span/span/span/ul/li/input<datalist><option>//div[@id='detail_keywords']/div/span/span/span/ul/li/input</option></datalist></td>
+	<td>${keywordtag}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>//div[@id='detail_keywords']/div/span/span/span/ul/li/input<datalist><option>//div[@id='detail_keywords']/div/span/span/span/ul/li/input</option></datalist></td>
+	<td> ${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>//div[@id='detail_keywords']/div/span/span/span/ul/li/input<datalist><option>//div[@id='detail_keywords']/div/span/span/span/ul/li/input</option></datalist></td>
+	<td> ${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>//div[@id='detail_keywords']/div/span/span/span/ul/li/input<datalist><option>//div[@id='detail_keywords']/div/span/span/span/ul/li/input</option></datalist></td>
+	<td> ${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=startbutton<datalist><option>id=startbutton</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000<datalist><option>5000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='header']/span/ul/li[3]/a/span<datalist><option>//div[@id='header']/span/ul/li[3]/a/span</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000<datalist><option>3000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=English<datalist><option>link=English</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Basket Dynamics</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/basket/index.html<datalist><option>${currentServer}/${currentApplication}/views/basket/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>css=p.info<datalist><option>css=p.info</option></datalist></td>
+	<td>isBasketEmpty</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${isBasketEmpty}<datalist><option>${isBasketEmpty}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['isBasketEmpty']==true<datalist><option>storedVars['isBasketEmpty']==true</option></datalist></td>
+	<td>BASKETEMPTY</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=pagetoggle<datalist><option>name=pagetoggle</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Remove<datalist><option>link=Remove</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>BASKETEMPTY<datalist><option>BASKETEMPTY</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0<datalist><option>0</option></datalist></td>
+	<td>numBasketItems</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/modules/asset/index.html<datalist><option>${currentServer}/${currentApplication}/views/modules/asset/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=pagetoggle<datalist><option>name=pagetoggle</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a[contains(text(),'Add To Basket')]<datalist><option>//a[contains(text(),'Add To Basket')]</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000<datalist><option>10000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/modules/asset/index.html<datalist><option>${currentServer}/${currentApplication}/views/modules/asset/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>${numBasketItems} + ${numResultsPerPage}<datalist><option>${numBasketItems} + ${numResultsPerPage}</option></datalist></td>
+	<td>numBasketItems</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Basket (${numBasketItems})<datalist><option>link=Basket (${numBasketItems})</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Reload Lists</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/settings/status/tools/index.html<datalist><option>${currentServer}/${currentApplication}/views/settings/status/tools/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Reindex<datalist><option>link=Reindex</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotText</td>
+	<td>id=eml-tab-green-container<datalist><option>id=eml-tab-green-container</option></datalist></td>
+	<td>*Exception*</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Permissions 2</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/index.html<datalist><option>${currentServer}/${currentApplication}/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Settings<datalist><option>link=Settings</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#permissions &gt; a<datalist><option>css=#permissions &gt; a</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=roles<datalist><option>id=roles</option></datalist></td>
+	<td>label=Administrators</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000<datalist><option>3000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=checkbox-quicksearch<datalist><option>id=checkbox-quicksearch</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=checkbox-exportdata<datalist><option>id=checkbox-exportdata</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=checkbox-viewrecentuploads<datalist><option>id=checkbox-viewrecentuploads</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=checkbox-viewrecentsearches<datalist><option>id=checkbox-viewrecentsearches</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=checkbox-viewmodulesettings<datalist><option>id=checkbox-viewmodulesettings</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=checkbox-viewrelatedkeywords<datalist><option>id=checkbox-viewrelatedkeywords</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=checkbox-quickpublish<datalist><option>id=checkbox-quickpublish</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=checkbox-quickgallery<datalist><option>id=checkbox-quickgallery</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=checkbox-viewclosedcaptions<datalist><option>id=checkbox-viewclosedcaptions</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.small<datalist><option>css=input.btn.small</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=module<datalist><option>id=module</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Modules</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/index.html<datalist><option>${currentServer}/${currentApplication}/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Contacts<datalist><option>link=Contacts</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=p.info<datalist><option>css=p.info</option></datalist></td>
+	<td>*found*</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Events - Saving</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/modules/asset/index.html<datalist><option>${currentServer}/${currentApplication}/views/modules/asset/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Settings<datalist><option>link=Settings</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Scheduler<datalist><option>link=Scheduler</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Events<datalist><option>link=Events</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select.jump<datalist><option>css=select.jump</option></datalist></td>
+	<td>label=asset</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='emselectable']/table/tbody/tr/td<datalist><option>//div[@id='emselectable']/table/tbody/tr/td</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=enabled<datalist><option>name=enabled</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=period<datalist><option>name=period</option></datalist></td>
+	<td>5m</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn<datalist><option>css=input.btn</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Events<datalist><option>link=Events</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select.jump<datalist><option>css=select.jump</option></datalist></td>
+	<td>label=asset</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='emselectable']/table/tbody/tr/td<datalist><option>//div[@id='emselectable']/table/tbody/tr/td</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=period<datalist><option>name=period</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=enabled<datalist><option>name=enabled</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn<datalist><option>css=input.btn</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Manager New Catalog/App</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>:8444${currentServer}/manager/views/catalogs/index.html<datalist><option>:8444${currentServer}/manager/views/catalogs/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Create New Catalog<datalist><option>link=Create New Catalog</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=catalog-name<datalist><option>id=catalog-name</option></datalist></td>
+	<td>Selenium Test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=rootpath<datalist><option>name=rootpath</option></datalist></td>
+	<td>/${possibleApp}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Create Catalog']<datalist><option>//input[@value='Create Catalog']</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>:8444${currentServer}/manager/views/catalogs/edit.html?appcatalogid=${possibleApp}/catalog<datalist><option>:8444${currentServer}/manager/views/catalogs/edit.html?appcatalogid=${possibleApp}/catalog</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Create New Application<datalist><option>link=Create New Application</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Next &gt;&gt;<datalist><option>link=Next &gt;&gt;</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.mbtn.learn-more<datalist><option>css=input.mbtn.learn-more</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=View<datalist><option>link=View</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Check to make sure 404 doesn't happen<datalist><option>Check to make sure 404 doesn't happen</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>404<datalist><option>404</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Library Permissions</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/index.html<datalist><option>${currentServer}/${currentApplication}/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//li[@id='index_row']/div/span<datalist><option>//li[@id='index_row']/div/span</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>//li[@data-categoryname='Libraries']<datalist><option>//li[@data-categoryname='Libraries']</option></datalist></td>
+	<td>LibrariesVisible</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['LibrariesVisible']==true<datalist><option>storedVars['LibrariesVisible']==true</option></datalist></td>
+	<td>IndexOpen</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//li[@id='index_row']/div/span<datalist><option>//li[@id='index_row']/div/span</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>IndexOpen<datalist><option>IndexOpen</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>//li[@data-categoryname='${pssibleLibrary}']<datalist><option>//li[@data-categoryname='${pssibleLibrary}']</option></datalist></td>
+	<td>LibrariesVisible</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['LibrariesVisible']==true<datalist><option>storedVars['LibrariesVisible']==true</option></datalist></td>
+	<td>LibrariesOpen</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//li[@id='AWEqAmQDF-UnkbY0Y2mm_row']/div/span<datalist><option>//li[@id='AWEqAmQDF-UnkbY0Y2mm_row']/div/span</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>LibrariesOpen<datalist><option>LibrariesOpen</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//li[@data-categoryname='${possibleLibrary}']/div<datalist><option>//li[@data-categoryname='${possibleLibrary}']/div</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=permissionstab<datalist><option>id=permissionstab</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='listdetail_viewroles']/span/span/span<datalist><option>//div[@id='listdetail_viewroles']/span/span/span</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//ul[@id='select2-viewrolesvalue-results']//li[contains(text(),'Users')]<datalist><option>//ul[@id='select2-viewrolesvalue-results']//li[contains(text(),'Users')]</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#dataeditor &gt; input.btn<datalist><option>css=#dataeditor &gt; input.btn</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout<datalist><option>link=Logout</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=accountname<datalist><option>id=accountname</option></datalist></td>
+	<td>${testUser}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=password<datalist><option>name=password</option></datalist></td>
+	<td>${testUserPassword}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=login-submit<datalist><option>id=login-submit</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//li[@id='index_row']/div/span<datalist><option>//li[@id='index_row']/div/span</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>//li[@data-categoryname='Libraries']<datalist><option>//li[@data-categoryname='Libraries']</option></datalist></td>
+	<td>LibrariesVisible</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['LibrariesVisible']==true<datalist><option>storedVars['LibrariesVisible']==true</option></datalist></td>
+	<td>IndexOpen</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//li[@id='index_row']/div/span<datalist><option>//li[@id='index_row']/div/span</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>IndexOpen<datalist><option>IndexOpen</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>//li[@data-categoryname='${pssibleLibrary}']<datalist><option>//li[@data-categoryname='${pssibleLibrary}']</option></datalist></td>
+	<td>LibrariesVisible</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['LibrariesVisible']==true<datalist><option>storedVars['LibrariesVisible']==true</option></datalist></td>
+	<td>LibrariesOpen</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//li[@id='AWEqAmQDF-UnkbY0Y2mm_row']/div/span<datalist><option>//li[@id='AWEqAmQDF-UnkbY0Y2mm_row']/div/span</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>LibrariesOpen<datalist><option>LibrariesOpen</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//li[@data-categoryname='${possibleLibrary}']/div<datalist><option>//li[@data-categoryname='${possibleLibrary}']/div</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout<datalist><option>link=Logout</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=accountname<datalist><option>name=accountname</option></datalist></td>
+	<td>${currentUser}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=password<datalist><option>name=password</option></datalist></td>
+	<td>${currentPassword}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=login-submit<datalist><option>id=login-submit</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Import</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>http://demo.entermediadb.org${currentServer}/${currentApplication}/views/upload/create/createnewstart.html<datalist><option>http://demo.entermediadb.org${currentServer}/${currentApplication}/views/upload/create/createnewstart.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='createmediapanel']/div/div[2]/a/img<datalist><option>//div[@id='createmediapanel']/div/div[2]/a/img</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=externalmediainput<datalist><option>id=externalmediainput</option></datalist></td>
+	<td>https://www.youtube.com/watch?v=DZmv1YJnszw</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=finishbutton<datalist><option>id=finishbutton</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>6000<datalist><option>6000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=View Record<datalist><option>link=View Record</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Export_Table_Data_Manager</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/settings/modules/asset/index.html<datalist><option>${currentServer}/${currentApplication}/views/settings/modules/asset/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Settings<datalist><option>link=Settings</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Data Manager<datalist><option>link=Data Manager</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>name=searchtype<datalist><option>name=searchtype</option></datalist></td>
+	<td>label=asset</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Export<datalist><option>link=Export</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">English</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/index.html<datalist><option>${currentServer}/${currentApplication}/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='header']/span/ul/li[3]/a/span<datalist><option>//div[@id='header']/span/ul/li[3]/a/span</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000<datalist><option>3000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>link=English<datalist><option>link=English</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000<datalist><option>5000</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Badges Verify</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}<datalist><option>${currentServer}/${currentApplication}</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=module<datalist><option>id=module</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=img.smallthumb.assetdragdrop<datalist><option>css=img.smallthumb.assetdragdrop</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#detaileditor-metadatageneral &gt; a.ajax.tooltip &gt; span.text<datalist><option>css=#detaileditor-metadatageneral &gt; a.ajax.tooltip &gt; span.text</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Edit<datalist><option>link=Edit</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=asset / Edit Status list<datalist><option>link=asset / Edit Status list</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=viewadvanced<datalist><option>id=viewadvanced</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=isbadge.value<datalist><option>id=isbadge.value</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.right<datalist><option>css=input.btn.right</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/settings/status/tools/index.html<datalist><option>${currentServer}/${currentApplication}/views/settings/status/tools/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Reindex<datalist><option>link=Reindex</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=My Account<datalist><option>link=My Account</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Add Media<datalist><option>link=Add Media</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.ajax.btnthumbnail &gt; img<datalist><option>css=a.ajax.btnthumbnail &gt; img</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div[@id='detail_keywords']/div/span/span/span/ul/li/input<datalist><option>//div[@id='detail_keywords']/div/span/span/span/ul/li/input</option></datalist></td>
+	<td>${keywordtag}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>//div[@id='detail_keywords']/div/span/span/span/ul/li/input<datalist><option>//div[@id='detail_keywords']/div/span/span/span/ul/li/input</option></datalist></td>
+	<td> ${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>//div[@id='detail_keywords']/div/span/span/span/ul/li/input<datalist><option>//div[@id='detail_keywords']/div/span/span/span/ul/li/input</option></datalist></td>
+	<td> ${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>//div[@id='detail_keywords']/div/span/span/span/ul/li/input<datalist><option>//div[@id='detail_keywords']/div/span/span/span/ul/li/input</option></datalist></td>
+	<td> ${KEY_ENTER}</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=list-copyrightstatus<datalist><option>id=list-copyrightstatus</option></datalist></td>
+	<td>label=Public Domain</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=filePicker<datalist><option>id=filePicker</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=upload_field<datalist><option>id=upload_field</option></datalist></td>
+	<td>${uploadDirectory}Image_JPEG.jpg</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>id=nav<datalist><option>id=nav</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>----------------------------------------------------------------------------------------------------- Upload PDF<datalist><option>----------------------------------------------------------------------------------------------------- Upload PDF</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=filePicker<datalist><option>id=filePicker</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=upload_field<datalist><option>id=upload_field</option></datalist></td>
+	<td>${uploadDirectory}2Page_PDF.pdf</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=startbutton<datalist><option>id=startbutton</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=module<datalist><option>id=module</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=keywords<datalist><option>id=keywords</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=assetaddeddate<datalist><option>id=assetaddeddate</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000<datalist><option>5000</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Project Tracking</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/components/libraries/addassettocollection.html?collectionid=105&amp;assetid=AVVKhPk9X6umoHWGYgtE<datalist><option>${currentServer}/${currentApplication}/components/libraries/addassettocollection.html?collectionid=105&amp;assetid=AVVKhPk9X6umoHWGYgtE</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/modules/asset/index.html<datalist><option>${currentServer}/${currentApplication}/views/modules/asset/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.glyphicon.glyphicon-search<datalist><option>css=i.glyphicon.glyphicon-search</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name.value<datalist><option>id=name.value</option></datalist></td>
+	<td>Human</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//table[@id='main-results-table']/tbody[2]/tr/td<datalist><option>//table[@id='main-results-table']/tbody[2]/tr/td</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>4000<datalist><option>4000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Create New<datalist><option>link=Create New</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=name.value<datalist><option>name=name.value</option></datalist></td>
+	<td>${possibleCollection}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=input.btn.btn-sm<datalist><option>css=input.btn.btn-sm</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//span[@text='${possibleCollection}'])<datalist><option>xpath=(//span[@text='${possibleCollection}'])</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>//***** Upload Assets to Collection<datalist><option>//***** Upload Assets to Collection</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=addmediatab<datalist><option>id=addmediatab</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.ajax.btnthumbnail &gt; img<datalist><option>css=a.ajax.btnthumbnail &gt; img</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=upload_field<datalist><option>id=upload_field</option></datalist></td>
+	<td>/home/shanti/Pictures/Hilborn.jpg</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=filePicker<datalist><option>id=filePicker</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=upload_field<datalist><option>id=upload_field</option></datalist></td>
+	<td>${uploadDirectory}\Multiple\image\Image_JPEG_3.jpg</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>id=header<datalist><option>id=header</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@type='search'])[2]<datalist><option>xpath=(//input[@type='search'])[2]</option></datalist></td>
+	<td>${keywordtag}</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=input.select2-search__field<datalist><option>css=input.select2-search__field</option></datalist></td>
+	<td>${KEY_TAB}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=startbutton<datalist><option>id=startbutton</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>8000<datalist><option>8000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=viewassets<datalist><option>id=viewassets</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>name=uploader1475523656651<datalist><option>name=uploader1475523656651</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=count<datalist><option>name=count</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Remove from Collection<datalist><option>link=Remove from Collection</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Remove from collection?<datalist><option>Remove from collection?</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Open Collections - Add Media</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/index.html<datalist><option>${currentServer}/${currentApplication}/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.glyphicon.glyphicon-search<datalist><option>css=i.glyphicon.glyphicon-search</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//table[@id='main-results-table']/tbody[2]/tr[6]/td<datalist><option>//table[@id='main-results-table']/tbody[2]/tr[6]/td</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=addmediatab<datalist><option>id=addmediatab</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.ajax.btnthumbnail &gt; img<datalist><option>css=a.ajax.btnthumbnail &gt; img</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=filePicker<datalist><option>id=filePicker</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=upload_field<datalist><option>id=upload_field</option></datalist></td>
+	<td>C:\Users\Casey\Documents\Media\Multiple\image\Image_JPEG_3.jpg</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=startbutton<datalist><option>id=startbutton</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=filePicker<datalist><option>id=filePicker</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>15000<datalist><option>15000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=viewassetsbtn<datalist><option>id=viewassetsbtn</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Asset Edit Tag</td></tr>
+</thead>
+<tbody>
+<tr>
+	<td>open</td>
+	<td>${currentServer}/${currentApplication}/views/modules/asset/index.html<datalist><option>${currentServer}/${currentApplication}/views/modules/asset/index.html</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=description.value<datalist><option>id=description.value</option></datalist></td>
+	<td>Image_JPEG.jpg</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.btn.small<datalist><option>css=input.btn.small</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//table[@id='main-results-table']/tbody/tr[2]/td[2]<datalist><option>//table[@id='main-results-table']/tbody/tr[2]/td[2]</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Email<datalist><option>link=Email</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add Tags<datalist><option>link=Add Tags</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000<datalist><option>2000</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=keyword<datalist><option>name=keyword</option></datalist></td>
+	<td>SeleniumTest</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=form[name="adder"] &gt; input.btn.small<datalist><option>css=form[name="adder"] &gt; input.btn.small</option></datalist></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000<datalist><option>1000</option></datalist></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
